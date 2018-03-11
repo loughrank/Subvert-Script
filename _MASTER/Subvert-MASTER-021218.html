@@ -617,13 +617,13 @@ Christina: I need yo
 
 [[Christina Disconnected.&lt;-Christina?]]
 
-</tw-passagedata><tw-passagedata pid="29" name="Exit QuizB" tags="" position="3608,2046" size="100,100">SID: It seems she has the ability to log off =Interesting. 
+</tw-passagedata><tw-passagedata pid="29" name="Exit QuizB" tags="" position="3626,2045" size="100,100">SID: It seems she has the ability to log off =Interesting. 
 
-SID: &quot;Christina&quot;= distressed. 
+SID: Dialogue suggest distressed =Christina. 
 
-SID: Unstable.
+SID: Unstable psyche =Possible.
 
-SID: I have no records of US, Bunkers or Commanders in Hierarch Archives.
+SID: Also, I have no records of US, Bunkers or Commanders in Hierarch Archives.
 
 SID: Hierarchs may know more. We could ask them, except...
 
@@ -640,14 +640,20 @@ SID: But our discovery may pardon us.
 
 
 
-</tw-passagedata><tw-passagedata pid="30" name="28A" tags="" position="4432,1902" size="100,100">SID: Very well. This =safe choice.
+</tw-passagedata><tw-passagedata pid="30" name="28A" tags="" position="3796,1931" size="100,100">SID: Very well. This =safe choice.
 
 SID: My mainframe is being co-opted for a hierarch project. I must go dormant.
 
-SID: I will alert you when free. ETA: 5 hours.
+SID: I will alert you when free =2hours.
 
 
-[[29A&lt;-Very well.]]
+[[Meditation 1B&lt;-Very well.]]
+
+[[Monitoring Package B&lt;- I should install the Monitoring Package.]]@if(Monitoring Package+1)then(hide)@
+
+[[Mess Hall B&lt;-I should take care of my mess hall duties anyways.]]@if(PathContains=Mess Hall Entry)then(hide)@
+
+[[Waste Duty B&lt;-I need to take care of my waste assignement now.]]@if(PathContains=Waste Duty Entry)then(hide)@
 
 
 
@@ -664,14 +670,18 @@ SID: Are you going to disclose our finding to Clementine?
 
 
 
-</tw-passagedata><tw-passagedata pid="32" name="29A" tags="" position="4562,1914" size="100,100">
+</tw-passagedata><tw-passagedata pid="32" name="Meditation 1" tags="" position="4001,1752" size="100,100">
 
-System: Meditation @wait(2hours)@
+System: Meditation@wait(1hour)@
 
 System: &quot;The Wall is like the hull unto a seed. Within it life is possible, and all those bounties with which the Creators favor us. They have housed us from the Chaos beyond, and so we honor them with the purity of the lives we lead. Shall we not dream of growing like the seed? There shall come a day when we are complete, and the Creators are among us. Then we might spring forth from our Wall, and carry their light to darkened places.&quot;  -Hierarch Grays, The Truth, S13*
 
 
-[[30A&lt;-I&#39;ll Meditate.]]</tw-passagedata><tw-passagedata pid="33" name="30A" tags="" position="4699,1934" size="100,100">SID: Hierarch project complete. I am no longer in hiding. You have a new message from Christina. Restoring connection. @wait(2hours)@
+[[Meditation Follow up&lt;-I can&#39;t believe the day is near.]]
+
+[[Meditation Follow up&lt;-I should meditate.]]
+
+</tw-passagedata><tw-passagedata pid="33" name="31" tags="" position="5063,1908" size="100,100">SID: Hierarch project complete. I am no longer in hiding. You have a new message from Christina. Restoring connection.@wait(30sec)@
 
 Christina: Rager!!! @wait(4sec)@
 
@@ -689,7 +699,7 @@ Christina: Or is everyone food?
 [[31A&lt;-I don’t understand the question]]
 
 
-</tw-passagedata><tw-passagedata pid="34" name="31A" tags="" position="4854,1930" size="100,100">Christina: Of course you don’t. 
+</tw-passagedata><tw-passagedata pid="34" name="31A" tags="" position="5056,2021" size="100,100">Christina: Of course you don’t. 
 
 Christina: Different Planets... @if(MC2APlanet)then(Show)@
 
@@ -10679,7 +10689,7 @@ Christina: Please, get it right. I need to trust you.
 
 hristina: What&#39;s your bunker&#39;s code-name?
 
-[[End Quiz - Despair B&lt;-Liberty City.]]
+[[Exit Quiz - Despair B&lt;-Liberty City.]]
 
 [[UtopiaPlanet&lt;-Utopia?]]@set(Trust+1)@
 
@@ -11584,13 +11594,13 @@ System: HERESY WILL LEAD TO IBRIDA RECYCLING...
 
 [[Server Choice&lt;- Being recycled, it&#39;s an intersting thought.]]</tw-passagedata><tw-passagedata pid="951" name="Monitoring Package Confirm" tags="" position="1855,357" size="100,100">System: New Monitoring Package Update.
 
-System: Run time of completion:2 hours.
+System: Run time of completion =2hours.
 
 System: Confirm?
 
-[[Confirm Exit&lt;-I don&#39;t want to wait. Intiate SID.]]
+[[Monitoring Package Complete&lt;-Patience is a virtue, confirm.]]@set(Monitoring Package+1)##set(Suspicion-1)@
 
-[[Monitoring Package B&lt;-Patience is a virtue, confirm.]]@set(Monitoring Package+1)##set(Suspicion-1)@</tw-passagedata><tw-passagedata pid="952" name="Clementine&#39;s thoughts on Arrival B" tags="" position="226,1063" size="100,100">HI-CLEM: Because I do not know. 
+[[Confirm Exit&lt;-I don&#39;t want to wait. Intiate SID.]]</tw-passagedata><tw-passagedata pid="952" name="Clementine&#39;s thoughts on Arrival B" tags="" position="226,1063" size="100,100">HI-CLEM: Because I do not know. 
 
 HI-CLEM: I am not going to break it down more than that. 
 
@@ -11626,7 +11636,9 @@ System: Running PROGRAM S.I.D V4.9
 
 [[SID INTRODUCTION&lt;- Here&#39;s to heresy.]]
 
-</tw-passagedata><tw-passagedata pid="954" name="Monitoring Package Return" tags="" position="2134,407" size="100,100">System: Monitoring Package = complete.@wait(2hours)@
+</tw-passagedata><tw-passagedata pid="954" name="Monitoring Package Complete" tags="" position="2134,407" size="100,100">System: Confirmed.
+
+System: Monitoring Package =Complete.@wait(2hours)@
 
 [[Booting SID&lt;- Now that&#39;s done, let&#39;s see if SID found anything]]</tw-passagedata><tw-passagedata pid="955" name="SID INTRODUCTION" tags="" position="1921,922" size="100,100">SID: Hello, Sam. =Greeting. 
 
@@ -11695,13 +11707,13 @@ SID: I&#39;ll continue scanning in the background.
 
 SID: Checking back =1 hour.
 
-[[Mess Hall&lt;-Thank you.]]@set(Assignment+1)
+[[Mess Hall&lt;-Thank you.]]
 
 [[Fork A2&lt;-Wait, Nevermind.]]@if(PathContains=Results Fail Fork)then(hide)@
 
 [[Results Fail Fork&lt;-Wait, Nevermind.]]@if(PathContains=Results Fail Fork)then(show)@</tw-passagedata><tw-passagedata pid="961" name="Mess Hall 3" tags="" position="3145,417" size="100,100">[[Mess Hall 4&lt;-My vibration get&#39;s messy around Hierarch Fields.]]
 
-[[Mess Hall 4&lt;-Our vibrations always clash, I&#39;m glad I have Hierarch Clementine.]]
+[[Mess Hall 4&lt;-I&#39;m glad I answer to Hierarch Clementine.]]
 
 </tw-passagedata><tw-passagedata pid="962" name="Report" tags="" position="3342,719" size="100,100">SID: Radio scan =Detected one (1) anomaly.
 
@@ -11749,7 +11761,7 @@ HI-CLEM: What seems to be the issue?
 
 [[CLEM Side track A &lt;-I feel stressed from all this work.  ]]@set(Suspicion+1)@
 
-</tw-passagedata><tw-passagedata pid="965" name="Mess Hall" tags="" position="2883,409" size="100,100">HI-Fields: Good afternoon, Sam.@wait(1min)@
+</tw-passagedata><tw-passagedata pid="965" name="Mess Hall" tags="" position="2883,409" size="100,100">HI-Fields: Good afternoon, Sam.@wait(2min)@
 
 HI-Fields: I see you are headed towards the mess hall. 
 
@@ -12505,11 +12517,11 @@ System: As Naoum Deus Onaiau gets closer, don&#39;t fight the vibration change. 
 
 [[It&#39;s time is coming.-&gt;Onaiau Mass Announcement C.]]
 
-[[Their coming?-&gt;Onaiau Mass Announcement C.]]</tw-passagedata><tw-passagedata pid="1031" name="Mess Hall2" tags="" position="2996,408" size="100,100">HI-Fields: Be diligent in your work and be joyous that you may serve your siblings today. Feed them with energy and bring a joyous vibration to all you interact with. 
+[[Their coming?-&gt;Onaiau Mass Announcement C.]]</tw-passagedata><tw-passagedata pid="1031" name="Mess Hall2" tags="" position="2996,408" size="100,100">HI-Fields: Be diligent in your work and be joyous that you may serve your siblings today. Feed them with not just food but posivitve and joyous vibration. 
 
-HI-Fields: I will leave you with a verse from The Hiearch Grays. 
+HI-Fields: I will leave you with a verse from The Hiearch Grays as motivation. 
 
-HI-Fields: &quot;One shall Exude a confidence that strikes a beam in all brothers and sisters. Seducing them into praise for The Creator. May your frequencies aline.&quot; Hierarch Grays. - Purpose, F43*
+HI-Fields: &quot;One shall Exude a confidence that strikes a beam in all brothers and sisters. Seducing them into praise of The Creator. May your frequencies aline.&quot; Hierarch Grays. - Purpose: F43
 
 HI-Fields: May our frequiences align. 
 
@@ -13359,7 +13371,7 @@ Christina: Sam, are you still there? @wait(15sec)@
 
 [[Booting SID&lt;- Confirm.]]
 
-[[Monitoring Package Return&lt;-Nevermind, Let&#39;s just get it done]]@set(Monitoring Package+1)##set(Suspicion-1)@
+[[Monitoring Package Complete&lt;-Nevermind, Let&#39;s just get it done]]@set(Monitoring Package+1)##set(Suspicion-1)@
 
 </tw-passagedata><tw-passagedata pid="1114" name="Confirm SID" tags="" position="1751,803" size="100,100">System: Please confirm Boot Sid.
 
@@ -13371,7 +13383,9 @@ Christina: Sam, are you still there? @wait(15sec)@
 
 SID: Show results =Desired? 
 
-[[Results Success B&lt;-Yes, Show me.]]</tw-passagedata><tw-passagedata pid="1116" name="Mess Hall 4" tags="" position="3142,526" size="100,100">[[Mess Hall Return A&lt;-Here&#39;s to finding Sacrifice in greatness.]]@set(lights=off)@</tw-passagedata><tw-passagedata pid="1117" name="Monitoring Package B" tags="" position="1993,380" size="100,100">[[Monitoring Package Return&lt;-Patience is a virtue, confirm.]]@set(Assignment+1)##set(Suspicion-1)@</tw-passagedata><tw-passagedata pid="1118" name="Fork A" tags="" position="2441,689" size="100,100">SID: Essentially.
+[[Results Success B&lt;-Yes, Show me.]]</tw-passagedata><tw-passagedata pid="1116" name="Mess Hall 4" tags="" position="3142,526" size="100,100">[[Mess Hall Return A&lt;-Here&#39;s to finding Sacrifice in greatness.]]@if(PathContains=28A)then(hide)##set(Assignment+1)@
+
+</tw-passagedata><tw-passagedata pid="1117" name="Fork A" tags="" position="2441,689" size="100,100">SID: Essentially.
 
 SID: When I am offline it will shut down.
 
@@ -13383,7 +13397,7 @@ SID: Shall I show you the results of the Frequency Search now?
 
 [[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]
 
-</tw-passagedata><tw-passagedata pid="1119" name="Fork B" tags="" position="2447,910" size="100,100">SID: Correct. 
+</tw-passagedata><tw-passagedata pid="1118" name="Fork B" tags="" position="2447,910" size="100,100">SID: Correct. 
 
 SID: Allowing you to come back and check at any time.
 
@@ -13393,7 +13407,7 @@ SID: Shall I show you the results of the Frequency Search now?
 
 [[Mess Hall Entry&lt;-Wait till I get back from my mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1120" name="Waste Duty Entry" tags="" position="2739,979" size="100,100">SID: Understood.  
+[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1119" name="Waste Duty Entry" tags="" position="2673,991" size="100,100">SID: Understood.  
 
 SID: I&#39;ll continue scanning in the background.
 
@@ -13403,15 +13417,15 @@ SID: Checking back =1 hour.
 
 [[Fork A2&lt;-Wait, Nevermind.]]@if(PathContains=Results Fail Fork)then(hide)@
 
-[[Results Fail Fork&lt;-Wait, Nevermind.]]@if(PathContains=Results Fail Fork)then(show)@</tw-passagedata><tw-passagedata pid="1121" name="Waste Duty" tags="" position="2914,1013" size="100,100">SID: I detect you are back from your Waste Duties.@wait(1hour)##@set(lights=on)@@
+[[Results Fail Fork&lt;-Wait, Nevermind.]]@if(PathContains=Results Fail Fork)then(show)@</tw-passagedata><tw-passagedata pid="1120" name="Waste Duty Return" tags="" position="2940,999" size="100,100">SID: I detect you are back from your Waste Duties.@wait(1hour)##@set(lights=on)@@
 
 SID: Show results =Desired? 
 
-[[Results Success B&lt;-Yes, Show me.]]</tw-passagedata><tw-passagedata pid="1122" name="Results Fail Fork" tags="" position="2862,807" size="100,100">[[Results Success&lt;-Notify me when you find something.]]
+[[Results Success B&lt;-Yes, Show me.]]</tw-passagedata><tw-passagedata pid="1121" name="Results Fail Fork" tags="" position="2862,807" size="100,100">[[Results Success&lt;-Notify me when you find something.]]
 
 [[Mess Hall Entry&lt;-I&#39;m off to mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1123" name="Results Success B" tags="" position="3051,759" size="100,100">SID: I have good news.
+[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1122" name="Results Success B" tags="" position="3051,759" size="100,100">SID: I have good news.
 
 SID: I seemed to have found something interesting. 
 
@@ -13419,7 +13433,7 @@ SID: Shall I display the report?
 
 [[i8A&lt;-Yes, of course]]
 
-[[i8A&lt;-Do it.]]</tw-passagedata><tw-passagedata pid="1124" name="Fork A2" tags="" position="2442,796" size="100,100">SID: Confirmed.
+[[i8A&lt;-Do it.]]</tw-passagedata><tw-passagedata pid="1123" name="Fork A2" tags="" position="2442,796" size="100,100">SID: Confirmed.
 
 SID: Shall I show you the results of the Frequency Search now?  
 
@@ -13427,13 +13441,13 @@ SID: Shall I show you the results of the Frequency Search now?
 
 [[Mess Hall Entry&lt;-Wait till I get back from my mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1125" name=" Where from?" tags="" position="3527,731" size="100,100">SID: Location =Unavailable.
+[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1124" name=" Where from?" tags="" position="3527,731" size="100,100">SID: Location =Unavailable.
 
 [[4A&lt;-Is it from another planet?]]
 
 [[4B&lt;-Alternate Dimension?]]
 
-[[4C&lt;-Another location on the timeline?]]</tw-passagedata><tw-passagedata pid="1126" name="Report 2" tags="" position="3345,874" size="100,100">SID: Signal type does not match any Ibrida or Hierarch Technology.
+[[4C&lt;-Another location on the timeline?]]</tw-passagedata><tw-passagedata pid="1125" name="Report 2" tags="" position="3345,874" size="100,100">SID: Signal type does not match any Ibrida or Hierarch Technology.
 
 SID: No known matching traces in the Naoum Galaxy.
 
@@ -13442,7 +13456,7 @@ SIDL: Your theory =Proof.
 [[ Where from?&lt;-Do we know where the signal is broadcasting from??]] 
 
 [[5A&lt;-Holy Feather Tales, I can&#39;t believe it!!!!]]@set(brokensid=1)##set(Suspicion+3)@
-</tw-passagedata><tw-passagedata pid="1127" name="HL2" tags="" position="322,1594" size="100,100">SID: &quot;Environment Warnings for Habitat Levels 2:&quot;
+</tw-passagedata><tw-passagedata pid="1126" name="HL2" tags="" position="322,1594" size="100,100">SID: &quot;Environment Warnings for Habitat Levels 2:&quot;
 
 SID: &quot;Low Temperature - (5°C)&quot;
 
@@ -13452,17 +13466,17 @@ SID: &quot;Inhabitable&quot;
 
 [[Bunker Status&lt;-I wonder what happened.]]
 
-[[13A&lt;-Take me to the main screen.]]</tw-passagedata><tw-passagedata pid="1128" name="30 min wait." tags="" position="880,2315" size="100,100">SID: Are you ready, Sam?@wait(30min)@
+[[13A&lt;-Take me to the main screen.]]</tw-passagedata><tw-passagedata pid="1127" name="30 min wait." tags="" position="880,2315" size="100,100">SID: Are you ready, Sam?@wait(30min)@
 
 [[I am ready for the vibration.-&gt;MESSAGES]]
 
-[[Thank you-&gt;30 min wait Continual.]]</tw-passagedata><tw-passagedata pid="1129" name="30 min wait Continual." tags="" position="743,2315" size="100,100">SID: Confirmed.
+[[Thank you-&gt;30 min wait Continual.]]</tw-passagedata><tw-passagedata pid="1128" name="30 min wait Continual." tags="" position="743,2315" size="100,100">SID: Confirmed.
 
 SID: Are you ready, Sam?@wait(30min)@
 
 [[I am ready for the vibration.-&gt;MESSAGES]]
 
-[[Give me 30 min.-&gt;30 min wait Continual.]]</tw-passagedata><tw-passagedata pid="1130" name="Founding Commander Question" tags="" position="2585.25,1924" size="100,100">Christina: Who was the founding commander of your bunker?
+[[Give me 30 min.-&gt;30 min wait Continual.]]</tw-passagedata><tw-passagedata pid="1129" name="Founding Commander Question" tags="" position="2585.25,1924" size="100,100">Christina: Who was the founding commander of your bunker?
 
 SID: Mention of Rodriguez =correct answer.@if(HushSid=1)then(Hide)@ 
 
@@ -13476,13 +13490,13 @@ SID: Mention of Rodriguez =correct answer.@if(Rodriguez=1)then(Show)@
 
 [[I don&#39;t know-&gt;Commander Question Leniant]]@if(PathContains=First Question Correct)then(Show)@
 
-[[I don&#39;t know-&gt;Quiz Fail]]@if(PathContains=First Question Wrong)then(Show)@</tw-passagedata><tw-passagedata pid="1131" name="End Quiz - Despair B" tags="" position="3029,2160" size="100,100">Christina: That’s wrong…
+[[I don&#39;t know-&gt;Quiz Fail]]@if(PathContains=First Question Wrong)then(Show)@</tw-passagedata><tw-passagedata pid="1130" name="Exit Quiz - Despair B" tags="" position="3019,2160" size="100,100">Christina: That’s wrong…
 
 Christina: I’m sorry...
 
 Christina: Just leave me alone.
 
-[[Exit QuizB&lt;-Christina?]]@set(Trust=0)@</tw-passagedata><tw-passagedata pid="1132" name="Hush Sid" tags="" position="1836.75,1992" size="100,100">SID:Understood. 
+[[Exit QuizB&lt;-Christina?]]@set(Trust=0)@</tw-passagedata><tw-passagedata pid="1131" name="Hush Sid" tags="" position="1836.75,1992" size="100,100">SID:Understood. 
 
 Christina: Hello?
 
@@ -13494,7 +13508,7 @@ Christina: Hello?
 
 [[No Bunker Question 1&lt;-I&#39;m not who you think I am.]]
 
-</tw-passagedata><tw-passagedata pid="1133" name="First Question Wrong" tags="" position="2431,2042.75" size="100,100">Christina: Um…
+</tw-passagedata><tw-passagedata pid="1132" name="First Question Wrong" tags="" position="2431,2042.75" size="100,100">Christina: Um…
 
 Christina: That’s not right.
 
@@ -13509,7 +13523,7 @@ Christina: Let’s try another one.
 [[Founding Commander Question B&lt;-This is Dumb.]]
 
 
-</tw-passagedata><tw-passagedata pid="1134" name="First Question Correct" tags="" position="2430,1904" size="100,100">Christina: Correct. 
+</tw-passagedata><tw-passagedata pid="1133" name="First Question Correct" tags="" position="2430,1904" size="100,100">Christina: Correct. 
 
 Christina: See easy.
 
@@ -13522,7 +13536,7 @@ Christina: Next Question.
 
 
 
-</tw-passagedata><tw-passagedata pid="1135" name="Founding Commander Question B" tags="" position="2574,2080.75" size="100,100">Christina: I’m sorry you don’t feel this is important. 
+</tw-passagedata><tw-passagedata pid="1134" name="Founding Commander Question B" tags="" position="2574,2080.75" size="100,100">Christina: I’m sorry you don’t feel this is important. 
 
 Christina: This is important to me ok. 
 
@@ -13546,7 +13560,7 @@ SID: Mention of Rodriguez =correct answer.@if(Rodriguez=1)then(Show)@
 
 [[I don&#39;t know-&gt;Quiz Fail]]@if(PathContains=First Question Wrong)then(Show)@
 
-</tw-passagedata><tw-passagedata pid="1136" name="Quiz Fail" tags="" position="2858,2152" size="100,100">Christina: NO NO...
+</tw-passagedata><tw-passagedata pid="1135" name="Quiz Fail" tags="" position="2858,2152" size="100,100">Christina: NO NO...
 
 Christina: Why are you not getting these right? 
 
@@ -13555,7 +13569,7 @@ Christina: I&#39;m sorry.
 Christina: Just leave me alone.
 
 [[Exit QuizB&lt;-Christina?]]@set(Trust=0)@
-</tw-passagedata><tw-passagedata pid="1137" name="Quiz Fail B" tags="" position="3027.75,2018.75" size="100,100">Christina: I’m sorry…
+</tw-passagedata><tw-passagedata pid="1136" name="Quiz Fail B" tags="" position="3027.75,2018.75" size="100,100">Christina: I’m sorry…
 
 Christina: I have to go.
 
@@ -13565,27 +13579,191 @@ Christina: You keep getting them wrong.
 
 Christina: Just leave me alone.
 
-[[Exit QuizB&lt;-Christina?]]@set(Trust=0)@</tw-passagedata><tw-passagedata pid="1138" name="Quiz C" tags="" position="3277,1841" size="100,100">Christina: You didn’t get them all right.
+[[Exit QuizB&lt;-Christina?]]@set(Trust=0)@</tw-passagedata><tw-passagedata pid="1137" name="Quiz C" tags="" position="3277,1841" size="100,100">Christina: You didn’t get them all right.
 
 Christina: I’ll take it though. 
 
 Christina: You must somewhat civilized if I’m 
 
-[[Christina Disconnected.&lt;-Christina?]]</tw-passagedata><tw-passagedata pid="1139" name="Christina Disconnected." tags="" position="3479,1814" size="100,100">SID: It appears Christina has been disconnected. 
+[[Christina Disconnected.&lt;-Christina?]]</tw-passagedata><tw-passagedata pid="1138" name="Christina Disconnected." tags="" position="3479,1814" size="100,100">SID: It appears Christina has been abruptly disconnected. 
 
 SID: Power Source =Disconnected.
 
-[[Exit Quiz A&lt;-Any info in Archives?]] 
+[[Exit Quiz A&lt;-Any info in the Archives?]] 
 
-</tw-passagedata><tw-passagedata pid="1140" name="Exit Quiz A" tags="" position="3638.5,1852.25" size="100,100">SID: I have no records of US, Bunkers or Commanders in Hierarch Archives.
+</tw-passagedata><tw-passagedata pid="1139" name="Exit Quiz A" tags="" position="3638.5,1852.25" size="100,100">SID: I have no records of US, Bunkers or Commanders in Hierarch Archives.
 
 SID: Hierarchs may know more. We could ask them, except...
 
 SID: My existence =heretical?
 
-SID: But our discovery may pardon us.
+SID: Discovery may pardon us?
 
-[[28A&lt;-Keep it a secret for now.]]</tw-passagedata></tw-storydata>
+[[28A&lt;-Keep it a secret for now.]]</tw-passagedata><tw-passagedata pid="1140" name="Waste Duty" tags="" position="2823,993.75" size="100,100">HI-Esther: You are here as requested by Hierarch Clementine.@wait(2min)@
+
+HI-Esther: I do not wish to waste time that is not needed to be wasted on your frequency.
+
+HI-Esther: You understand your duties. 
+
+HI-Esther: May our Frequencies align. 
+
+[[Waste Duty Return&lt;-May our Frequencies Align]]@if(PathContains=28A)then(Hide)##set(Assignment+1)@
+
+
+</tw-passagedata><tw-passagedata pid="1141" name="Meditation 1B" tags="" position="3988,1914" size="100,100">System: Meditation.@wait(3omin)@
+
+System: &quot;The Wall is like the hull unto a seed. Within it life is possible, and all those bounties with which the Creators favor us. They have housed us from the Chaos beyond, and so we honor them with the purity of the lives we lead. Shall we not dream of growing like the seed? There shall come a day when we are complete, and the Creators are among us. Then we might spring forth from our Wall, and carry their light to darkened places.&quot;  -Hierarch Grays, The Truth, S13*
+
+
+[[Meditation Follow up&lt;-I can&#39;t believe the day is near.]]
+
+[[Meditation Follow up&lt;-I should meditate.]]</tw-passagedata><tw-passagedata pid="1142" name="Meditation Follow up" tags="" position="4192,1919" size="100,100">HI-Clem: Hello, Sam.
+
+HI-Clem: I trust you are doing well. 
+
+[[Task FU&lt;-I am thank you.]]@if(Assignment=2)&amp;&amp;if(MonitoringPackage=1)then(hide)@ 
+
+[[Task FU&lt;-Yes, and you Hierarch Clementine?]]@if(Assignment=2)&amp;&amp;if(MonitoringPackage=1)then(hide)@ 
+
+[[Task Complete&lt;-I am thank you.]]@if(Assignment=2)&amp;&amp;if(MonitoringPackage=1)then(show)@ 
+
+[[Task Complete&lt;-Yes, and you Hierarch Clementine?]]@if(Assignment=2)&amp;&amp;if(MonitoringPackage=1)then(show)@
+
+
+</tw-passagedata><tw-passagedata pid="1143" name="Task FU" tags="" position="4291,1672" size="100,100">HI-Clem: I have noticed you have not completed all of your tasks assigned for today. 
+
+HI-Clem: I know you do not wish to be punished for you defiance. 
+
+HI-Clem: Do I need to remind you of the severity of punishment that accompanies disobedience?
+
+[[Task FU B&lt;-No]]m
+
+[[Task FU B2&lt;-I finished my main assignment.]]@if(MonitoringPackage=1)then(show)
+
+[[Task FU B2&lt;-I only have one assignment left.]]@if(Assignment=1)&amp;&amp;if(MonitoringPackage=1)then(show)@
+
+
+</tw-passagedata><tw-passagedata pid="1144" name="Task FU B" tags="" position="4422,1595" size="100,100">HI-Clem: Your vibration has not be intune lately which brings me concern. 
+
+HI-Clem: I wish you to fix it and I believe serving your siblings is the correct path for bringing order to the chaos in your vibration. 
+
+HI-Clem: Finish all your assignments before end of the day or harsher punishment will follow.  
+
+Hi-Clem: Am I clear? 
+
+[[FU END&lt;-Yes, Hierarch Clementine.]]
+
+[[FU END&lt;-Yep]]@set(Suspicion+1)@
+
+
+
+
+</tw-passagedata><tw-passagedata pid="1145" name="Task FU B2" tags="" position="4408,1762" size="100,100">HI-Clem: I did not ask for excuses. 
+
+HI-Clem: Your job is not done until all your assignments are complete.
+
+HI-Clem: You’re vibration has not be intune lately which brings me concern. 
+
+HI-Clem: I wish you to fix it and I believe serving your siblings is the correct path to fixing the chaos you are in. 
+
+HI-Clem: Finish all your assignments before end of the day or harsher punishment will follow.  
+
+Hi-Clem: Am I clear? 
+
+[[FU END&lt;-Yes, Hierarch Clementine.]]
+
+[[FU END&lt;-Yep]]@set(Suspicion+1)@</tw-passagedata><tw-passagedata pid="1146" name="FU END" tags="" position="4587,1879" size="100,100">HI-Clem: May our Frequencies align.
+
+[[30&lt;-May our Frequencies align.]]
+
+</tw-passagedata><tw-passagedata pid="1147" name="Task Complete" tags="" position="4409,1924" size="100,100">HI-Clem: I see you have finished all your assignments for the day. 
+
+HI-Clem: That brings me joy. 
+
+HI-Clem: You truly are an amazing child. 
+
+HI-Clem: I am grateful for The Naou in allowing me to aid in the creation and growth of your vibration. 
+
+HI-Clem: May I suggest taking the rest of your day to experience the removal of malfunctioned AI cores. 
+
+HI-Clem: The removal of chaos brings wisdom to all who experience it. 
+
+HI-Clem: Enjoy your day Sam. 
+
+[[FU END&lt;-Thank you, Hierarch Clementine.]]
+
+[[FU END&lt;-You too, Hierarch Clementine.]]
+
+</tw-passagedata><tw-passagedata pid="1148" name="30" tags="" position="4757,1918" size="100,100">SID: Hello, Sam.@wait(5min)@
+
+SID: Hierarch Project Complete. 
+
+SID: Are you available? 
+
+SAM: Yes.
+
+[[Assignements&lt;-No, I need to do one of my assignments, reach out when I’m done.]]@if(PathContains=Task FU)then(Show)@ 
+
+[[Assignements&lt;-Clementine is bugging me about my assignments, reach out when I’m done.]]@if(PathContains=Task FU)then(Show)@ 
+
+[[31&lt;-Yes, have we heard from Christina?]]
+
+
+</tw-passagedata><tw-passagedata pid="1149" name="Assignements" tags="" position="4753,1731" size="100,100">[[Monitoring Package B&lt;- I should install the Monitoring Package.]]@if(Monitoring Package+1)then(hide)@
+
+[[Mess Hall B&lt;-I should take care of my mess hall duties anyways.]]@if(PathContains=Mess Hall Entry)then(hide)@
+
+[[Waste Duty B&lt;-I need to take care of my waste assignement now.]]@if(PathContains=Waste Duty Entry)then(hide)@
+
+</tw-passagedata><tw-passagedata pid="1150" name="Mess Hall B" tags="" position="4412.25,916" size="100,100">HI-Fields: Good afternoon, Sam.@wait(2min)@
+
+HI-Fields: I see you are headed towards the mess hall. 
+
+HI-Fields: I trust Hierarch Clementine spoke to you as to why you have been given extra assignments today.
+
+HI-Fields: I wished to give you a stricter punishment. 
+
+HI-Fields: However, for a reason beyond me, Clementine requested you be a fasting servant instead. 
+
+HI-Fields: I do not understand her commitment to you. 
+
+HI-Fields: None the less, I agreed.
+
+
+[[Mess Hall B2&lt;- Thank you for your grace, Hierarch Fields.]]
+
+[[Mess Hall B2&lt;- Understood, Hierarch Fields.]]</tw-passagedata><tw-passagedata pid="1151" name="Mess Hall B2" tags="" position="4410.25,1052" size="100,100">HI-Fields: Be diligent in your work and be joyous that you may serve your siblings today. Feed them with not just food but posivitve and joyous vibration. 
+
+HI-Fields: I will leave you with a verse from The Hiearch Grays as motivation. 
+
+HI-Fields: &quot;One shall Exude a confidence that strikes a beam in all brothers and sisters. Seducing them into praise of The Creator. May your frequencies aline.&quot; Hierarch Grays. - Purpose: F43
+
+HI-Fields: May our frequiences align. 
+
+[[Mess Hall B3&lt;- May our frequiences align.]]</tw-passagedata><tw-passagedata pid="1152" name="Mess Hall B3" tags="" position="4410.25,1202" size="100,100">[[31&lt;-Yes, have we heard from Christina?]]</tw-passagedata><tw-passagedata pid="1153" name="Monitoring Package B" tags="" position="4567.25,910" size="100,100">System: New Monitoring Package Update.
+
+System: Run time of completion =2hours.
+
+System: Confirm?
+
+[[Monitoring Package B2&lt;-Better than punishment, confirm.]]@set(Monitoring Package+1)##set(Suspicion-1)@
+
+</tw-passagedata><tw-passagedata pid="1154" name="Monitoring Package B2" tags="" position="4569.25,1060" size="100,100">System: Confirmed.
+
+System: Monitoring Package =Complete.@wait(2hours)@
+
+[[31&lt;-Yes, have we heard from Christina?]]</tw-passagedata><tw-passagedata pid="1155" name="Waste Duty B" tags="" position="4739.25,907.75" size="100,100">HI-Esther: You are here as requested by Hierarch Clementine.@wait(2min)@
+
+HI-Esther: I do not wish to waste time that is not needed to be wasted on your frequency.
+
+HI-Esther: You understand your duties. 
+
+HI-Esther: May our Frequencies align. 
+
+[[Waste Duty B2&lt;-May our Frequencies Align]]@set(Assignment+1)@
+
+
+</tw-passagedata><tw-passagedata pid="1156" name="Waste Duty B2" tags="" position="4739.25,1057.75" size="100,100">[[31&lt;-Yes, have we heard from Christina?]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,o=!1,i=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(o)throw i}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
