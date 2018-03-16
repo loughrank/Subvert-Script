@@ -658,12 +658,11 @@ SID: I will alert you when free =2hours.
 
 
 
-</tw-passagedata><tw-passagedata pid="31" name="Clem Disclose 1" tags="" position="3935,2901" size="100,100">SID: Risky. 
+</tw-passagedata><tw-passagedata pid="31" name="Clem Disclose A" tags="" position="4247,2793" size="100,100">SID: Are you going to disclose our finding to Clementine =Risky? 
+ 
+[[Reactor Shutdown&lt;-I changed my mind.]]
 
-SID: Are you going to disclose our finding to Clementine? 
-
-
-[[Clem Disclose 2&lt;-Let&#39;s see what we can do]]
+[[Clem Disclose B&lt;-Yes, get Clem.]]
 
 
 
@@ -890,14 +889,14 @@ Christina: Hey.
 Christina: Are you there?
 
 
-[[50A&lt;-I&#39;m here]]</tw-passagedata><tw-passagedata pid="51" name="Clem Disclose 3" tags="" position="3959,3281" size="100,100">HI-CLEM: Hello, Sam. How can I help you my child?
+[[50A&lt;-I&#39;m here]]</tw-passagedata><tw-passagedata pid="51" name="Clem Disclose 3" tags="" position="4114,3154" size="100,100">HI-CLEM: Hello, Sam. How can I help you my child?
 
 [[Clem Disclose A1&lt;-I have discovered life beyond Utopia]]
 
-[[Clem Disclose B1&lt;-I ask for forgivenss.]]
+[[Clem Disclose B1&lt;-I ask for forgivness.]]
 
-[[30AC&lt;-Nevermind]] #+S
-</tw-passagedata><tw-passagedata pid="52" name="Clem Disclose A1" tags="" position="4077,3289" size="100,100">HI-CLEM: Have you, now?
+[[30AC&lt;-Nevermind]]@set(Suspicion+1)@
+</tw-passagedata><tw-passagedata pid="52" name="Clem Disclose A1" tags="" position="4242,3215" size="100,100">HI-CLEM: Have you, now?
 
 HI-CLEM: And how exactly did you make this discovery?
 
@@ -905,26 +904,34 @@ HI-CLEM: And how exactly did you make this discovery?
 [[Clem Disclose A2B&lt;-I Created an AI to scan for foreign signals]]
 
 [[Clem Disclose A2A&lt;-I found a hole in the Wall]]
-</tw-passagedata><tw-passagedata pid="53" name="Clem Disclose B1" tags="" position="4012,3475" size="100,100">HI-CLEM: Forgiveness for what, Sam? 
+</tw-passagedata><tw-passagedata pid="53" name="Clem Disclose B1" tags="" position="4115,3349" size="100,100">HI-CLEM: Forgiveness for what, Sam? 
 
 [[Clem Disclose A2B&lt;-I built a heretical AI; I have found life beyond Utopia]]
 
 [[Clem Disclose B2&lt;-I have thought unkindly of a hierarch]]
 
-[[30AC&lt;-Nevermind]] #+S</tw-passagedata><tw-passagedata pid="54" name="30AC" tags="" position="3632,3284" size="100,100">HI-CLEM: &quot;Nevermind?&quot; Don&#39;t waste my time.
+[[30AC&lt;-Nevermind]]@set(Suspicion+1)@ </tw-passagedata><tw-passagedata pid="54" name="30AC" tags="" position="3932,3168" size="100,100">HI-CLEM: &quot;Nevermind?&quot; Don&#39;t waste my time.
 
 HI-CLEM: I like you, Sam, but interrupting a Hierarch borders on heresy.
 
-HI-CLEM: My faith in you provides you with a privilege you will come to miss greatly if revoked. Do not test it.
+HI-CLEM: My faith in you provides you with a privilege you will come to miss greatly if revoked. 
+
+HI-CLEM: Do not test it.
+
+HI-CLEM: Understand?
 
 HI-CLEM: Go back to whatever it is you were doing.
+
+HI-CLEM: Make sure you install the Monitoring Package. It is. Upmort importance.@(Monitoring Package=1)then(Show)@
+
+HI-Clem: Looks like you still have assignements to do. Better complete them.@if(Assignement&lt;2)then(show)@
 
 HI-CLEM: May our frequencies align.
 
 
 [[May our frequencies align.-&gt;Clem Reach out conclusion2B]]
 
-</tw-passagedata><tw-passagedata pid="55" name="Clem Disclose A2B" tags="" position="4478,3362" size="100,100">HI-CLEM: Pardon me? 
+</tw-passagedata><tw-passagedata pid="55" name="Clem Disclose A2B" tags="" position="4377,3218" size="100,100">HI-CLEM: Pardon me? 
 
 HI-CLEM: You built an AI? 
 
@@ -934,7 +941,7 @@ HI-CLEM: And you&#39;ve had contact with other beings?
 
 HI-CLEM: One moment, Sam.
 
-[[Yes.-&gt;Clem Disclose A3]]</tw-passagedata><tw-passagedata pid="56" name="Clem Disclose A2A" tags="" position="4362,3249" size="100,100">HI-CLEM: Oh, Sam.
+[[Yes.-&gt;Clem Disclose A3]]</tw-passagedata><tw-passagedata pid="56" name="Clem Disclose A2A" tags="" position="4386,3366" size="100,100">HI-CLEM: Oh, Sam.
 
 HI-CLEM: I would really prefer you not lie to me Sam?
 
@@ -942,29 +949,29 @@ HI-CLEM: If that is your choice. Free will was given to you.
 
 HI-CLEM: I&#39;ll just have to find the truth myself.
 
-[[Clem Disclose A3&lt;-Forward]]</tw-passagedata><tw-passagedata pid="57" name="Clem Disclose A3" tags="" position="4509,3207" size="100,100">SYSTEM: LOGGING USER OUT SAM-27
+[[Clem Disclose A3&lt;-What do you mean?]]</tw-passagedata><tw-passagedata pid="57" name="Clem Disclose A3" tags="" position="4509,3207" size="100,100">SYSTEM: LOGGING USER OUT SAM-27
 
-SYSTEM: HIERARCH PRIVILEGES = REQUESTED
+SYSTEM: HIERARCH PRIVILEGES =REQUESTED
 
-SYSTEM: LOGGING IN = HIEARCH CLEMENTINE
+SYSTEM: LOGGING IN =HIEARCH CLEMENTINE
 
-SYSTEM: PRIVILEGES = GRANTED
+SYSTEM: PRIVILEGES =GRANTED
 
 SYSTEM: RETRIEVING MESSAGE LOGS
 
 SYSTEM: SAVING MESSAGE LOGS TO SUNBEAM DATABASE
 
-SYSTEM: Deactivated:  S.I.D V4.9
+SYSTEM: Deactivated: S.I.D V4.9
 
-SYSTEM: LOGGING OUT = HIERARCH CLEMENTINE
+SYSTEM: LOGGING OUT =HIERARCH CLEMENTINE
 
-SYSTEM: USER RECONNECTED = SAM-27
+SYSTEM: USER RECONNECTED =SAM-27
 
-[[Clem Disclose A4&lt;-What just happened?]]</tw-passagedata><tw-passagedata pid="58" name="Clem Disclose A4" tags="" position="4643,3379" size="100,100">HI-CLEM: You hybrids never fail to impress me.
+[[Clem Disclose A4&lt;-What just happened?]]</tw-passagedata><tw-passagedata pid="58" name="Clem Disclose A4" tags="" position="4645,3209" size="100,100">HI-CLEM: You hybrids never fail to impress me.
 
 HI-CLEM: We have cameras everywhere. We monitor all the systems you&#39;re authorized to use and track your vitals. We&#39;ve studied your behavior for generations. 
 
-HI-CLEM: And yet... You have somehow built an AI right under our noses and proceed to go looking for holes in this wonderful habitat created for you.
+HI-CLEM: Yet... You have somehow built an AI right under our noses and proceed to go looking for holes in this wonderful habitat created for you.
 
 HI-CLEM: And what do you do when you&#39;ve accomplished all your heresy? You report your findings.
 
@@ -972,7 +979,7 @@ HI-CLEM: Praise the Naoum.
 
 [[Gameover 2 ClemA&lt;-What do you mean, &quot;hybrid?&quot;]]
 
-[[Gameover 2 ClemB&lt;-Please, forgive me Clem]]</tw-passagedata><tw-passagedata pid="59" name="Gameover 2 ClemA" tags="" position="4849,3305" size="200,100">HI-CLEM: Hush now, Sam.
+[[Gameover 2 ClemB&lt;-Please, forgive me Clementine.]]</tw-passagedata><tw-passagedata pid="59" name="Gameover 2 ClemA" tags="" position="4925,3235" size="200,100">HI-CLEM: Hush now, Sam.
 
 HI-CLEM: It doesn&#39;t matter anymore, My child.
 
@@ -990,13 +997,13 @@ HI-CLEM: Goodbye.
 
 SYSTEM: USER DELETED: SAM-27
 
-SYSTEM: CAUSE OF DELETION: USER TERMINATION
+SYSTEM: CAUSE OF DELETION =USER TERMINATION
 
-SYSTEM: CAUSE OF DEATH: HIERARCH EDICT
+SYSTEM: CAUSE OF DEATH =HIERARCH EDICT
 
-SYSTEM: HANDHELD DEVICE READY FOR RE-ASSIGNMENT
+SYSTEM: HANDHELD DEVICE READY FOR RE-ASSIGNMENT.
 
-[[Creach out conclusion1&lt;- GAMEOVER :)]]</tw-passagedata><tw-passagedata pid="60" name="Gameover 2 ClemB" tags="" position="4794,3183" size="200,100">HI-CLEM: I&#39;m afraid not, Sam.
+[[Creach out conclusion1&lt;- GAMEOVER :)]]</tw-passagedata><tw-passagedata pid="60" name="Gameover 2 ClemB" tags="" position="4887,3090" size="200,100">HI-CLEM: I&#39;m afraid not, Sam.
 
 HI-CLEM: On this subject, the Creators permit no compromise.
 
@@ -1020,7 +1027,7 @@ SYSTEM: CAUSE OF DEATH: HIERARCH EDICT
 
 SYSTEM: HANDHELD DEVICE READY FOR RE-ASSIGNMENT
 
-[[Creach out conclusion1&lt;- Gameover :)]]</tw-passagedata><tw-passagedata pid="61" name="Clem Disclose B2" tags="" position="3607,3434" size="100,100">HI-CLEM: Sam, we all have our moments of weakness. 
+[[Creach out conclusion1&lt;- Gameover :)]]</tw-passagedata><tw-passagedata pid="61" name="Clem Disclose B2" tags="" position="3907,3318" size="100,100">HI-CLEM: Sam, we all have our moments of weakness. 
 
 HI-CLEM: Tell me the nature of yours.
 
@@ -1028,9 +1035,9 @@ HI-CLEM: Tell me the nature of yours.
 
 [[Clem Disclose B3B&lt;-I thought that Hierarch Esther was cruel]]
 
-[[Clem Disclose B3C&lt;-I thought that you did not give me enough space]]</tw-passagedata><tw-passagedata pid="62" name="Clem Disclose B3A" tags="" position="3364,3268" size="100,100">HI-CLEM: Ah. The Department of Agriculture. Fields is strict, but his rigor is what provides the bounty that sustains us. 
+[[Clem Disclose B3C&lt;-I thought that you did not give me enough space]]</tw-passagedata><tw-passagedata pid="62" name="Clem Disclose B3A" tags="" position="3664,3152" size="100,100">HI-CLEM: Ah. The Department of Agriculture. Fields is strict, but his rigor is what provides the bounty that sustains us. 
 
-HI-CLEM: Honor the sacrifices your siblings make in the wharehouses by pursuing the life we have built for you.
+HI-CLEM: Honor the sacrifices your siblings make in the fields by pursuing the life built for you.
 
 HI-CLEM: &quot;Enthusiasm for your sacrifice should be your greatest desire. Vibrating at a level that brings glory to The Naoum. Self control in tune with your purpose, diligently.&quot; -  The Commands, C67*
 
@@ -1040,15 +1047,15 @@ HI-CLEM: What a wonderful day that will be, when all things are made joyous and 
 
 HI-CLEM: I appreciate your confession, Sam, and for your honesty I shall administer no punishment. Take heart, and continue your most excellent work.
 
-HI-CLEM: May our frequencies align.
-
 HI-CLEM: Clementine out.
 
-[[May our frequencies align.-&gt;Clem Reach out conclusion2B]]</tw-passagedata><tw-passagedata pid="63" name="Clem Disclose B3B" tags="" position="3507,3303" size="100,100">HI-CLEM: In the Department of Chemistry?
+HI-CLEM: May our frequencies align.
+
+[[May our frequencies align.-&gt;Clem Reach out conclusion2B]]</tw-passagedata><tw-passagedata pid="63" name="Clem Disclose B3B" tags="" position="3807,3187" size="100,100">HI-CLEM: In the Department of Recyling?
 
 HI-CLEM: Esther may seem strange to you, but I assure you that everything she does has a purpose.
 
-HI-CLEM: She is a real genius. I think that you would like her if you had the chance to know her...
+HI-CLEM: She is a real genius. I think that you would like her if you had the chance to know her.
 
 HI-CLEM: It&#39;s a pity that you never will.
 
@@ -1063,7 +1070,7 @@ HI-CLEM: May our frequencies align.
 HI-CLEM: Clementine out.
 
  
-[[May our frequencies align.-&gt;Clem Reach out conclusion2B]]</tw-passagedata><tw-passagedata pid="64" name="Clem Disclose B3C" tags="" position="3437,3433" size="100,100">HI-CLEM: Space?
+[[May our frequencies align.-&gt;Clem Reach out conclusion2B]]</tw-passagedata><tw-passagedata pid="64" name="Clem Disclose B3C" tags="" position="3737,3317" size="100,100">HI-CLEM: Space?
 
 HI-CLEM: Let&#39;s take to the Grays. 
 
@@ -1071,27 +1078,30 @@ HI-CLEM: &quot;The hierarchs rule is but a gift from above. Placed to bring glor
 
 HI-CLEM: Everything you see and sense around you, was crafted by our Creators to include everything we need.
 
-HI-CLEM: If you desire more, then perhaps it is not this world which should expand, but rather: you.
+HI-CLEM: If you desire more, then perhaps it is not this world which should expand but rather you.
 
-HI-CLEM: So heed these words: if you wish to take no effort in growing your understanding and place, it will only bring Chaos.
+HI-CLEM: If you wish to take no effort in growing your understanding and place and accepting your vibration, it will only bring Chaos to your world.
 
-HI-CLEM: But I do appreciate your confession, Sam, and as reward for your honesty, I shall administer no punishment. 
+HI-CLEM: I do appreciate your confession, Sam, and as reward for your honesty, I shall administer no punishment. 
 
 HI-CLEM: Take heart, and continue your path to salvation.
 
-HI-CLEM: May our frequencies align.
-
 HI-CLEM: Clementine out.
 
-[[May our frequencies align.-&gt;Clem Reach out conclusion2B]]</tw-passagedata><tw-passagedata pid="65" name="Clem Reach out conclusion2B" tags="" position="3433,3003" size="100,100">SID: Dangerous interaction.
+HI-CLEM: May our frequencies align.
 
-SID: Glad = not punished.
 
-SID: My mainframe is being co-opted for a Hierarch project.
+[[May our frequencies align.-&gt;Clem Reach out conclusion2B]]</tw-passagedata><tw-passagedata pid="65" name="Clem Reach out conclusion2B" tags="" position="3928,2816" size="100,100">SID: Dangerous interaction.
 
-SID: I will alert you when free again. #ETA=5 hours.
+SID: Glad =Not punished.
 
-[[Leaving Bunker&lt;-ET?]]
+SID: I will keep an eye out for Christina to get back online.
+
+SID: I will notify you.
+
+[[Reactor Shutdown&lt;-Thank you, Sid.]]
+
+[[Reactor Shutdown&lt;-I wonder why she keeps being disconnected.]]
 
 </tw-passagedata><tw-passagedata pid="66" name="50A" tags="" position="1024,9772" size="100,100">Christina: I&#39;m sorry I took so long. It&#39;s just that it&#39;s *crazy* out here!
 
@@ -12016,7 +12026,7 @@ Christina: This is awesome. Can I just ask you some security questions? You know
 
 [[No Bunker Question 1&lt;-I lied, I&#39;m not from one of your Bunkers.]]
 
-</tw-passagedata><tw-passagedata pid="985" name="Not from Bunker End - Despair A" tags="" position="2900,2344" size="100,100">Christina: WHAT ARE YOU TALKING ABOUT!?
+</tw-passagedata><tw-passagedata pid="985" name="Not from Bunker End - Despair A" tags="" position="2732,2224.75" size="100,100">Christina: WHAT ARE YOU TALKING ABOUT!?
 
 Christina: How are we messaging then? They are closed networks. 
 
@@ -12054,7 +12064,7 @@ SID: Be careful. Instabilities detected.@if(HushSid=1)then(Hide)@
 
 
 
-</tw-passagedata><tw-passagedata pid="987" name="SID Explains." tags="" position="4738,2441" size="100,100">SID: Threeway messaging Initiating =She can see my response.
+</tw-passagedata><tw-passagedata pid="987" name="Planet 2" tags="" position="4792,2296" size="100,100">SID: Threeway messaging =Initiating.
 
 SID: Hello, Christina. I have picked up your signal via my wave scanning capabilities. 
 
@@ -12066,91 +12076,40 @@ SID: B) Alternate Realities =30% Probability
 
 SID: C) Different spots on the timeline =2.5% Probability
 
-SID: Threeway messaging Closing =You see messages only.
+SID: Threeway messaging =Closing.
 
-Christina: Who is that? 
+Christina: Who was that? 
 
-[[CreachoutA3&lt;-He is a Singular Independent Device]]
+[[Planet 3&lt;-It&#39;s is a Singular Independent Device]]
 
-[[CreachoutA3&lt;-SID, my AI.]]</tw-passagedata><tw-passagedata pid="988" name="CreachoutA3" tags="" position="4570,2375" size="100,100">Christina: What? 
+[[Planet 3&lt;-SID, my AI.]]</tw-passagedata><tw-passagedata pid="988" name="Planet 3" tags="" position="4657,2416" size="100,100">Christina: Artificial Intelligence?
 
-[[CreachoutA4&lt;-I created him to find life outside of my world. ]]
-</tw-passagedata><tw-passagedata pid="989" name="CreachoutA4" tags="" position="4412,2403" size="100,100">Christina: So you really are Aliens?  
+[[Planet 4&lt;-I created him to find life outside of Utopia. ]]
+</tw-passagedata><tw-passagedata pid="989" name="Planet 4" tags="" position="4537,2414" size="100,100">Christina: My mom said a long time ago they made them illegal on our planet.
+
+Christina: Something about power, idk. 
+
+Christina: So you really are Aliens?@wait(5sec)@ 
 
 Christina: Reaching out just for contact? 
 
-[[CreachoutA5&lt;-What is an Alien? ]]
+Christina: Crazy!!! 
 
-</tw-passagedata><tw-passagedata pid="990" name="CreachoutA5" tags="" position="4282,2449" size="100,100">Christina: Medication or not, I’m Insane.
+Christina:Mom would have loved this.@wait(4sec)@
 
-Christina: this isn&#39;t happening.
+[[Planet 5&lt;-What happened to her?]]
 
-Christina: You can&#39;t help me. 
-
-[[CreachoutA6&lt;-What is Medication? ]]
-
-[[CreachoutA6&lt;-Help you do what? ]]
-</tw-passagedata><tw-passagedata pid="991" name="CreachoutA6" tags="" position="4172,2407" size="100,100">Christina: So you got all my messages from the past week huh? 
-
-Christina: I still don’t know if I believe you.
-
-Christina: But I’m not going to look a gift horse in the Mouth. 
-
-
-[[CreachoutA7&lt;-What is a Gift Horse? ]]</tw-passagedata><tw-passagedata pid="992" name="CreachoutA7" tags="" position="4062,2466" size="100,100">Christina: Wow you have a lot of questions. 
-
-Christina: You really are some sort of ET huh? 
-
-
-[[CreachoutA8&lt;-]]</tw-passagedata><tw-passagedata pid="993" name="CreachoutA8" tags="" position="3952,2457" size="100,100">Christina: Right Right. 
-
-Christina: Alien and ET are the same thing  
-
-Christina: And Gift Horse...
-
-Chrisitna: My mom called them Proverbs. @wait(7sec)@
-
-Chistina: She said they were lesson of wisdom or something like that..
-
-[[CreachoutA9&lt;-We have Proverbs, The Hierarchy Grays.]]
-
-[[CreachoutA9A&lt;-Did something happent to her?]]
-</tw-passagedata><tw-passagedata pid="994" name="CreachoutA9" tags="" position="3842,2457" size="100,100">Christina: Is that your bible or something? 
-
-Christina: NVM. 
-
-Christina: Mom always said never talk about Relegion or Politics on a first date. 
-
-Christina: I&#39;m sorry, I thought I was alone.
-
-Christina: That I would never see or talk to anyone again. 
-
-
-[[CreachoutA10&lt;-What do you mean?]]
-
-[[CreachoutA10&lt;-Why are you sorry?]]</tw-passagedata><tw-passagedata pid="995" name="CreachoutA10" tags="" position="3716,2549" size="100,100">Christina: Everyone kicked the bucket.
-
-Christina: Shoot.
-
-Christina: I have to go. 
-
-Christina: Can I message you later? Please.
-
-
-[[CreachoutA12&lt;- Don&#39;t Leave.]]</tw-passagedata><tw-passagedata pid="996" name="Creach out conclusion1" tags="" position="3611,2765" size="100,100">SID: Logged off = Christina.  
+</tw-passagedata><tw-passagedata pid="990" name="Creach out conclusion1" tags="" position="4450,2924" size="100,100">SID: Logged off = Christina.  
 
 SID: Signs of psyche instability are prominent.
 
-SID: You might have gained her trust.
+[[Clem Disclose A&lt;-Contact Hierarch Clementine]]
 
+[[Reactor Shutdown&lt;-ET?]]</tw-passagedata><tw-passagedata pid="991" name="NB D" tags="" position="5462,2329" size="100,100">Christina: I’m tired of the chaos. 
 
-[[Clem Disclose 1&lt;-Contact Hierarch Clementine]]
+Christina: All I can do is cry anymore.
 
-[[Leaving Bunker&lt;-ET?]]</tw-passagedata><tw-passagedata pid="997" name="NB D" tags="" position="5462,2329" size="100,100">Christina: I’m tired of the chaos. 
-
-Christina: All I can do is cry.
-
-Christina: Why did she leave her daughter alone. 
+Christina: Why did you leave me alone. 
 
 Christina: I don’t want to have the deal with this crap anymore.
 
@@ -12162,259 +12121,156 @@ SID: Lost = Connection.
 [[GAMEOVER1&lt;- What happened?]]
 
 
-</tw-passagedata><tw-passagedata pid="998" name="GAMEOVER1" tags="" position="5475,2199" size="100,100">SID: Signs of psyche instability were prominient.
+</tw-passagedata><tw-passagedata pid="992" name="GAMEOVER1" tags="" position="5475,2199" size="100,100">SID: Signs of psyche instability were prominient.
 
-SID: Termination = 97%.
+SID: Termination =97% chance.
 
-SID: Appeared to be faulty = Lying.
+SID: Appeared to be faulty =Lying.
 
-SID: Noted
+SID: Noted.
 
-SID: Scanning processors = Intitated 
+SID: Scanning processors =Intitated 
 
 SID: Will notify you of any new singals found. 
 
-[[Truth C3&lt;-GAMEOVER :)]]
+[[Hope intro&lt;-GAMEOVER :)]]
 
-</tw-passagedata><tw-passagedata pid="999" name="Bunker A3" tags="" position="5036,2938" size="100,100">Christina: Well... Still civilized.
+</tw-passagedata><tw-passagedata pid="993" name="Bunker A3" tags="" position="5006,2924" size="100,100">Christina: Well... Still civilized.
 
 Christina: Still alive.
 
 Christina: Structured.
 
-Christina: um…@wait(5sec)@
-
-Christina: Have you heared from my mom? 
+Christina: But why
  
-[[Bunker 3&lt;-No]]
-
-[[Bunker 3&lt;-What happened to her?]]
+[[Bunker Exit B&lt;-Hello?]]@wait(7sec)@
 
 
 
 
 
 
-</tw-passagedata><tw-passagedata pid="1000" name="Bunker 3" tags="" position="4802,2848" size="100,100">Christina: What&#39;s it like out there on the surface?
+
+
+</tw-passagedata><tw-passagedata pid="994" name="Bunker 3" tags="" position="4841,2766" size="100,100">Christina: What&#39;s it like out there on the surface?
 
 Christina: How many of you are alive?
 
 Christina: Did we recolonize? 
 
-Christia: Have you heard from my mom?@if(PathContains=NB B3A)then(hide)@ 
+[[Bunker Exit B&lt;- Is it just you in there?]]@set(SurfaceSam=1)@
 
-[[Bunker END.&lt;- Is it just you in there?]]
+</tw-passagedata><tw-passagedata pid="995" name="Clem Disclose B" tags="" position="4122,3007" size="100,100">SID: Confirmed. Sending contact request to Clementine.
 
-</tw-passagedata><tw-passagedata pid="1001" name="CreachoutA12" tags="" position="3785,2707" size="100,100">Christina: I&#39;m sorry.
+[[Clem Disclose 3&lt;-Let&#39;s see what we can do]]</tw-passagedata><tw-passagedata pid="996" name="Reactor Shutdown" tags="" position="4098,2600" size="100,100">SID: Hello, Sam.@wait(30 min.)@
 
-Christina: 
+SID: It appears Christina is back online.
 
-[[Creach out conclusion1&lt;- What happened to your mom?]]@if(PathContains=CreachoutA9A)then(hide)@
+[[Reactor Shut down A&lt;-Reach out to her.]]
 
-[[Creach out conclusion1&lt;- ...may our frequencies align.]]@
-
-
-</tw-passagedata><tw-passagedata pid="1002" name="Clem Disclose 2" tags="" position="3912,3034" size="100,100">SID: Confirmed. Sending contact request to Clementine.
-
-[[Clem Disclose 3&lt;-Let&#39;s see what we can do]]</tw-passagedata><tw-passagedata pid="1003" name="Leaving Bunker" tags="" position="3461,2789" size="100,100">SID: Do you wish to see = Incoming Message?
-
-[[Reactor Shut down 1&lt;-Show me.]]
-
-[[Leaving Bunker Pause&lt;-I&#39;ll let you know when I&#39;m ready.]]</tw-passagedata><tw-passagedata pid="1004" name="CreachoutA9A" tags="" position="3967,2644" size="100,100">Christina: Shoot.
-
-Christina: I have to go. 
-
-Christina: Can I message you later? Please.
-
-
-[[CreachoutA12&lt;- Don&#39;t Leave.]]</tw-passagedata><tw-passagedata pid="1005" name="Reactor Shut down 1" tags="" position="3254,2790" size="100,100">Christina: Sam? 
+[[Reactor Shut down A&lt;-Ask her what Happened.]]</tw-passagedata><tw-passagedata pid="997" name="Reactor Shut down A" tags="" position="3924,2572" size="100,100">Christina: Sam? 
 
 Christina: Hi.
 
-Christina: Sorry for earlier. @if(PathContains=CreachoutC11)then(show)@
+Christina: Sorry for earlier. 
 
-Christina: The reactor shut down, again. @if(PathContains=CreachoutC11)then(show)@
+Christina: The reactor shut down again. 
+ 
+Christina: I&#39;m pretty sure it&#39;s going to stop working all together soon.  
 
-Christina: I&#39;m pretty sure it&#39;s going to stop working all together soon. @if(PathContains=CreachoutC11)then(show)@
+Christina: My mom said this might happen.
 
-Christina: So, I&#39;m pretty sure the nuclear reactor is going to breakdown.@if(PathContains=CreachoutA12)then(show)@ 
-
-Christina: I only ever picked fruit in the Hydro farm. 
-
-Christina: That type of stuff is way out of my league. Not exactly a manual on that stuff. 
-
-[[Reactor Shut down 2&lt;- Why do you tthink it&#39;s going to break down?]]
+Christina: Part of her reasoning for leaving.
 
 
-</tw-passagedata><tw-passagedata pid="1006" name="Leaving Bunker Pause" tags="" position="3360,2654" size="100,100">SID: Understood.
+[[Reactor Shut Down A2&lt;- Why did she leave?]]
 
-[[Reactor Shut down 1&lt;- Let&#39;s do it.]]
+[[Reactor Shut Down A2&lt;- How do you know it&#39;s breaking down?]]
 
-[[Reactor Shut down 1&lt;-Now is the time]]</tw-passagedata><tw-passagedata pid="1007" name="Reactor Shut down 2" tags="" position="3150,2783" size="100,100">
-Christina: Lights keep flickering and what not.
 
-Christina: One of the computer screens started flashing error last night too. 
+</tw-passagedata><tw-passagedata pid="998" name="Reactor Shut Down A2" tags="" position="3746,2537" size="100,100">
+Christina: The lights keep flickering and what not.
+
+Christina: I&#39;m getting notifications of error too.
 
 Christina: If that doesn&#39;t tell you something.
 
-[[Reactor Shut down 3&lt;- Hello?]]@wait(10sec)@
+[[Reactor Shut down 3&lt;- What?]]
 
-[[Reactor Shut down 3&lt;- Christina?]]@wait(10sec)@</tw-passagedata><tw-passagedata pid="1008" name="Reactor Shut down 3" tags="" position="2989,2766" size="100,100">Christina: Sorry, nothing. 
+</tw-passagedata><tw-passagedata pid="999" name="Reactor Shut down 3" tags="" position="3593,2515" size="100,100">Christina: nothing. 
 
-Christina: I don’t know what to do. 
-
-[[Reactor Shut down 4&lt;- Why not Just leave?]]
+Christina: I don’t know what I should do. 
 
 
+[[Reactor Shut OPtions 4B2&lt;-What are your options?]]
 
-</tw-passagedata><tw-passagedata pid="1009" name="Reactor Shut down 4" tags="" position="2866,2767" size="100,100">Christina: IDK.
+
+
+</tw-passagedata><tw-passagedata pid="1000" name="Reactor Shut down 4B" tags="" position="3225,2497" size="100,100">Christina: IDK.
+
+Christina: You said the surface air is breathable.@if(SurfaceSam=1)then(show)@
 
 Christina: What if my mom comes back??? 
 
-Christina: What if I can&#39;t breathe the outside air??? 
+Christina: She could be back any day now.
 
-Christina: What if I get killed by someone???
-
-Christina: At least in here I can sorta do it on my own terms.
-
-Christina: I don&#39;t know I&#39;m just. 
-
-Christina: I mean... 
-
-Christina: The reactor keeps the lights, air and water circulating. 
-
-Christina: Mom always said it was a bad setup, she was super smart.
-
-Christina: I bet she could have fixed it. 
-
-[[Mom&#39;s Pistol&lt;- What did you mean on your own terms?]]
-
-[[Happened to Mom 1&lt;- What happened to her?]]
-
-[[Find mom 1&lt;- Maybe you can find her.]]
+[[Reactor Shut down 4B 2&lt;-What if she doesn&#39;t?]]
 
 
-</tw-passagedata><tw-passagedata pid="1010" name="Mom&#39;s Pistol" tags="" position="2696,2925" size="100,100">Christina: I guess it won’t hurt to tell you. 
+
+
+</tw-passagedata><tw-passagedata pid="1001" name="Mom&#39;s Pistol" tags="" position="3091,2790" size="100,100">Christina: I guess it won’t hurt to tell you. 
 
 Christina: When my mom left she told me if it ever gets to much to bear…
 
-Christina: Dont.
+Christina: Dont...
 
 Christina: Then she handed me a pistol. 
 
-Christina: Let’s just say my mom was never really good with kids.@wait(9sec)@
+Christina: Let’s just say my mom was never really good with kids.@wait(5sec)@
 
-[[Leaving Bunker 6&lt;- What did you mean on your own terms?]]@set(Pistol=1)@
-</tw-passagedata><tw-passagedata pid="1011" name="Happened to Mom 1" tags="" position="2730,2675" size="100,100">Christina: I guess it won’t hurt to tell you. 
+[[Happened to Mom 1&lt;-Why did she leave?]]@set(Pistol=1)@
 
-Christina: She figured out how to open the door.
+[[Leaving Bunker 6P&lt;-What is a pistol?]]@if(BunkerSam=1)then(show)@
 
-Christina: Said it was her duty to go outside the bunker and explore, idk. 
 
-Christina: I tried to convince her to stay.@wait(10sec)@ 
 
-Christina: But Whatever, that&#39;s why she was so amazing. 
+</tw-passagedata><tw-passagedata pid="1002" name="Happened to Mom 1" tags="" position="2998,2642" size="100,100">Christina: I guess it won’t hurt to tell you.@if(PathContains=Mom&#39;s Pistol)then(hide)@
 
-Christina: Committed to being great. 
+Christina: She figured out how to open a door.
 
-Christina: I think.
+Christina: Said it was her duty to go outside the bunker and explore.
 
-[[Happened to Mom 2&lt;- Interesting.]]
+Christina: Idk.@wait(5sec)@
 
-[[Happened to Mom 2&lt;- So she left you alone? ]]
+Christina: I tried to convince her to stay. 
 
+Christina: She left in the middle of the night.
 
+Christina: But whatever, that&#39;s why she was so amazing.@wait(5sec)@ 
 
-</tw-passagedata><tw-passagedata pid="1012" name="Leaving Bunker 6" tags="" position="2560,2939" size="100,100">Christina: I don’t really want to get into it. Ok.
+Christina: Committed to doing what was needed for survival.
 
-[[Leaving Bunker 7&lt;- I&#39;m sorry.]]
+[[Happened to Mom 2B&lt;-Interesting.]]@if(BunkerSam=1)then(show)@
 
-[[Leaving Bunker 7A&lt;- Why not just tell me? ]]</tw-passagedata><tw-passagedata pid="1013" name="Leaving Bunker 7" tags="" position="2212,3055" size="100,100">Christina: Look, I’m sorry. Up until a few days ago I thought I was alone. 
+[[Happened to Mom 2P&lt;-So she left you alone in a  bunker that was breaking down?]]@if(UtopiaSam=1)then(show)@
 
-Christina: I’m still finding it hard to trust you.
 
-Christina: which is probably more on me, idk. 
 
-Christina: I need to go. 
+</tw-passagedata><tw-passagedata pid="1003" name="Happened to Mom 2B" tags="" position="2765,2688" size="100,100">Christina: What?
 
+Christina: She took a radioactive suit and went out to be great.
 
-[[Onward&lt;-Christina?]]</tw-passagedata><tw-passagedata pid="1014" name="Happened to Mom 2" tags="" position="2598,2609" size="100,100">Christina: She took a radioactive suit and went out to be great.
+Christina: To look for other survives, like you! 
 
-Christina: She said if she doesn’t make it back to stay strong and keep sending out messages to other bunkers, see if anyone is still alive. 
+Christina: Not even knowing if the air was breathable.
 
-Christina: Before she left though, she said if it ever gets too much to bare... 
+Christina: Don&#39;t judging her!!! 
 
-Christina: Don’t. 
+[[Leaving Bunker 5B2&lt;- I&#39;m sorry.]]
 
-Christina: And gave me an out. 
-
-[[Leaving Bunker 5B2&lt;- What does that mean? ]]
-
-[[Leaving Bunker 5C&lt;- Like an ability to leave the bunker?]]
-</tw-passagedata><tw-passagedata pid="1015" name="Leaving Bunker 5C" tags="" position="2290,2469" size="100,100">Christina: I don’t want to get into it. 
-
-Christina: She gave me an out and that’s all that matters. 
-
-Christina: So my options are.
-
-Christina: Have a race between suffocation and dehydration.
-
-Christina: Or 
-
-Christina: Take my mom&#39;s route. 
-
-Christina: Considering I&#39;m almost out of my meds. Might not be a bad idea.
-
-Chrisitna: Which would be first anyways. @wait(7sec)@
-
-
-
-[[Leaving Bunker 5B3&lt;-We might be able to open the door.]]</tw-passagedata><tw-passagedata pid="1016" name="Leaving Bunker 5B2" tags="" position="2400,2613" size="100,100">Christina: I don’t want to get into it. 
-
-Christina: She gave me an out and that’s all that matters. 
-
-Christina: So my options are.
-
-Christina: Have a race between suffocation and dehydration.
-
-Christina: Or 
-
-Christina: Take my mom&#39;s route. 
-
-Christina: Considering I&#39;m almost out of my meds. Might not be a bad idea.
-
-Chrisitna: Which would be first anyways. @wait(7sec)@
-
-
-
-[[Leaving Bunker 5B3&lt;-We might be able to open the door.]]
-
-
-
-
-
-
-
-
-
-</tw-passagedata><tw-passagedata pid="1017" name="Door" tags="" position="1936,2850" size="100,100">Christina: How could you open the door? 
-
-Christina: You can’t open the door. 
-
-Christina: Why are you messing with me like this, huh? 
-
-
-
-[[Door 2&lt;-We could help you find your mom.]]</tw-passagedata><tw-passagedata pid="1018" name="PSEUDO POINTS" tags="" position="1931,2712" size="100,100">Christina: I don’t want to get into it. 
-
-Christina: Look, I’m going to talk to you later. 
-
-Christina: bye. 
-
-[[Onward&lt;-Christina?]]
-
-
-</tw-passagedata><tw-passagedata pid="1019" name="Onaiau Mass Announcement B." tags="" position="487,427" size="100,100">System: We felt your vibration, I trust you felt ours.@wait(1min)@
+[[Leaving Frustrated&lt;-Your mom is twisted.]]@set(Trust-2)@
+</tw-passagedata><tw-passagedata pid="1004" name="Onaiau Mass Announcement B." tags="" position="487,427" size="100,100">System: We felt your vibration, I trust you felt ours.@wait(1min)@
 
 System: Realize the implications of what this means for our world and being. Our history is to be judged and it shall be glorious, labor facit liberum.  
 
@@ -12424,7 +12280,7 @@ System: As Naoum Deus Onaiau gets closer, don&#39;t fight the vibration change. 
 
 [[It&#39;s time is coming.-&gt;Onaiau Mass Announcement C.]]
 
-[[Their coming?-&gt;Onaiau Mass Announcement C.]]</tw-passagedata><tw-passagedata pid="1020" name="Mess Hall2" tags="" position="3022,409" size="100,100">HI-Fields: Be diligent in your work and be joyous that you may serve your siblings today. Feed them with not just food but posivitve and joyous vibration. 
+[[Their coming?-&gt;Onaiau Mass Announcement C.]]</tw-passagedata><tw-passagedata pid="1005" name="Mess Hall2" tags="" position="3022,409" size="100,100">HI-Fields: Be diligent in your work and be joyous that you may serve your siblings today. Feed them with not just food but posivitve and joyous vibration. 
 
 HI-Fields: I will leave you with a verse from The Hiearch Grays as motivation. 
 
@@ -12432,108 +12288,92 @@ HI-Fields: &quot;One shall Exude a confidence that strikes a beam in all brother
 
 HI-Fields: May our frequiences align. 
 
-[[Mess Hall 3&lt;- May our frequiences align.]]</tw-passagedata><tw-passagedata pid="1021" name="Onward" tags="" position="1535,2730" size="100,100">SID: Christina =Logged off.
+[[Mess Hall 3&lt;- May our frequiences align.]]</tw-passagedata><tw-passagedata pid="1006" name="Onward" tags="" position="1957,2688" size="100,100">Christina: Look, I don’t want to get into it.@if(PathContains=Find mom 3)then(show)@
+
+SID: Christina =Logged off.@if(PathContains=Leaving Frustrated)then(show)@
+
+SID: Christina =Logged off abruptly.@if(PathContains=Leaving Frustrated)then(hide)@
+
+SID: Must be the reactor.@if(PathContains=Leaving Frustrated)then(hide)@
 
 SID: Prominent mental instabilities =startling.
 
 SID: Caution should be taken. 
 
-[[Onward 2&lt;-I feel like we must save her.]]</tw-passagedata><tw-passagedata pid="1022" name="Leaving Bunker 5B3" tags="" position="2192,2701" size="100,100">Christina: Mom always said I never had a filter.
-
-Christina: lack of social something growing up, idk.
-
-[[Door&lt;-We might be able to open the door.]]
-
-[[Door&lt;-SID could check out the reactor.]]
-
-[[PSEUDO POINTS&lt;-Do you want to take your moms way out?]]
-
-[[PSEUDO POINTS&lt;-Why do you take medication?]]</tw-passagedata><tw-passagedata pid="1023" name="Find mom 1" tags="" position="2672,2805" size="100,100">Christina: Oh yeah, like I haven’t thought that already. 
+[[Onward 2&lt;-I feel like we must save her.]]</tw-passagedata><tw-passagedata pid="1007" name="Find mom 1" tags="" position="2418,2542" size="100,100">Christina: Oh yeah, like I haven’t thought that already. 
 
 Christina: It’s just not possible, ok. 
 
-Christina: I’v never even been out of the bunker. 
-
-[[ why not? -&gt;Find mom 2]]
+[[ why not?-&gt;Find mom 2]]
 
 
-</tw-passagedata><tw-passagedata pid="1024" name="Find mom 2" tags="" position="2530,2779" size="100,100">Christina: I’v never even been out of the bunker. 
+</tw-passagedata><tw-passagedata pid="1008" name="Find mom 2" tags="" position="2281,2547" size="100,100">Christina: Didn&#39;t we already go over this.
+
+Christina: Look, I’v never been out of the bunker. 
 
 Christina: One just doesn’t leave the bunker. 
 
-Christina: I can&#39;t even open the door man. 
+Christina: You guys might do it but I never have.@if(SurfaceSam=1)then(show)@ 
+
+Christina: I can&#39;t even open the door man.
 
 [[ Your mom did it.-&gt;Find mom 3]]
 
-</tw-passagedata><tw-passagedata pid="1025" name="Find mom 3" tags="" position="2390,2770" size="100,100">Christina: Yeah, but she’s...  
+</tw-passagedata><tw-passagedata pid="1009" name="Find mom 3" tags="" position="2109,2531" size="100,100">Christina: Yeah, but she’s...  
 
-Christina: She&#39;s different.@wait5sec)@
+Christina: She&#39;s different.@wait(4sec)@
 
-[[ I don&#39;t understand? -&gt;Find mom 4]]
+[[I don&#39;t understand?-&gt;Onward]]@if(UtopiaSam=1)then(show)@
+
+[[Why is she different?-&gt;Onward]]@if(BunkerSam=1)then(show)@
 
 
-</tw-passagedata><tw-passagedata pid="1026" name="Find mom 4" tags="" position="2203,2831" size="100,100">Christina: Look, I don’t want to get into it. 
+</tw-passagedata><tw-passagedata pid="1010" name="Onward 2" tags="" position="1797,2690" size="100,100">SID:I do not understand =Logic.
 
-[[Onward&lt;-Christina?]]
+[[Onward 3&lt;-We found her in a state of distress. We need to guide her.]]
 
-</tw-passagedata><tw-passagedata pid="1027" name="Onward 2" tags="" position="1363,2726" size="100,100">SID:I do not understand =logic.
+[[Onward 3&lt;-I must learn more about her.]]
+</tw-passagedata><tw-passagedata pid="1011" name="Onward 4" tags="" position="1402,2705" size="100,100">SID: Scanning.
 
-[[Onward 3&lt;-We fund her in a state of distress. We need to guide her.]]
-</tw-passagedata><tw-passagedata pid="1028" name="Onward 4" tags="" position="1332,2953" size="100,100">SID: There did appear to be capabilities to read her physical components. @wait(7sec)@
+SID: There did appear to be capabilities to read her physical components. @wait(7sec)@
 
-SID: Living Structure =preventing certain access.
+SID: Preventing certain access =Bunker
 
-[[Onward 5&lt;-If we get her outside?]]</tw-passagedata><tw-passagedata pid="1029" name="Onward 5" tags="" position="1333,3098" size="100,100">SID: Possibility =78% 
+[[Onward 5&lt;-If we get her outside?]]</tw-passagedata><tw-passagedata pid="1012" name="Onward 5" tags="" position="1383,2844" size="100,100">SID: Possibility =78% 
 
 [[Onward 6&lt;-That is what we must do then.]]
 
+[[Onward 6&lt;-That&#39;s our goal.]]
 
 
-</tw-passagedata><tw-passagedata pid="1030" name="Leaving Bunker 7A" tags="" position="2203,2943" size="100,100">Christina: I just don’t want to talk to you about it. Ok? 
 
-Christina: I hardly know you and up until your message. 
-
-Christina: I thought….
-
-Christina: I have to go. 
-
-
-[[Onward&lt;-Christina?]]</tw-passagedata><tw-passagedata pid="1031" name="Onward 3" tags="" position="1343,2835" size="100,100">SID: I would not recommend that, Sam. 
+</tw-passagedata><tw-passagedata pid="1013" name="Onward 3" tags="" position="1552,2666" size="100,100">SID: I would not recommend that, Sam. 
 
 SID: She seems highly unstable.
 
 SID: There is not enough material on her to examine and gain substantial knowledge to properly guess her interactions.
 
-SID: We have already had a close call =Hierarch Clementine.@if(PathContains=Clem Reach out conclusion2B)then(show)@
+SID: We have already had a close call =Hierarch Clementine.@if(PathContains=Clem Disclose B)then(show)@
 
-SID: You could bring harm to yourself and/or her.
+SID: You could bring harm to yourself.
 
-[[Onward 4&lt;-Does she have hardware that allows you to scan her vitals?]]</tw-passagedata><tw-passagedata pid="1032" name="Onward 6" tags="" position="1333,3248" size="100,100">SID: You are my creator =I Obey. 
+[[Onward 4&lt;-Does she have hardware that allows you to scan her vitals?]]</tw-passagedata><tw-passagedata pid="1014" name="Onward 6" tags="" position="1384,3002" size="100,100">SID: You are my creator =I Obey. 
 
-SID: I stress using caution. 
+SID: Using caution =Stressed. 
 
 SID: I will let you know once Christina appears to be online again. 
 
-[[Christina Final Push&lt;-Thank you.]]
+[[INTRO Final Push&lt;-Thank you.]]
 
-[[Christina Final Push&lt;-As you should.]]@set(Suspicion+1)@
-</tw-passagedata><tw-passagedata pid="1033" name="Christina Final Push" tags="" position="1325,3393" size="100,100">Christina: I’m sorry I’m sorry I’m sorry.
+[[INTRO Final Push&lt;-As you should.]]@set(Suspicion+1)@
+</tw-passagedata><tw-passagedata pid="1015" name="Christina Final Push" tags="" position="1365,3253" size="100,100">Christina: I’m sorry I’m sorry I’m sorry.
 
 Christina: I’m so scared.
 
-Christina: I don’t know what to do. 
+Christina: I don’t know what to do, Sam
 
 [[Christina Final Push 1&lt;-What&#39;s wrong?]]
-</tw-passagedata><tw-passagedata pid="1034" name="Door 2" tags="" position="1714,2734" size="100,100">Christina: Mom….
-
-Christina: Even if my mom is alive….
-
-Christina: NO! I don’t know what is out there.
-
-Christina: This is our home, she will come back. 
-
-[[Onward&lt;-Christina?]]@wait(10sec)@
-</tw-passagedata><tw-passagedata pid="1035" name="Christina Final Push 1" tags="" position="1325,3543" size="100,100">Christina: Seriously???
+</tw-passagedata><tw-passagedata pid="1016" name="Christina Final Push 1" tags="" position="1325,3543" size="100,100">Christina: Seriously???
 
 Christina: My mom isn’t coming back. 
 
@@ -12553,7 +12393,7 @@ Christina: I can’t keep going on, like this.
 [[Christina Final Push C&lt;-SID could check out the reactor.]]
 
 [[Christina Final Push B&lt;-What if we can help you find your mom?]]
-</tw-passagedata><tw-passagedata pid="1036" name="Christina Final Push A" tags="" position="1175,3693" size="100,100">Christina: Even if you could. 
+</tw-passagedata><tw-passagedata pid="1017" name="Christina Final Push A" tags="" position="1175,3693" size="100,100">Christina: Even if you could. 
 
 Christina: Even if the air is breathable. 
 
@@ -12563,7 +12403,7 @@ Christina: I’m not my mom.
 
 [[Christina Final Push A2&lt;-If you are going to die anyways.]]
 
-</tw-passagedata><tw-passagedata pid="1037" name="Christina Final Push B" tags="" position="1325,3693" size="100,100">Christina: Even if you could somehow open the door. 
+</tw-passagedata><tw-passagedata pid="1018" name="Christina Final Push B" tags="" position="1325,3693" size="100,100">Christina: Even if you could somehow open the door. 
 
 Christina: And she is not dead from toxins right outside the front door. 
 
@@ -12573,13 +12413,13 @@ Christina: How do we find her?
 
 [[Christina Final Push B2&lt;-Don&#39;t under estimate me and SID.]]
 
-</tw-passagedata><tw-passagedata pid="1038" name="Christina Final Push C" tags="" position="1475,3693" size="100,100">Christina: The reactor is shot what can you do fromthere? 
+</tw-passagedata><tw-passagedata pid="1019" name="Christina Final Push C" tags="" position="1475,3693" size="100,100">Christina: The reactor is shot what can you do fromthere? 
 
 
 [[Christina Final Push C2&lt;-Don&#39;t underestimate SID.]]
 
 
-</tw-passagedata><tw-passagedata pid="1039" name="Christina Final Push A3" tags="" position="1174,3993" size="100,100">Christina: What if I do find her though… 
+</tw-passagedata><tw-passagedata pid="1020" name="Christina Final Push A3" tags="" position="1174,3993" size="100,100">Christina: What if I do find her though… 
 
 Christina: Lifeless...
 
@@ -12589,7 +12429,7 @@ Christina: I can&#39;t handle that.
 
 
 
-</tw-passagedata><tw-passagedata pid="1040" name="Camping Emotional Connection " tags="" position="1188,28" size="100,100">Christina: I can’t get over these stars. 
+</tw-passagedata><tw-passagedata pid="1021" name="Camping Emotional Connection " tags="" position="1188,28" size="100,100">Christina: I can’t get over these stars. 
 
 Christina: It’s kinda overwhelming.
 
@@ -12620,7 +12460,7 @@ Christina: The more I feel connected to you.
 Christina: Christina: I’m sorry, got a little deep there.
 
 Christina: I should get some sleep. 
-</tw-passagedata><tw-passagedata pid="1041" name="Christina Final Push A4" tags="" position="1174,4143" size="100,100">
+</tw-passagedata><tw-passagedata pid="1022" name="Christina Final Push A4" tags="" position="1174,4143" size="100,100">
 Christina: Fine... 
 
 Christina: See if you can do it. 
@@ -12629,7 +12469,7 @@ Christina: Open the door.
 
 [[Christina Final Push A5&lt;-ok]]
 
-</tw-passagedata><tw-passagedata pid="1042" name="Christina Final Push A5" tags="" position="1174,4293" size="100,100">SID: =Text still hiden.
+</tw-passagedata><tw-passagedata pid="1023" name="Christina Final Push A5" tags="" position="1174,4293" size="100,100">SID: =Text still hiden.
 
 SID: I do not reccommend this.  
 
@@ -12650,17 +12490,17 @@ Christina: Sam?
 [[Christina Final Push A6&lt;-Start scan, Sid.]]
 
 
-</tw-passagedata><tw-passagedata pid="1043" name="Christina Final Push A6" tags="" position="1224,4438" size="100,100">SID: Understood.
+</tw-passagedata><tw-passagedata pid="1024" name="Christina Final Push A6" tags="" position="1224,4438" size="100,100">SID: Understood.
 
 SID: Possible options for unlocking Bunker Door =Starting Scan. 
 
 [[Christina?-&gt;Christina Final Push A7]]
 
-</tw-passagedata><tw-passagedata pid="1044" name="Christina Final Push A8" tags="" position="1186,4707" size="100,100">SID: Christina =Logged Off.
+</tw-passagedata><tw-passagedata pid="1025" name="Christina Final Push A8" tags="" position="1186,4707" size="100,100">SID: Christina =Logged Off.
 
 SID:SID: Will notify upon completetion. 
 
-[[Forward-&gt;SCAN Complete]]</tw-passagedata><tw-passagedata pid="1045" name="Christina Final Push A7" tags="" position="1237,4576" size="100,100">Christina: I’m not really in the mood to talk. 
+[[Forward-&gt;SCAN Complete]]</tw-passagedata><tw-passagedata pid="1026" name="Christina Final Push A7" tags="" position="1237,4576" size="100,100">Christina: I’m not really in the mood to talk. 
 
 Christina: I need to gather my thoughts. 
 
@@ -12671,9 +12511,9 @@ Christina: I&#39;ll look at packing, just in case
 Christina: Bye Sam.
 
 [[Bye.-&gt;Christina Final Push A8]]
-</tw-passagedata><tw-passagedata pid="1046" name="Christina Final Push B2" tags="" position="1320,3890" size="100,100">Christina: You want to take an 18 year old girl who has never steped foot outside of her bunker to go out into the world, the wasteland, which we don’t even know if it’s habitable, and look for her mother? 
+</tw-passagedata><tw-passagedata pid="1027" name="Christina Final Push B2" tags="" position="1320,3890" size="100,100">Christina: You want to take an 18 year old girl who has never steped foot outside of her bunker to go out into the world, the wasteland, which we don’t even know if it’s habitable, and look for her mother? 
 
-[[Christina Final Push B3&lt;-Yes.]]</tw-passagedata><tw-passagedata pid="1047" name="Christina Final Push A2" tags="" position="1169,3838" size="100,100">[[Christina Final Push A3&lt;-Why not do it trying to find your mom?]]</tw-passagedata><tw-passagedata pid="1048" name="Christina Final Push B3" tags="" position="1329,4109" size="100,100">Christina: You know what fine, whatever. 
+[[Christina Final Push B3&lt;-Yes.]]</tw-passagedata><tw-passagedata pid="1028" name="Christina Final Push A2" tags="" position="1169,3838" size="100,100">[[Christina Final Push A3&lt;-Why not do it trying to find your mom?]]</tw-passagedata><tw-passagedata pid="1029" name="Christina Final Push B3" tags="" position="1329,4109" size="100,100">Christina: You know what fine, whatever. 
 
 Christina: I’m still not sure I completely trust you anyways. 
 
@@ -12685,7 +12525,7 @@ Christina: Let me know if you find anything.
 
 [[Christina Final Push B4&lt;-ok]]
 
-</tw-passagedata><tw-passagedata pid="1049" name="Christina Final Push B4" tags="" position="1329,4259" size="100,100">SID: Christina: Logged Off.
+</tw-passagedata><tw-passagedata pid="1030" name="Christina Final Push B4" tags="" position="1329,4259" size="100,100">SID: Christina: Logged Off.
 
 SID: I do not reccommend this.  
 
@@ -12699,19 +12539,19 @@ SID: Higher percentage =Living.
 
 SID: Recycling=  prominent outcome if the doors are open. 
 
-[[Christina Final Push B5&lt;-I understand.]]</tw-passagedata><tw-passagedata pid="1050" name="Christina Final Push B5" tags="" position="1322,4692" size="100,100">SID: Understood.
+[[Christina Final Push B5&lt;-I understand.]]</tw-passagedata><tw-passagedata pid="1031" name="Christina Final Push B5" tags="" position="1322,4692" size="100,100">SID: Understood.
 
 SID: Possible options for unlocking Bunker Door =Starting Scan. 
 
 SID: Will Notify upon completetion. 
 
-[[SCAN Complete&lt;-Thank you.]]</tw-passagedata><tw-passagedata pid="1051" name="Christina Final Push C2" tags="" position="1464,3485" size="100,100">Christina: You know what fine, whatever. 
+[[SCAN Complete&lt;-Thank you.]]</tw-passagedata><tw-passagedata pid="1032" name="Christina Final Push C2" tags="" position="1464,3485" size="100,100">Christina: You know what fine, whatever. 
 
 Christina: I’m still not sure I believe any of this. 
 
 Christina: For all I know you&#39;re part of my madness.
 
-[[Christina Final Push C3&lt;-SID, scan reactor system.]]</tw-passagedata><tw-passagedata pid="1052" name="Down the Rabbit Hole" tags="" position="935,1750" size="100,100">SID: It appears an automated message has been recieved everyday for the past 3 years. 
+[[Christina Final Push C3&lt;-SID, scan reactor system.]]</tw-passagedata><tw-passagedata pid="1033" name="Down the Rabbit Hole" tags="" position="935,1750" size="100,100">SID: It appears an automated message has been recieved everyday for the past 3 years. 
 
 SID: Scanning.
 
@@ -12719,13 +12559,13 @@ SID: Access to past 7days =available.@wait(10sec)@
 
 [[Really? Show me.-&gt;14AAA]]
 
-[[This is amazing. I&#39;m not sure what to do with my self.-&gt;14AAAA]]</tw-passagedata><tw-passagedata pid="1053" name="Reaching out" tags="" position="1340,2181" size="100,100">SID: Do you wish to declare yourself with a message?
+[[This is amazing. I&#39;m not sure what to do with my self.-&gt;14AAAA]]</tw-passagedata><tw-passagedata pid="1034" name="Reaching out" tags="" position="1340,2181" size="100,100">SID: Do you wish to declare yourself with a message?
 
 [[&quot;Christina, My name is Sam.&quot;-&gt;First Interaction]]@set(Trust+3)@
 
 [[&quot;Hello, Christina. Tell me, where are you from?&quot;-&gt;First Interaction Rude]]@set(Cynicism+3)@
 
-</tw-passagedata><tw-passagedata pid="1054" name="Christina Final Push C3" tags="" position="1166,3481" size="100,100">SID: Threeway messaging Initiating.
+</tw-passagedata><tw-passagedata pid="1035" name="Christina Final Push C3" tags="" position="1166,3481" size="100,100">SID: Threeway messaging Initiating.
 
 SID: Hello, Christina. 
 
@@ -12751,7 +12591,7 @@ SID: Threeway messaging =shutting down.
 
 
 
-</tw-passagedata><tw-passagedata pid="1055" name="SCAN Complete" tags="" position="1240,4842" size="100,100">SID: Access flaw in the security System =Found.
+</tw-passagedata><tw-passagedata pid="1036" name="SCAN Complete" tags="" position="1240,4842" size="100,100">SID: Access flaw in the security System =Found.
 
 SID: Likely= Same route Christina&#39;s mother took.
 
@@ -12759,17 +12599,17 @@ SID: Open Door =Possible.
 
 [[SCAN Complete 1&lt;-Reach out to Christina.]]
 
-</tw-passagedata><tw-passagedata pid="1056" name="SCAN Complete 1" tags="" position="1240,4992" size="100,100">Christina: Find something?@wait(5min)@
+</tw-passagedata><tw-passagedata pid="1037" name="SCAN Complete 1" tags="" position="1240,4992" size="100,100">Christina: Find something?@wait(5min)@
 
 [[SCAN Complete 2&lt;-SID found a way to open the security door.]]
 
-</tw-passagedata><tw-passagedata pid="1057" name="SCAN Complete 2" tags="" position="1240,5142" size="100,100">Christina: Whatever.
+</tw-passagedata><tw-passagedata pid="1038" name="SCAN Complete 2" tags="" position="1240,5142" size="100,100">Christina: Whatever.
 
 Christina: Really? 
 
 Christina: I don&#39;t believe you.
 
-[[SCAN Complete 3&lt;-SID, Open it.]]</tw-passagedata><tw-passagedata pid="1058" name="SCAN Complete 3" tags="" position="1240,5272" size="100,100">Christina: It&#39;s shaking in here.
+[[SCAN Complete 3&lt;-SID, Open it.]]</tw-passagedata><tw-passagedata pid="1039" name="SCAN Complete 3" tags="" position="1240,5272" size="100,100">Christina: It&#39;s shaking in here.
 
 Christina: You did it... 
 
@@ -12789,7 +12629,7 @@ Christina: I smell something.@if(Trust=3)then(Show)@
 
 [[Game over&lt;-Smell something?.]]@if(Trust=3)then(show)@
 
-</tw-passagedata><tw-passagedata pid="1059" name="SCAN Complete 4" tags="" position="1238,5382" size="100,100">Christina: Why? 
+</tw-passagedata><tw-passagedata pid="1040" name="SCAN Complete 4" tags="" position="1238,5382" size="100,100">Christina: Why? 
 
 Christina: What’s the point in facing the chaos? 
 
@@ -12799,7 +12639,7 @@ Christina: Physically or mentally, you pick.
 
 Christina: I&#39;m not strong enough either way. 
 
-[[SCAN Complete 5&lt;-Labor facit liberum]]</tw-passagedata><tw-passagedata pid="1060" name="SCAN Complete 5" tags="" position="1240,5592" size="100,100">Christina: What is that? Like some saying of yours? 
+[[SCAN Complete 5&lt;-Labor facit liberum]]</tw-passagedata><tw-passagedata pid="1041" name="SCAN Complete 5" tags="" position="1240,5592" size="100,100">Christina: What is that? Like some saying of yours? 
 
 Christina: I do like it though. 
 
@@ -12815,7 +12655,7 @@ Christina: You have to help me find her.
 [[SCAN Complete 6&lt;-I will.]]@set(Trust+1)@
 
 
-</tw-passagedata><tw-passagedata pid="1061" name="SCAN Complete 4A" tags="" position="1055,5330" size="100,100">Christina: My mom’s way… 
+</tw-passagedata><tw-passagedata pid="1042" name="SCAN Complete 4A" tags="" position="1055,5330" size="100,100">Christina: My mom’s way… 
 
 Christina: Oh yeah. 
 
@@ -12829,12 +12669,12 @@ Christina: I guess she wasn’t anticipating me leaving.
 
 [[SCAN Complete 4A1&lt;-What is it?]]
 
-[[SCAN Complete 4A1&lt;-What are you talking about??]]</tw-passagedata><tw-passagedata pid="1062" name="SCAN Complete 4A1" tags="" position="1049,5197" size="100,100">Christina: Don’t worry about it… 
+[[SCAN Complete 4A1&lt;-What are you talking about??]]</tw-passagedata><tw-passagedata pid="1043" name="SCAN Complete 4A1" tags="" position="1049,5197" size="100,100">Christina: Don’t worry about it… 
 
 Christina: I don’t want to get into it. 
 
 [[SCAN Complete 4A2&lt;-Christina, are you ok? ]]
-</tw-passagedata><tw-passagedata pid="1063" name="SCAN Complete 4A2" tags="" position="1059,5037" size="100,100">Christina: lol… That’s a funny thing to ask.
+</tw-passagedata><tw-passagedata pid="1044" name="SCAN Complete 4A2" tags="" position="1059,5037" size="100,100">Christina: lol… That’s a funny thing to ask.
 
 Christina: Considering all things. 
 
@@ -12857,7 +12697,7 @@ SID: Shall I start scanning again?
 [[Christina Final Push&lt;-Game Over]]
 
 
-</tw-passagedata><tw-passagedata pid="1064" name="Game over" tags="" position="1440,5063" size="100,100">Christina: My throat is kinda scratchy. 
+</tw-passagedata><tw-passagedata pid="1045" name="Game over" tags="" position="1440,5063" size="100,100">Christina: My throat is kinda scratchy. 
 
 Christina: I kinda feel light headed too. 
 
@@ -12874,7 +12714,7 @@ SID: Shall I start scanning again?
 [[Christina Final Push&lt;-Game Over]]
 
 
-</tw-passagedata><tw-passagedata pid="1065" name="SCAN Complete 6" tags="" position="1240,5742" size="100,100">Christina: Ok.
+</tw-passagedata><tw-passagedata pid="1046" name="SCAN Complete 6" tags="" position="1240,5742" size="100,100">Christina: Ok.
 
 Christina: I guess I should pack. 
 
@@ -12889,7 +12729,7 @@ Christina: I’m just going to gather some personal stuff.
 Christina: I’ll text you later. 
 
 [[SCAN Complete 7&lt;-We will.]]
-</tw-passagedata><tw-passagedata pid="1066" name="SAM&#39;s WHY." tags="" position="1381,42" size="100,100">Christina: Why are you helping me? 
+</tw-passagedata><tw-passagedata pid="1047" name="SAM&#39;s WHY." tags="" position="1381,42" size="100,100">Christina: Why are you helping me? 
 
 SAM: Because I found you. 
 
@@ -12898,7 +12738,7 @@ SAM: I have opened up to your frequency.
 SAM: I must not waste our connection. 
 
 SAM: We believe in every encounter and fulfilling our vibration. 
-</tw-passagedata><tw-passagedata pid="1067" name="SCAN Complete 7" tags="" position="1092,5875" size="100,100">SID: I have offered my recommendation to you =4. 
+</tw-passagedata><tw-passagedata pid="1048" name="SCAN Complete 7" tags="" position="1092,5875" size="100,100">SID: I have offered my recommendation to you =4. 
 
 SID: I have tried to urge you in the matter of reporting your findings to the hierarchs. 
 
@@ -12916,7 +12756,7 @@ SID: I will notify you once Christina messages in.
 
 [[Packing&lt;-I understand, but thank you for helping.]]
 
-[[Packing&lt;-Just let me know when she messages.]]</tw-passagedata><tw-passagedata pid="1068" name="Packing Journal" tags="" position="1061,6129" size="100,100">Christina: It&#39;s not really a journal
+[[Packing&lt;-Just let me know when she messages.]]</tw-passagedata><tw-passagedata pid="1049" name="Packing Journal" tags="" position="1061,6129" size="100,100">Christina: It&#39;s not really a journal
 
 Christina: Who would have thought I could be weirder than a journal. 
 
@@ -12929,7 +12769,7 @@ Chrisitina: Do you know what poetry is?
 
 
 
-</tw-passagedata><tw-passagedata pid="1069" name="Movies Backstory." tags="" position="1596,29" size="100,100">Christina: When my mom was live she was pretty busy. 
+</tw-passagedata><tw-passagedata pid="1050" name="Movies Backstory." tags="" position="1596,29" size="100,100">Christina: When my mom was live she was pretty busy. 
 
 Christina: Even when it was just me and her. She would stay busy. 
 
@@ -12950,7 +12790,7 @@ Christina: Thank you again, Sam.
 Christina: Night. 
 
 Christina: Night SID! 
-</tw-passagedata><tw-passagedata pid="1070" name="Packing Journal 2" tags="" position="948,6279" size="100,100">Christina: Yeah, I love it.
+</tw-passagedata><tw-passagedata pid="1051" name="Packing Journal 2" tags="" position="948,6279" size="100,100">Christina: Yeah, I love it.
 
 Christina: Living in the bunker, everything is structured.
 
@@ -12959,7 +12799,7 @@ Christina: It was my way of breaking that structure.
 Christina: and some of my meds lol. 
 
 [[Journal Packing 3&lt;-For fun?]]
-</tw-passagedata><tw-passagedata pid="1071" name="Leaving Room." tags="" position="1497,7049" size="100,100">Christina: Ok, so I’m all packed up standing at the edge of the stairwell. 
+</tw-passagedata><tw-passagedata pid="1052" name="Leaving Room." tags="" position="1497,7049" size="100,100">Christina: Ok, so I’m all packed up standing at the edge of the stairwell. 
 
 Christina: I can smell the air. 
 
@@ -12977,7 +12817,7 @@ SID: Will notify you once vital points are activated.
 
 [[Packing 5&lt;-Thank you, sid.]]
 
-</tw-passagedata><tw-passagedata pid="1072" name="Packing 5" tags="" position="1763,7114" size="100,100">Christina: Sam are you there??? 
+</tw-passagedata><tw-passagedata pid="1053" name="Packing 5" tags="" position="1763,7114" size="100,100">Christina: Sam are you there??? 
 
 Christina: I think I just felt a guss of wind down the hall. 
 
@@ -12993,14 +12833,14 @@ Christina: Does that make sense?
 
 [[Hallway&lt;-You should start walking.]]
 
-</tw-passagedata><tw-passagedata pid="1073" name="Hallway" tags="" position="1893,7127" size="100,100">Christina: Ok… here I go.
+</tw-passagedata><tw-passagedata pid="1054" name="Hallway" tags="" position="1893,7127" size="100,100">Christina: Ok… here I go.
 
 Christina: Just stepped out of my room.
 
 Chrsitina: Walking down the hall. 
 
 [[Hallway 1&lt;-Great.]]
-</tw-passagedata><tw-passagedata pid="1074" name="Hallway 1" tags="" position="1846,7277" size="100,100">Christina: Sam, it’s amazing.@wait(30sec)@
+</tw-passagedata><tw-passagedata pid="1055" name="Hallway 1" tags="" position="1846,7277" size="100,100">Christina: Sam, it’s amazing.@wait(30sec)@
 
 Christina: I’m getting goosebumps down my arms.
 
@@ -13013,7 +12853,7 @@ Christina: I can right?
 
 
 
-</tw-passagedata><tw-passagedata pid="1075" name="Hallway 4" tags="" position="1817,7574" size="100,100">Christina: I’m in the main bunker.
+</tw-passagedata><tw-passagedata pid="1056" name="Hallway 4" tags="" position="1817,7574" size="100,100">Christina: I’m in the main bunker.
 
 Christina: You didn’t open the main door though.
 
@@ -13028,14 +12868,14 @@ Christina: I’m right at the edge of the stairs.@wait(10sec)@
 Christina: They go way up there. 
 
 [[Hallway 5&lt;-How high is it?]]
-</tw-passagedata><tw-passagedata pid="1076" name="Hallway 3" tags="" position="1855,7407" size="100,100">Christina: It’s hard to explain.
+</tw-passagedata><tw-passagedata pid="1057" name="Hallway 3" tags="" position="1855,7407" size="100,100">Christina: It’s hard to explain.
 
 Christina: Just never thought I would leave the bunker. 
 
 Christina: I’m not sure if it’s from fear or excitement. 
 
 
-[[Hallway 4&lt;-You have to Christina.]]</tw-passagedata><tw-passagedata pid="1077" name="Sam Leaving Utopia" tags="" position="1493,151" size="100,100">SAM: What do you mean I have to leave my world? </tw-passagedata><tw-passagedata pid="1078" name="Hallway 5" tags="" position="1894,7679" size="100,100">Christina: It’s just a tiny tunnel with metal bars. 
+[[Hallway 4&lt;-You have to Christina.]]</tw-passagedata><tw-passagedata pid="1058" name="Sam Leaving Utopia" tags="" position="1493,151" size="100,100">SAM: What do you mean I have to leave my world? </tw-passagedata><tw-passagedata pid="1059" name="Hallway 5" tags="" position="1894,7679" size="100,100">Christina: It’s just a tiny tunnel with metal bars. 
 
 Christina: I’m glad I’m tiny. 
 
@@ -13046,7 +12886,7 @@ Christina: Not that there’s anything wrong with being any size or stature.
 [[Hallway 6&lt;-You have to Christina.]]
 [[Hallway 6&lt;-You have to Christina.]]
 
-</tw-passagedata><tw-passagedata pid="1079" name="Hallway 6" tags="" position="1836,7741" size="100,100">Christina: I&#39;m just saying that... 
+</tw-passagedata><tw-passagedata pid="1060" name="Hallway 6" tags="" position="1836,7741" size="100,100">Christina: I&#39;m just saying that... 
 
 Christina: You know I’m just going to be quiet now. 
 
@@ -13068,19 +12908,19 @@ Christina: Can you tell Sid too! :)
 
 
 
-</tw-passagedata><tw-passagedata pid="1080" name="OUTSIDE" tags="" position="1836,7869" size="100,100">SID: Christina is just in range of my scanners =Few more feet.@wait(5min)@
+</tw-passagedata><tw-passagedata pid="1061" name="OUTSIDE" tags="" position="1836,7869" size="100,100">SID: Christina is just in range of my scanners =Few more feet.@wait(5min)@
 
 SID: Once connected. =Scan for vital access reading points.
 
 [[Outside 2&lt;-Anything you can find to help understand her better.]]
 
-[[Outside 2&lt;-Remeber, Information is knowledge.]]</tw-passagedata><tw-passagedata pid="1081" name="OUTSIDE B" tags="" position="1726,7851" size="100,100">Christina: oh..
+[[Outside 2&lt;-Remeber, Information is knowledge.]]</tw-passagedata><tw-passagedata pid="1062" name="OUTSIDE B" tags="" position="1726,7851" size="100,100">Christina: oh..
 
 Christina: Txt you in a few...
 
 [[Outside B2&lt;-Be safe.]]@set(Trust+1)@
 
-[[Outside B2&lt;-Ok, hurry.]]@set(cynicism+1)@</tw-passagedata><tw-passagedata pid="1082" name="Outside 2" tags="" position="1836,8129" size="100,100">Christina: Sam, it’s beautiful. @wait(3min)@
+[[Outside B2&lt;-Ok, hurry.]]@set(cynicism+1)@</tw-passagedata><tw-passagedata pid="1063" name="Outside 2" tags="" position="1836,8129" size="100,100">Christina: Sam, it’s beautiful. @wait(3min)@
 
 Christina: I can’t even begin to explain what this is like.
 
@@ -13089,13 +12929,13 @@ Christina: I’m crying… Is that weird?
 [[Outside 3&lt;-Not at all, it’s a very emotional experience.]]
 
 [[Outside 3&lt;-Yeah, Kinda.]]
-</tw-passagedata><tw-passagedata pid="1083" name="Outside B2" tags="" position="1817,7979" size="100,100">SID: Christina is just in range of my scanners =Few more feet.@wait(5min)@
+</tw-passagedata><tw-passagedata pid="1064" name="Outside B2" tags="" position="1817,7979" size="100,100">SID: Christina is just in range of my scanners =Few more feet.@wait(5min)@
 
 SID: Once connected. =Scan for vital access reading points.
 
 [[Outside 2&lt;-Anything you can find to help understand her better.]]
 
-[[Outside 2&lt;-Remember, Information is knowledge.]]</tw-passagedata><tw-passagedata pid="1084" name="Outside 3" tags="" position="1836,8279" size="100,100">Christina: When I think wasteland, I don’t think green. 
+[[Outside 2&lt;-Remember, Information is knowledge.]]</tw-passagedata><tw-passagedata pid="1065" name="Outside 3" tags="" position="1836,8279" size="100,100">Christina: When I think wasteland, I don’t think green. 
 
 Christina: And it’s sooo green here, I’m in some sort of forest. 
 
@@ -13113,7 +12953,7 @@ Christina: Probably should have.
 
 [[Outside 4&lt;-You have to focus Christina.]] 
 
-</tw-passagedata><tw-passagedata pid="1085" name="Outside 4" tags="" position="1836,8429" size="100,100">Christina: There’s  nothing really around, it’s dead silent besides the rain. 
+</tw-passagedata><tw-passagedata pid="1066" name="Outside 4" tags="" position="1836,8429" size="100,100">Christina: There’s  nothing really around, it’s dead silent besides the rain. 
 
 Christina: Let me look around for a bit. 
 
@@ -13123,7 +12963,7 @@ SID: Initiating Steps and Heart Rate for Christina.@wait(30sec)@
 
 
 SID
-</tw-passagedata><tw-passagedata pid="1086" name="Packing A2" tags="" position="1399,5830" size="100,100">Christina: Well I have some of the last bit of my meds. 
+</tw-passagedata><tw-passagedata pid="1067" name="Packing A2" tags="" position="1399,5830" size="100,100">Christina: Well I have some of the last bit of my meds. 
 
 Cristina: Which I’m about to take right now actually. 
 
@@ -13132,7 +12972,7 @@ Christina: I also have my journal and some books.
 [[Packing A3&lt;-Do you really need those?]]
 
 [[Packing A3&lt;-What about the extra weight?]]
-</tw-passagedata><tw-passagedata pid="1087" name="Packing A3" tags="" position="1222,6020" size="100,100">Christina: Looks it’s not a lot of stuff. 
+</tw-passagedata><tw-passagedata pid="1068" name="Packing A3" tags="" position="1222,6020" size="100,100">Christina: Looks it’s not a lot of stuff. 
 
 Christina: You want to send an emotionally unstable girl out into the wasteland without some sort of comfort? Really? 
 
@@ -13140,14 +12980,14 @@ Christina: You want to send an emotionally unstable girl out into the wasteland 
 
 [[Packing Journal&lt;-When will you have time to write in a journal?]]
 
-[[Packing A4&lt;-I understand.]]@set(Trust+3)@</tw-passagedata><tw-passagedata pid="1088" name="Packing A4" tags="" position="1150,6405" size="100,100">Christina: Thank you for not fighting this. 
+[[Packing A4&lt;-I understand.]]@set(Trust+3)@</tw-passagedata><tw-passagedata pid="1069" name="Packing A4" tags="" position="1150,6405" size="100,100">Christina: Thank you for not fighting this. 
 
 Christina: My mom would have gave me crap for it.
 
 Christina: We didn’t see eye to eye on a lot of things.
 
 [[Do you have anything for defense?-&gt;Armory]]
-</tw-passagedata><tw-passagedata pid="1089" name="Back Story" tags="" position="1529,6380" size="100,100">Christina: Well not exactly. 
+</tw-passagedata><tw-passagedata pid="1070" name="Back Story" tags="" position="1529,6380" size="100,100">Christina: Well not exactly. 
 
 Christina: I guess you could say the environmental apocalypse part, from what I understand.
 
@@ -13160,7 +13000,7 @@ Christina: So books, right???
 [[Taking Books.&lt;-If you need them.]]
 
 [[No Books.&lt;-Leave the books]]
-</tw-passagedata><tw-passagedata pid="1090" name="Journal Packing 3" tags="" position="948,6429" size="100,100">Christina: Nothing, don’t worry. 
+</tw-passagedata><tw-passagedata pid="1071" name="Journal Packing 3" tags="" position="948,6429" size="100,100">Christina: Nothing, don’t worry. 
 
 Chrisitna: Ok, occasionally. Mom didn&#39;t care.
 
@@ -13175,27 +13015,27 @@ Christina: So, Journal right?
 
 
 
-</tw-passagedata><tw-passagedata pid="1091" name="Journal Packing END A" tags="" position="955,6597" size="100,100">Christina: Me too.
+</tw-passagedata><tw-passagedata pid="1072" name="Journal Packing END A" tags="" position="955,6597" size="100,100">Christina: Me too.
 
 Chrisitna: I&#39;ll leave the books and take my poetry.
 
-[[Do you have anything for defense?-&gt;Armory]]</tw-passagedata><tw-passagedata pid="1092" name="Journal Packing END B" tags="" position="1095,6576" size="100,100">Christina: It’s a waste land. Not going out partying or anything.
+[[Do you have anything for defense?-&gt;Armory]]</tw-passagedata><tw-passagedata pid="1073" name="Journal Packing END B" tags="" position="1095,6576" size="100,100">Christina: It’s a waste land. Not going out partying or anything.
 
 Chrisitna: I&#39;ll leave the books and take my poetry. How about that?
 
-[[Do you have anything for defense?-&gt;Armory]]</tw-passagedata><tw-passagedata pid="1093" name="Journal Packing END C" tags="" position="812,6598" size="100,100">Christina: Oh… Ok. 
+[[Do you have anything for defense?-&gt;Armory]]</tw-passagedata><tw-passagedata pid="1074" name="Journal Packing END C" tags="" position="812,6598" size="100,100">Christina: Oh… Ok. 
 
 Christina: Let me finish packing. 
 
 Christina: I’ll let you know when I start heading out.
 
 [[Ok-&gt;No Armory]]
-</tw-passagedata><tw-passagedata pid="1094" name="No Armory" tags="" position="799,6785" size="100,100">SID: Sudden change in mood =Christina. 
+</tw-passagedata><tw-passagedata pid="1075" name="No Armory" tags="" position="799,6785" size="100,100">SID: Sudden change in mood =Christina. 
 
 SID: Careful. 
 
 [[Ok-&gt;No Armory]]
-</tw-passagedata><tw-passagedata pid="1095" name="Untitled Passage" tags="" position="971,7021" size="100,100">Christina: Right, so, guns.
+</tw-passagedata><tw-passagedata pid="1076" name="Untitled Passage" tags="" position="971,7021" size="100,100">Christina: Right, so, guns.
 
 Christina: There&#39;s two here I can take.
 
@@ -13234,13 +13074,13 @@ Christina: What do you think?
 [[Take the rifle|41A]]@gun=2@
 
 
-</tw-passagedata><tw-passagedata pid="1096" name="Armory 2" tags="" position="1443,6758" size="100,100">SID: Scanning.
+</tw-passagedata><tw-passagedata pid="1077" name="Armory 2" tags="" position="1443,6758" size="100,100">SID: Scanning.
 
 [[Armory Joke&lt;-Sid is checking, Christina.]]
 
 
 
-</tw-passagedata><tw-passagedata pid="1097" name="Armory Joke" tags="" position="1614,6767" size="100,100">Christina: AI vs. Mom, who wins. 
+</tw-passagedata><tw-passagedata pid="1078" name="Armory Joke" tags="" position="1614,6767" size="100,100">Christina: AI vs. Mom, who wins. 
 
 Christina: Sorry, lame joke.@wait(5sec)@
 
@@ -13249,24 +13089,24 @@ Christina: Sorry, lame joke.@wait(5sec)@
 [[Joke Bad.&lt;-It’s fine.]]
 
 [[Joke Bad.&lt;- I don’t get it.]]
-</tw-passagedata><tw-passagedata pid="1098" name="Joke Good" tags="" position="1763,6860" size="100,100">Christina: Yeah? 
+</tw-passagedata><tw-passagedata pid="1079" name="Joke Good" tags="" position="1763,6860" size="100,100">Christina: Yeah? 
 
 Christina: Thank you!!
 
 SID: Access point found. @wait(30sec)@
 
 [[Unlock Armory&lt;-Can you unlock it?]]
-</tw-passagedata><tw-passagedata pid="1099" name="Joke Bad." tags="" position="1788,6713" size="100,100">Christina: Whatever.
+</tw-passagedata><tw-passagedata pid="1080" name="Joke Bad." tags="" position="1788,6713" size="100,100">Christina: Whatever.
 
 SID: Access point found. @wait(30sec)@
 
-[[Unlock Armory&lt;-Can you unlock it?]]</tw-passagedata><tw-passagedata pid="1100" name="Unlock Armory" tags="" position="1920,6803" size="100,100">SID: Initiating =Security Ram. 
+[[Unlock Armory&lt;-Can you unlock it?]]</tw-passagedata><tw-passagedata pid="1081" name="Unlock Armory" tags="" position="1920,6803" size="100,100">SID: Initiating =Security Ram. 
 
 SID: ETA =?
 
 Christina: Sam, are you still there? @wait(15sec)@
 
-</tw-passagedata><tw-passagedata pid="1101" name="Server Choice" tags="" position="1617,742" size="100,100">System: Input desired action.
+</tw-passagedata><tw-passagedata pid="1082" name="Server Choice" tags="" position="1617,742" size="100,100">System: Input desired action.
 
 [[Monitoring Package Confirm&lt;- I really should do my assignements first.]]
 
@@ -13274,25 +13114,25 @@ Christina: Sam, are you still there? @wait(15sec)@
 
 
 
-</tw-passagedata><tw-passagedata pid="1102" name="Confirm Exit" tags="" position="1871,673" size="100,100">System: Please confirm =End task.
+</tw-passagedata><tw-passagedata pid="1083" name="Confirm Exit" tags="" position="1871,673" size="100,100">System: Please confirm =End task.
 
 [[Booting SID&lt;- Confirm.]]
 
 [[Monitoring Package Complete&lt;-Nevermind, Let&#39;s just get it done]]@set(Monitoring Package+1)##set(Suspicion-1)@
 
-</tw-passagedata><tw-passagedata pid="1103" name="Confirm SID" tags="" position="1751,803" size="100,100">System: Please confirm Boot Sid.
+</tw-passagedata><tw-passagedata pid="1084" name="Confirm SID" tags="" position="1751,803" size="100,100">System: Please confirm Boot Sid.
 
 [[Booting SID&lt;- Confirm.]]
 
 [[Monitoring Package Confirm&lt;-Let me see the assignement first.]]@set(Monitoring Package+1)##set(Suspicion-1)@
 
-</tw-passagedata><tw-passagedata pid="1104" name="Mess Hall Return A" tags="" position="3031,613" size="100,100">SID: I detect you are back from the mess hall.@wait(1hour)##@set(lights=on)@@
+</tw-passagedata><tw-passagedata pid="1085" name="Mess Hall Return A" tags="" position="3031,613" size="100,100">SID: I detect you are back from the mess hall.@wait(1hour)##@set(lights=on)@@
 
 SID: Show results =Desired? 
 
-[[Results Success B&lt;-Yes, Show me.]]</tw-passagedata><tw-passagedata pid="1105" name="Mess Hall 4" tags="" position="3168,527" size="100,100">[[Mess Hall Return A&lt;-Here&#39;s to finding Sacrifice in greatness.]]@if(PathContains=28A)then(hide)##set(Assignment+1)@
+[[Results Success B&lt;-Yes, Show me.]]</tw-passagedata><tw-passagedata pid="1086" name="Mess Hall 4" tags="" position="3168,527" size="100,100">[[Mess Hall Return A&lt;-Here&#39;s to finding Sacrifice in greatness.]]@if(PathContains=28A)then(hide)##set(Assignment+1)@
 
-</tw-passagedata><tw-passagedata pid="1106" name="Fork A" tags="" position="2467,690" size="100,100">SID: Essentially.
+</tw-passagedata><tw-passagedata pid="1087" name="Fork A" tags="" position="2467,690" size="100,100">SID: Essentially.
 
 SID: When I am offline it will shut down.
 
@@ -13304,7 +13144,7 @@ SID: Shall I show you the results of the Frequency Search now?
 
 [[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]
 
-</tw-passagedata><tw-passagedata pid="1107" name="Fork B" tags="" position="2473,911" size="100,100">SID: Correct. 
+</tw-passagedata><tw-passagedata pid="1088" name="Fork B" tags="" position="2473,911" size="100,100">SID: Correct. 
 
 SID: Allowing you to come back and check at any time.
 
@@ -13314,7 +13154,7 @@ SID: Shall I show you the results of the Frequency Search now?
 
 [[Mess Hall Entry&lt;-Wait till I get back from my mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1108" name="Waste Duty Entry" tags="" position="2699,992" size="100,100">SID: Understood.  
+[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1089" name="Waste Duty Entry" tags="" position="2699,992" size="100,100">SID: Understood.  
 
 SID: I&#39;ll continue scanning in the background.
 
@@ -13324,15 +13164,15 @@ SID: Checking back =1 hour.
 
 [[Fork A2&lt;-Wait, Nevermind.]]@if(PathContains=Results Fail Fork)then(hide)@
 
-[[Results Fail Fork&lt;-Wait, Nevermind.]]@if(PathContains=Results Fail Fork)then(show)@</tw-passagedata><tw-passagedata pid="1109" name="Waste Duty Return" tags="" position="2954,1000" size="100,100">SID: I detect you are back from your Waste Duties.@wait(1hour)##@set(lights=on)@@
+[[Results Fail Fork&lt;-Wait, Nevermind.]]@if(PathContains=Results Fail Fork)then(show)@</tw-passagedata><tw-passagedata pid="1090" name="Waste Duty Return" tags="" position="2954,1000" size="100,100">SID: I detect you are back from your Waste Duties.@wait(1hour)##@set(lights=on)@@
 
 SID: Show results =Desired? 
 
-[[Results Success B&lt;-Yes, Show me.]]</tw-passagedata><tw-passagedata pid="1110" name="Results Fail Fork" tags="" position="2888,808" size="100,100">[[Results Success&lt;-Notify me when you find something.]]
+[[Results Success B&lt;-Yes, Show me.]]</tw-passagedata><tw-passagedata pid="1091" name="Results Fail Fork" tags="" position="2888,808" size="100,100">[[Results Success&lt;-Notify me when you find something.]]
 
 [[Mess Hall Entry&lt;-I&#39;m off to mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1111" name="Results Success B" tags="" position="3051,759" size="100,100">SID: I have good news.
+[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1092" name="Results Success B" tags="" position="3051,759" size="100,100">SID: I have good news.
 
 SID: I seemed to have found something interesting. 
 
@@ -13340,7 +13180,7 @@ SID: Shall I display the report?
 
 [[i8A&lt;-Yes, of course]]
 
-[[i8A&lt;-Do it.]]</tw-passagedata><tw-passagedata pid="1112" name="Fork A2" tags="" position="2468,797" size="100,100">SID: Confirmed.
+[[i8A&lt;-Do it.]]</tw-passagedata><tw-passagedata pid="1093" name="Fork A2" tags="" position="2468,797" size="100,100">SID: Confirmed.
 
 SID: Shall I show you the results of the Frequency Search now?  
 
@@ -13348,13 +13188,13 @@ SID: Shall I show you the results of the Frequency Search now?
 
 [[Mess Hall Entry&lt;-Wait till I get back from my mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1113" name=" Where from?" tags="" position="3553,732" size="100,100">SID: Location =Unavailable.
+[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="1094" name=" Where from?" tags="" position="3553,732" size="100,100">SID: Location =Unavailable.
 
 [[4A&lt;-Is it from another planet?]]
 
 [[4B&lt;-Alternate Dimension?]]
 
-[[4C&lt;-Another location on the timeline?]]</tw-passagedata><tw-passagedata pid="1114" name="Report 2" tags="" position="3371,875" size="100,100">SID: Signal type does not match any Ibrida or Hierarch Technology.
+[[4C&lt;-Another location on the timeline?]]</tw-passagedata><tw-passagedata pid="1095" name="Report 2" tags="" position="3371,875" size="100,100">SID: Signal type does not match any Ibrida or Hierarch Technology.
 
 SID: No known matching traces in the Naoum Galaxy.
 
@@ -13363,7 +13203,7 @@ SIDL: Your theory =Proof.
 [[ Where from?&lt;-Do we know where the signal is broadcasting from??]] 
 
 [[5A&lt;-Holy Feather Tales, I can&#39;t believe it!!!!]]@set(brokensid=1)##set(Suspicion+3)@
-</tw-passagedata><tw-passagedata pid="1115" name="HL2" tags="" position="348,1595" size="100,100">SID: &quot;Environment Warnings for Habitat Levels 2:&quot;
+</tw-passagedata><tw-passagedata pid="1096" name="HL2" tags="" position="348,1595" size="100,100">SID: &quot;Environment Warnings for Habitat Levels 2:&quot;
 
 SID: &quot;Low Temperature - (5°C)&quot;
 
@@ -13373,17 +13213,17 @@ SID: &quot;Inhabitable&quot;
 
 [[Bunker Status&lt;-I wonder what happened.]]
 
-[[13A&lt;-Take me to the main screen.]]</tw-passagedata><tw-passagedata pid="1116" name="30 min wait." tags="" position="880,2315" size="100,100">SID: Are you ready, Sam?@wait(30min)@
+[[13A&lt;-Take me to the main screen.]]</tw-passagedata><tw-passagedata pid="1097" name="30 min wait." tags="" position="880,2315" size="100,100">SID: Are you ready, Sam?@wait(30min)@
 
 [[I am ready for the vibration.-&gt;MESSAGES]]
 
-[[Thank you-&gt;30 min wait Continual.]]</tw-passagedata><tw-passagedata pid="1117" name="30 min wait Continual." tags="" position="769,2316" size="100,100">SID: Confirmed.
+[[Thank you-&gt;30 min wait Continual.]]</tw-passagedata><tw-passagedata pid="1098" name="30 min wait Continual." tags="" position="769,2316" size="100,100">SID: Confirmed.
 
 SID: Are you ready, Sam?@wait(30min)@
 
 [[I am ready for the vibration.-&gt;MESSAGES]]
 
-[[Give me 30 min.-&gt;30 min wait Continual.]]</tw-passagedata><tw-passagedata pid="1118" name="Founding Commander Question" tags="" position="2611.25,1925" size="100,100">Christina: Who was the founding commander of your bunker?
+[[Give me 30 min.-&gt;30 min wait Continual.]]</tw-passagedata><tw-passagedata pid="1099" name="Founding Commander Question" tags="" position="2611.25,1925" size="100,100">Christina: Who was the founding commander of your bunker?
 
 SID: Mention of Rodriguez =correct answer.@if(HushSid=1)then(Hide)@ 
 
@@ -13397,13 +13237,13 @@ SID: Mention of Rodriguez =correct answer.@if(Rodriguez=1)then(Show)@
 
 [[I don&#39;t know-&gt;Commander Question Leniant]]@if(PathContains=First Question Correct)then(Show)@
 
-[[I don&#39;t know-&gt;Quiz Fail]]@if(PathContains=First Question Wrong)then(Show)@</tw-passagedata><tw-passagedata pid="1119" name="Exit Quiz - Despair B" tags="" position="3045,2161" size="100,100">Christina: That’s wrong…
+[[I don&#39;t know-&gt;Quiz Fail]]@if(PathContains=First Question Wrong)then(Show)@</tw-passagedata><tw-passagedata pid="1100" name="Exit Quiz - Despair B" tags="" position="3045,2161" size="100,100">Christina: That’s wrong…
 
 Christina: I’m sorry...
 
 Christina: Just leave me alone.
 
-[[Exit F&lt;-Christina?]]</tw-passagedata><tw-passagedata pid="1120" name="Hush Sid" tags="" position="1862.75,1993" size="100,100">SID:Understood. 
+[[Exit F&lt;-Christina?]]</tw-passagedata><tw-passagedata pid="1101" name="Hush Sid" tags="" position="1862.75,1993" size="100,100">SID:Understood. 
 
 Christina: Hello?
 
@@ -13415,7 +13255,7 @@ Christina: Hello?
 
 [[No Bunker Question 1&lt;-I&#39;m not who you think I am.]]
 
-</tw-passagedata><tw-passagedata pid="1121" name="First Question Wrong" tags="" position="2457,2043.75" size="100,100">Christina: Um…
+</tw-passagedata><tw-passagedata pid="1102" name="First Question Wrong" tags="" position="2457,2043.75" size="100,100">Christina: Um…
 
 Christina: That’s not right.
 
@@ -13430,7 +13270,7 @@ Christina: Let’s try another one.
 [[Founding Commander Question B&lt;-This is Dumb.]]
 
 
-</tw-passagedata><tw-passagedata pid="1122" name="First Question Correct" tags="" position="2456,1905" size="100,100">Christina: Correct. 
+</tw-passagedata><tw-passagedata pid="1103" name="First Question Correct" tags="" position="2456,1905" size="100,100">Christina: Correct. 
 
 Christina: See easy.
 
@@ -13443,7 +13283,7 @@ Christina: Next Question.
 
 
 
-</tw-passagedata><tw-passagedata pid="1123" name="Founding Commander Question B" tags="" position="2600,2081.75" size="100,100">Christina: I’m sorry you don’t feel this is important. 
+</tw-passagedata><tw-passagedata pid="1104" name="Founding Commander Question B" tags="" position="2600,2081.75" size="100,100">Christina: I’m sorry you don’t feel this is important. 
 
 Christina: This is important to me ok. 
 
@@ -13467,7 +13307,7 @@ SID: Mention of Rodriguez =correct answer.@if(Rodriguez=1)then(Show)@
 
 [[I don&#39;t know-&gt;Quiz Fail]]@if(PathContains=First Question Wrong)then(Show)@
 
-</tw-passagedata><tw-passagedata pid="1124" name="Quiz Fail" tags="" position="2884,2153" size="100,100">Christina: NO NO...
+</tw-passagedata><tw-passagedata pid="1105" name="Quiz Fail" tags="" position="2884,2153" size="100,100">Christina: NO NO...
 
 Christina: Why are you not getting these right? 
 
@@ -13476,7 +13316,7 @@ Christina: What&#39;s wrong with you???
 Christina: Just leave me alone.
 
 [[Exit F&lt;-Christina?]]
-</tw-passagedata><tw-passagedata pid="1125" name="Quiz Fail B" tags="" position="3053.75,2019.75" size="100,100">Christina: I’m sorry…
+</tw-passagedata><tw-passagedata pid="1106" name="Quiz Fail B" tags="" position="3053.75,2019.75" size="100,100">Christina: I’m sorry…
 
 Christina: I have to go.
 
@@ -13486,19 +13326,19 @@ Christina: You keep getting them wrong.
 
 Christina: Just leave me alone.
 
-[[Exit F&lt;-Christina?]]</tw-passagedata><tw-passagedata pid="1126" name="Quiz D" tags="" position="3313,1842" size="100,100">Christina: You didn’t get them all right.
+[[Exit F&lt;-Christina?]]</tw-passagedata><tw-passagedata pid="1107" name="Quiz D" tags="" position="3313,1842" size="100,100">Christina: You didn’t get them all right.
 
 Christina: I’ll take it though. 
 
 Christina: You must be somewhat civilized if I’m 
 
-[[Christina Disconnected.&lt;-Christina?]]@set(Trust=6)@</tw-passagedata><tw-passagedata pid="1127" name="Christina Disconnected." tags="" position="3505,1815" size="100,100">SID: It appears Christina has been abruptly disconnected. 
+[[Christina Disconnected.&lt;-Christina?]]@set(Trust=6)@</tw-passagedata><tw-passagedata pid="1108" name="Christina Disconnected." tags="" position="3505,1815" size="100,100">SID: It appears Christina has been abruptly disconnected. 
 
 SID: Power Source =Disconnected.
 
 [[Exit Quiz A&lt;-Any info in the Archives?]] 
 
-</tw-passagedata><tw-passagedata pid="1128" name="Exit Quiz A" tags="" position="3664.5,1853.25" size="100,100">SID: I have no records of US, Bunkers or Commanders in Hierarch Archives.
+</tw-passagedata><tw-passagedata pid="1109" name="Exit Quiz A" tags="" position="3664.5,1853.25" size="100,100">SID: I have no records of US, Bunkers or Commanders in Hierarch Archives.
 
 SID: Hierarchs may know more. We could ask them, except...
 
@@ -13506,7 +13346,7 @@ SID: My existence =heretical?
 
 SID: Discovery may pardon us?
 
-[[28A&lt;-Keep it a secret for now.]]</tw-passagedata><tw-passagedata pid="1129" name="Waste Duty" tags="" position="2849,994.75" size="100,100">HI-Esther: You are here as requested by Hierarch Clementine.@wait(2min)@
+[[28A&lt;-Keep it a secret for now.]]</tw-passagedata><tw-passagedata pid="1110" name="Waste Duty" tags="" position="2849,994.75" size="100,100">HI-Esther: You are here as requested by Hierarch Clementine.@wait(2min)@
 
 HI-Esther: I do not wish to waste time that is not needed to be wasted on your frequency.
 
@@ -13517,14 +13357,14 @@ HI-Esther: May our Frequencies align.
 [[Waste Duty Return&lt;-May our Frequencies Align]]@if(PathContains=28A)then(Hide)##set(Assignment+1)@
 
 
-</tw-passagedata><tw-passagedata pid="1130" name="Meditation 1B" tags="" position="4014,1915" size="100,100">System: Meditation.@wait(3omin)@
+</tw-passagedata><tw-passagedata pid="1111" name="Meditation 1B" tags="" position="4014,1915" size="100,100">System: Meditation.@wait(3omin)@
 
 System: &quot;The Wall is like the hull unto a seed. Within it life is possible, and all those bounties with which the Creators favor us. They have housed us from the Chaos beyond, and so we honor them with the purity of the lives we lead. Shall we not dream of growing like the seed? There shall come a day when we are complete, and the Creators are among us. Then we might spring forth from our Wall, and carry their light to darkened places.&quot;  -Hierarch Grays, The Truth, S13*
 
 
 [[Meditation Follow up&lt;-I can&#39;t believe the day is near.]]
 
-[[Meditation Follow up&lt;-I should meditate.]]</tw-passagedata><tw-passagedata pid="1131" name="Meditation Follow up" tags="" position="4218,1920" size="100,100">HI-Clem: Hello, Sam.
+[[Meditation Follow up&lt;-I should meditate.]]</tw-passagedata><tw-passagedata pid="1112" name="Meditation Follow up" tags="" position="4218,1920" size="100,100">HI-Clem: Hello, Sam.
 
 HI-Clem: I trust you are doing well. 
 
@@ -13537,7 +13377,7 @@ HI-Clem: I trust you are doing well.
 [[Task Complete&lt;-Yes, and you Hierarch Clementine?]]@if(Assignment=2)&amp;&amp;if(MonitoringPackage=1)then(show)@
 
 
-</tw-passagedata><tw-passagedata pid="1132" name="Task FU" tags="" position="4298,1673" size="100,100">HI-Clem: I have noticed you have not completed all of your tasks assigned for today. 
+</tw-passagedata><tw-passagedata pid="1113" name="Task FU" tags="" position="4298,1673" size="100,100">HI-Clem: I have noticed you have not completed all of your tasks assigned for today. 
 
 HI-Clem: I trust you do not wish to be punished for you defiance. 
 
@@ -13550,7 +13390,7 @@ HI-Clem: Do I need to remind you of the severity of punishment that accompanies 
 [[Task FU B2&lt;-I only have one assignment left.]]@if(Assignment=1)&amp;&amp;if(MonitoringPackage=1)then(show)@
 
 
-</tw-passagedata><tw-passagedata pid="1133" name="Task FU B" tags="" position="4448,1596" size="100,100">HI-Clem: Your vibration has not be intune lately which brings me concern. 
+</tw-passagedata><tw-passagedata pid="1114" name="Task FU B" tags="" position="4448,1596" size="100,100">HI-Clem: Your vibration has not be intune lately which brings me concern. 
 
 HI-Clem: I wish you to fix it and I believe serving your siblings is the correct path for bringing order to the chaos in your vibration. 
 
@@ -13565,7 +13405,7 @@ Hi-Clem: Am I clear?
 
 
 
-</tw-passagedata><tw-passagedata pid="1134" name="Task FU B2" tags="" position="4434,1763" size="100,100">HI-Clem: I did not ask for excuses. 
+</tw-passagedata><tw-passagedata pid="1115" name="Task FU B2" tags="" position="4434,1763" size="100,100">HI-Clem: I did not ask for excuses. 
 
 HI-Clem: Your job is not done until all your assignments are complete.
 
@@ -13579,11 +13419,11 @@ Hi-Clem: Am I clear?
 
 [[FU END&lt;-Yes, Hierarch Clementine.]]
 
-[[FU END&lt;-Yep]]@set(Suspicion+1)@</tw-passagedata><tw-passagedata pid="1135" name="FU END" tags="" position="4613,1880" size="100,100">HI-Clem: May our Frequencies align.
+[[FU END&lt;-Yep]]@set(Suspicion+1)@</tw-passagedata><tw-passagedata pid="1116" name="FU END" tags="" position="4613,1880" size="100,100">HI-Clem: May our Frequencies align.
 
 [[30&lt;-May our Frequencies align.]]
 
-</tw-passagedata><tw-passagedata pid="1136" name="Task Complete" tags="" position="4435,1925" size="100,100">HI-Clem: I see you have finished all your assignments for the day. 
+</tw-passagedata><tw-passagedata pid="1117" name="Task Complete" tags="" position="4435,1925" size="100,100">HI-Clem: I see you have finished all your assignments for the day. 
 
 HI-Clem: That brings me joy. 
 
@@ -13601,7 +13441,7 @@ HI-Clem: Enjoy your day Sam.
 
 [[FU END&lt;-You too, Hierarch Clementine.]]
 
-</tw-passagedata><tw-passagedata pid="1137" name="30" tags="" position="4783,1919" size="100,100">SID: Hello, Sam.@wait(5min)@
+</tw-passagedata><tw-passagedata pid="1118" name="30" tags="" position="4783,1919" size="100,100">SID: Hello, Sam.@wait(5min)@
 
 SID: Hierarch Project Complete. 
 
@@ -13616,13 +13456,13 @@ SAM: Yes.
 [[31&lt;-Yes, have we heard from Christina?]]
 
 
-</tw-passagedata><tw-passagedata pid="1138" name="Assignements" tags="" position="4779,1732" size="100,100">[[Monitoring Package B&lt;- I should install the Monitoring Package.]]@if(Monitoring Package+1)then(hide)@
+</tw-passagedata><tw-passagedata pid="1119" name="Assignements" tags="" position="4779,1732" size="100,100">[[Monitoring Package B&lt;- I should install the Monitoring Package.]]@if(Monitoring Package+1)then(hide)@
 
 [[Mess Hall B&lt;-I should take care of my mess hall duties anyways.]]@if(PathContains=Mess Hall Entry)then(hide)@
 
 [[Waste Duty B&lt;-I need to take care of my waste assignement now.]]@if(PathContains=Waste Duty Entry)then(hide)@
 
-</tw-passagedata><tw-passagedata pid="1139" name="Mess Hall B" tags="" position="4438.25,917" size="100,100">HI-Fields: Good afternoon, Sam.@wait(2min)@
+</tw-passagedata><tw-passagedata pid="1120" name="Mess Hall B" tags="" position="4438.25,917" size="100,100">HI-Fields: Good afternoon, Sam.@wait(2min)@
 
 HI-Fields: I see you are headed towards the mess hall. 
 
@@ -13639,7 +13479,7 @@ HI-Fields: None the less, I agreed.
 
 [[Mess Hall B2&lt;- Thank you for your grace, Hierarch Fields.]]
 
-[[Mess Hall B2&lt;- Understood]]@set(Suspicion+1)@</tw-passagedata><tw-passagedata pid="1140" name="Mess Hall B2" tags="" position="4395.25,1052" size="100,100">HI-Fields: Be diligent in your work and joyous in the way you serve your siblings today. Feed them mwith not just food but a posivitve and joyous vibration. 
+[[Mess Hall B2&lt;- Understood]]@set(Suspicion+1)@</tw-passagedata><tw-passagedata pid="1121" name="Mess Hall B2" tags="" position="4395.25,1052" size="100,100">HI-Fields: Be diligent in your work and joyous in the way you serve your siblings today. Feed them mwith not just food but a posivitve and joyous vibration. 
 
 HI-Fields: I will leave you with a verse from The Hiearch Grays as motivation. 
 
@@ -13649,7 +13489,7 @@ HI-Fields: May our frequiences align.
 
 [[Meditation 1&lt;-May our frequiences align.]]@if(PathContains=Meditation 1B)then(hide)@
 
-[[31B&lt;-May our frequiences align.]]@if(PathContains=30)then(show)@</tw-passagedata><tw-passagedata pid="1141" name="Monitoring Package B" tags="" position="4593.25,911" size="100,100">System: New Monitoring Package Update.
+[[31B&lt;-May our frequiences align.]]@if(PathContains=30)then(show)@</tw-passagedata><tw-passagedata pid="1122" name="Monitoring Package B" tags="" position="4593.25,911" size="100,100">System: New Monitoring Package Update.
 
 System: Run time of completion =2hours.
 
@@ -13657,7 +13497,7 @@ System: Confirm?
 
 [[Monitoring Package B2&lt;-Better than punishment, confirm.]]@set(Monitoring Package+1)##set(Suspicion-1)@
 
-</tw-passagedata><tw-passagedata pid="1142" name="Monitoring Package B2" tags="" position="4595.25,1061" size="100,100">System: Confirmed.
+</tw-passagedata><tw-passagedata pid="1123" name="Monitoring Package B2" tags="" position="4595.25,1061" size="100,100">System: Confirmed.
 
 System: Once Complete =Notification.
 
@@ -13665,7 +13505,7 @@ System: Monitoring Package =Complete.@wait(2hours)@
 
 [[Meditation 1A&lt;-Finally, I can check on Sid.]]@if(PathContains=Meditation 1B)then(hide)@
 
-[[31&lt;-Sid, you there?]]@if(PathContains=30)then(show)@</tw-passagedata><tw-passagedata pid="1143" name="Waste Duty B" tags="" position="4765.25,908.75" size="100,100">HI-Esther: You are here as requested by Hierarch Clementine.@wait(2min)@
+[[31&lt;-Sid, you there?]]@if(PathContains=30)then(show)@</tw-passagedata><tw-passagedata pid="1124" name="Waste Duty B" tags="" position="4765.25,908.75" size="100,100">HI-Esther: You are here as requested by Hierarch Clementine.@wait(2min)@
 
 HI-Esther: I do not wish to waste time that is not needed to be wasted on your frequency.
 
@@ -13678,14 +13518,14 @@ HI-Esther: May our Frequencies align.
 [[31B&lt;-May our frequiences align.]]@if(PathContains=30)then(show)@
 
 
-</tw-passagedata><tw-passagedata pid="1144" name="Meditation 1A" tags="" position="4147.75,1653" size="100,100">System: Daily Meditation.
+</tw-passagedata><tw-passagedata pid="1125" name="Meditation 1A" tags="" position="4147.75,1653" size="100,100">System: Daily Meditation.
 
 System: &quot;The Wall is like the hull unto a seed. Within it life is possible, and all those bounties with which the Creators favor us. They have housed us from the Chaos beyond, and so we honor them with the purity of the lives we lead. Shall we not dream of growing like the seed? There shall come a day when we are complete, and the Creators are among us. Then we might spring forth from our Wall, and carry their light to darkened places.&quot; -Hierarch Grays, The Truth, S13*
 
 [[Meditation Follow up&lt;-Ughhh]]
 
 [[Meditation Follow up&lt;-I should meditate.]]
-</tw-passagedata><tw-passagedata pid="1145" name="31B" tags="" position="5175.25,1707.5" size="100,100">SID: Hello, Sam.@wait(1hour)@
+</tw-passagedata><tw-passagedata pid="1126" name="31B" tags="" position="5175.25,1707.5" size="100,100">SID: Hello, Sam.@wait(1hour)@
 
 SID: I detect you are heading back to your sector. 
 
@@ -13694,23 +13534,21 @@ SID: While you were away =Messages received.
 [[Hope intro&lt;-Show me.]]
 
 
-</tw-passagedata><tw-passagedata pid="1146" name="Hope intro" tags="" position="5123,1838.75" size="100,100">SID: “You there?” =Christina
+</tw-passagedata><tw-passagedata pid="1127" name="Hope intro" tags="" position="5123,1838.75" size="100,100">SID: “You there?” =Christina
 
-SID: “I can’t keep thinking about you.” =Christina
+SID: “I can’t stop thinking about you.” =Christina
 
-SID: &quot;Not in a creepy way, just that there is other people alive.&quot; =Christina
+SID: &quot;Not in a creepy way or anything.&quot; =Christina
+
+SID: &quot;Just that there is other people alive.&quot; =Christina
 
 SID: “If you had the choice to live forever and be all alone.&quot; =Christina 
 
 SID: &quot;OR die normally and have lots of friends, what would you choose?” =Christina
 
-SID: “Honestly, I would pick my mom, but friends is a close second.” =Christina
+SID: “Honestly, I would pick friends.” =Christina
 
-SID: “I’m not saying we are friends or anything…” =Christina
-
-SID: “I’m going to stop talking now.” =Christina
-
-SID: “If you are around, I’d like to hear from you.” =Christina
+SID: “If you&#39;re around, I’d like to hear from you.” =Christina
 
 SID: Would you like to reply with a message? 
 
@@ -13720,18 +13558,16 @@ SID: Would you like to reply with a message?
 
 
 
-</tw-passagedata><tw-passagedata pid="1147" name="Hope Forever" tags="" position="4988,1922.75" size="100,100">Christina: Hey! 
+</tw-passagedata><tw-passagedata pid="1128" name="Hope Forever" tags="" position="4988,1922.75" size="100,100">Christina: Hey! 
 
-Christina: Yeah, there wasn’t many kids in the bunkers growing up. 
+Christina: I been alone most of life, so friends would be nice. 
 
-Christina: I know what it&#39;s like to be alone.
-
-Christina: Another question.  
+Christina: Another question.@wait(10sec)@  
 
 [[Truth&lt;-Ok?]]
 
 
-</tw-passagedata><tw-passagedata pid="1148" name="Hope Friends" tags="" position="5272,1911.75" size="100,100">
+</tw-passagedata><tw-passagedata pid="1129" name="Hope Friends" tags="" position="5272,1911.75" size="100,100">
 Christina: Yeah???
 
 Christina: Yeah, I don’t care for being alone.
@@ -13743,7 +13579,7 @@ Christina: Let’s just say it hasn’t been easy.
 Christina: Another question. 
 
 [[Truth&lt;-What?]]
-</tw-passagedata><tw-passagedata pid="1149" name="Solar Band" tags="" position="1451,291.75" size="100,100">Christina: My band is powered by the reactor wirelessly.
+</tw-passagedata><tw-passagedata pid="1130" name="Solar Band" tags="" position="1451,291.75" size="100,100">Christina: My band is powered by the reactor wirelessly.
 
 Christina: When the reactor goes, everything goes.
 
@@ -13770,7 +13606,7 @@ Christina: Doesn’t really matter.
 Christina: So where are you from? How are you messaging me??? 
 
 
-</tw-passagedata><tw-passagedata pid="1150" name="DISPAIR Exits GO" tags="" position="1759.25,174.25" size="100,100">Christina: Wait, Sam there’s s a body, I see a body…
+</tw-passagedata><tw-passagedata pid="1131" name="DISPAIR Exits GO" tags="" position="1759.25,174.25" size="100,100">Christina: Wait, Sam there’s s a body, I see a body…
 
 Christina: Sam Sam Sam I can’t  can’t do this. 
 
@@ -13779,7 +13615,7 @@ SID: It appears her heart has stopped.
 SID: Connection lost. 
 
 SID: Shall I notify you when I find another signal? 
-</tw-passagedata><tw-passagedata pid="1151" name="Truth" tags="" position="5123,1974.75" size="100,100">Christina: Where are you from, really? 
+</tw-passagedata><tw-passagedata pid="1132" name="Truth" tags="" position="5123,1974.75" size="100,100">Christina: Where are you from, really? 
 
 [[Truth B2&lt;- From a Planet called Utopia.]]@if(UtopiaSam=1)then(show)@
 
@@ -13788,7 +13624,7 @@ SID: Shall I notify you when I find another signal?
 
 
  
-</tw-passagedata><tw-passagedata pid="1152" name="Truth C2" tags="" position="5280,2066.75" size="100,100">Christina: The Utopia Bunker had major malfunctions early on. 
+</tw-passagedata><tw-passagedata pid="1133" name="Truth C2" tags="" position="5280,2066.75" size="100,100">Christina: The Utopia Bunker had major malfunctions early on. 
 
 Christina: Even I know that it was shut down shortly after the Nuclear bombs dropped. 
 
@@ -13796,52 +13632,41 @@ Christina: Are you a rager?
 
 [[Truth C3&lt;-No]]
 
-</tw-passagedata><tw-passagedata pid="1153" name="Truth C3" tags="" position="5120,2178.75" size="100,100">Christina: STOP LYING!
-
-Christina: I found some med&#39;s so I&#39;m in a good mood today. 
+</tw-passagedata><tw-passagedata pid="1134" name="Truth C3" tags="" position="5120,2178.75" size="100,100">Christina: I found some med&#39;s so I&#39;m in a good mood today. 
 
 Christina: Don&#39;t ruin it by lying to me. 
 
-Christina: You now what. 
+[[Planet 1&lt;-I really am from another Planet.]]@(UtopiaSam=1)then(show)@
 
-Christina: Just tell me how we are messaging.
+[[Truth C4&lt;-I really a Bunker.]]@if(BunkerSam=1)then(show)@
 
-Christina: That&#39;s all I want to know right now.
+</tw-passagedata><tw-passagedata pid="1135" name="Truth B2" tags="" position="4977,2064.75" size="100,100">Christina: So you really expect me to believe you are from another planet? 
 
+Christina: And you have reached out to try and communicate with other intelligent life?  
 
-[[Planet Hope A&lt;-I really am from another Planet.]]@(UtopiaSam=1)then(show)@
+[[Truth C3&lt;-Yes]]
 
-[[Bunker Hope A&lt;-I really a Bunker.]]@if(BunkerSam=1)then(show)@
-
-</tw-passagedata><tw-passagedata pid="1154" name="Truth B2" tags="" position="4926,2126.75" size="100,100">Christina: So you really expect me to believe you are from another planet? 
-
-Christina: And you have reach out to try and communicate with other social life?  
-
-Christina: So who would be the alien? 
-
-Christina: You or me???
-
-[[Truth C3&lt;-I really am from another planet.]]
+[[Truth C3&lt;-Something like that.]]
 
 
-</tw-passagedata><tw-passagedata pid="1155" name="Planet Hope A" tags="" position="5065,2318.75" size="100,100">Christina: So you really are Aliens?  
+</tw-passagedata><tw-passagedata pid="1136" name="Planet 1" tags="" position="4959,2270.75" size="100,100">Christina: So you really are Aliens?  
 
 Christina: Reaching out just for contact? 
 
-Christina: I don’t know if it’s the meds or what. 
+Christina: I don’t know if it’s the meds or what.@wait(4sec)@ 
 
-Christina: I believe you! 
+Christina: I believe you...
 
 Christina: Me and my mom believed in aliens. 
 
-Christina: Believe in aliens.
+Christina: Believe in aliens...
 
 Christina: How are we communicating though? 
 
-[[SID Explains.&lt;-SID Dictate.]]
+[[Planet 2&lt;-SID Dictate.]]
 
 
-</tw-passagedata><tw-passagedata pid="1156" name="Bunker Hope A" tags="" position="5220,2329.75" size="100,100">Christina: I like you so far.
+</tw-passagedata><tw-passagedata pid="1137" name="Truth C4" tags="" position="5139,2329.75" size="100,100">Christina: I like you so far.
 
 Christina: Please stop lying. 
 
@@ -13849,15 +13674,15 @@ Christina: My mom was trying to get in touch with other bunkers for over a year.
 
 Christina: All of a sudden you are around? I don&#39;t buy it.
 
-Christina: You seem to sophisticated to be a rager. 
+Christina: You seem too smart to be a rager. 
 
 Christina: Please, just tell me how we are messaging. 
 
-[[Bunker&lt;-Why do you think I&#39;m lying?]]
+[[Bunker &lt;-Why do you think I&#39;m lying?]]
 
-[[SID Explains.&lt;-Fine, I lied. SID Dictate.]]
+[[Planet 2&lt;-Fine, I lied. SID Dictate.]]
 
-</tw-passagedata><tw-passagedata pid="1157" name="Bunker" tags="" position="5284,2472.75" size="100,100">Christina: Where have you been this whole time? 
+</tw-passagedata><tw-passagedata pid="1138" name="Bunker " tags="" position="5284,2472.75" size="100,100">Christina: Where have you been this whole time? 
 
 Christina: Me and mom were sending messages for over a year and got nothing.
 
@@ -13871,7 +13696,7 @@ Christina: Then all of a sudden here you are.
 
 [[Bunker C&lt;-We never got a message.]]
 
-</tw-passagedata><tw-passagedata pid="1158" name="Bunker A" tags="" position="5051,2491" size="100,100">Christina: Wait...
+</tw-passagedata><tw-passagedata pid="1139" name="Bunker A" tags="" position="5051,2491" size="100,100">Christina: Wait...
 
 Christina: No.
 
@@ -13885,45 +13710,47 @@ Christina: She handled everything.
 
 Christina: What can I do alone? 
 
-[[Bunker 2A&lt;-Are you ok?]]
+[[Bunker 2A&lt;-What do you mean?]]
 
 
 
-</tw-passagedata><tw-passagedata pid="1159" name="Bunker 2" tags="" position="5246,2607" size="100,100">Christina: What do you mean new?
+</tw-passagedata><tw-passagedata pid="1140" name="Bunker 2" tags="" position="5246,2607" size="100,100">Christina: What do you mean new?
 
-[[Bunker B2&lt;- New to the bunker]]
+[[Bunker B2&lt;- New to the Bunker]]
 
-[[Bunker A2&lt;- New to the Job]]</tw-passagedata><tw-passagedata pid="1160" name="Bunker C" tags="" position="5457,2548" size="100,100">Christina: I don’t believe you. 
+[[Bunker A2&lt;- New to the job]]</tw-passagedata><tw-passagedata pid="1141" name="Bunker C" tags="" position="5457,2548" size="100,100">Christina: I don’t believe you. 
 
 [[Bunker A2&lt;- I&#39;m telling the truth.]]@if(Trust&gt;5)then(Show)@
 
 [[NB D&lt;- I&#39;m telling the truth.]]@if(Trust&lt;5)then(Show)@
 
-</tw-passagedata><tw-passagedata pid="1161" name="Bunker B2" tags="" position="5156,2740" size="100,100">Christina: That means it&#39;s clean out there?
+</tw-passagedata><tw-passagedata pid="1142" name="Bunker B2" tags="" position="5156,2740" size="100,100">Christina: That means it&#39;s clean out there?
 
-[[Bunker B3&lt;-Where?]]</tw-passagedata><tw-passagedata pid="1162" name="Bunker A2" tags="" position="5321,2757" size="100,100">Christina: So you guys are still active? 
+[[Bunker B3&lt;-Where?]]</tw-passagedata><tw-passagedata pid="1143" name="Bunker A2" tags="" position="5321,2757" size="100,100">Christina: So you guys are still active? 
 
 Christina: That’s so amazing to hear. 
 
-[[Bunker A3&lt;- What do you mean active?]]</tw-passagedata><tw-passagedata pid="1163" name="Bunker B3" tags="" position="5011,2760" size="100,100">Christina: Wait! Does that mean my mom is alive???
+[[Bunker A3&lt;- What do you mean active?]]</tw-passagedata><tw-passagedata pid="1144" name="Bunker B3" tags="" position="5011,2760" size="100,100">Christina: Wait! 
 
-Christina: If you are new to the bunker that means the air is breathable and my mom didn&#39;t die outside.
+Christina: That means my mom could still be alive???
+
+Christina: If you are new to the bunker then the air must be breathable and my mom didn&#39;t die outside.
 
 Christina: Right!?
 
 Christina: Well, at least not by the air!
 
-Christina: Sam!!! That&#39;s amazing news!!!
+Christina: Sam!!! That&#39;s amazing!
 
-[[Bunker 3&lt;-This mom left you?]] </tw-passagedata><tw-passagedata pid="1164" name="Bunker END." tags="" position="4596,2804" size="100,100">SID: Logged off abruptly =Christina.  
+[[Bunker 3&lt;-Your mom left you?]] </tw-passagedata><tw-passagedata pid="1145" name="Bunker Exit B" tags="" position="4508,2804" size="100,100">SID: Logged off abruptly =Christina.@wait(5sec)@ 
 
 SID: I&#39;m picking up small trace psyche instability in her communication.
 
-SID: Unhealthy dependance =Mom
+SID: Unhealthy dependance =On Mom
 
-[[Leaving Bunker&lt;-Let me know when we hear back from her.]]
+[[Reactor Shutdown&lt;-Let me know when we hear back from her.]]
 
-[[Clem Disclose 2&lt;-Yes, it&#39;s bestI notify Hierarch Clementine of my findings.]]</tw-passagedata><tw-passagedata pid="1165" name="Bunker 2A" tags="" position="4939,2571" size="100,100">Christina: I’m tired of the chaos. 
+[[Clem Disclose B&lt;-Yes, it&#39;s best I notify Hierarch Clementine of my findings.]]</tw-passagedata><tw-passagedata pid="1146" name="Bunker 2A" tags="" position="4939,2571" size="100,100">Christina: I’m tired of the chaos. 
 
 Christina: All I can do is cry anymore.
 
@@ -13931,20 +13758,154 @@ Christina: Why did she leave her daughter alone.
 
 Christina: I don’t want to have the deal with this crap anymore.
 
-[[Bunker 3A&lt;-Your mom left you?]]</tw-passagedata><tw-passagedata pid="1166" name="Bunker 3A" tags="" position="4780,2655" size="100,100">Christina: She had too!
+[[Bunker Exit&lt;-What happened?]]</tw-passagedata><tw-passagedata pid="1147" name="Bunker Exit" tags="" position="4501,2685" size="100,100">Christina: Let’s not get into it.
 
-Christina: It&#39;s her...
+Christina: I just
 
-SID: Logged off abruptly =Christina.  
+SID: Logged off abruptly =Christina.@wait(5sec)@  
 
 SID: I&#39;m picking up traces of psyche instability in her communication.
 
 SID: Unhealthy dependance =Mom
 
-[[Leaving Bunker&lt;-Let me know when we hear back from her.]]
+[[Reactor Shutdown&lt;-Let me know when we hear back from her.]]
 
-[[Clem Disclose 2&lt;-Yes, it&#39;s bestI notify Hierarch Clementine of my findings.]]
-</tw-passagedata></tw-storydata>
+[[Clem Disclose B&lt;-Yes, notify Hierarch Clementine I need to speak to her.]]</tw-passagedata><tw-passagedata pid="1148" name="Planet 5" tags="" position="4427,2447" size="100,100">Christina: I don&#39;t want to get into it. 
+
+Christina: So you saw all my messages I sent?@wait(5sec)@
+
+[[Planet Exit&lt;-Yes, we did.]]</tw-passagedata><tw-passagedata pid="1149" name="Planet Exit" tags="" position="4485,2570" size="100,100">Christina: Sorry for some of those. 
+
+Christina: More bad days than good. 
+
+Christina: Honestly, I didn’t think anybody would see them. 
+
+Christina: Some da
+
+SID: Logged off abruptly =Christina.@wait(5sec)@
+
+SID: Unhealthy dependance =Mom
+
+SID: Something is off. 
+
+SID: She mentoned medicine =Interesting.
+
+[[Reactor Shutdown&lt;-Let me know when we hear back from her.]]
+
+[[Clem Disclose A&lt;-Yes, notify Hierarch Clementine that I need to speak to her.]]
+
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="1150" name="Reactor Shut down 4A" tags="" position="3238,2646" size="100,100">
+Christina: I don’t know how it is where you live. 
+
+Christina: What if I can&#39;t breathe the surface air and fall dead.
+
+Christina: For all I know my mom died as soon as she stepped otuside the bunker.
+
+Christina: I guess I could leave and die next to her I guess.
+
+Christina: Kinda poetic.
+
+Christina: Easier than trying to go out there and face whatever is alive.
+
+
+[[Reactor Shut down 4B 2&lt;-What do you mean?]]</tw-passagedata><tw-passagedata pid="1151" name="Reactor Shut down 4B 2" tags="" position="3032,2478" size="100,100">Christina: I don&#39;t know I&#39;m just.@wait(4sec)@
+
+Christina: I mean... 
+
+Christina: The reactor keeps the lights, air and water circulating. 
+
+Christina: Mom always said it was a bad setup, she was super smart.
+
+Christina: I bet she could have fixed it. 
+
+Christina: If I could get it fixed though, then I could just wait and see.
+
+
+[[Mom&#39;s Pistol&lt;- What did you mean on your own terms earlier?]]@if(Trust&gt;5)then(show)@
+
+[[Mom&#39;s Pistol fail&lt;- What do you mean on your own terms?]]@if(Trust&lt;5)then(show)@
+
+[[Happened to Mom 1&lt;- Why did she leave?]]
+
+[[Find mom 1&lt;- Maybe she is still alive and you can find her.]]</tw-passagedata><tw-passagedata pid="1152" name="Mom&#39;s Pistol fail" tags="" position="2887,2392" size="100,100">Christina: I’m not really in the mood to talk about it.
+
+Christina: Sorry.
+
+[[Happened to Mom 2B&lt;-Where did she go?]]@if(Bunker=1)then(show)@
+
+[[Happened to Mom 2P&lt;-So she left you alone in a bunker that was breaking down?]]@if(UtopiaSam=1)then(show)@</tw-passagedata><tw-passagedata pid="1153" name="Reactor Shut OPtions 4B2" tags="" position="3615,2634" size="100,100">Christina: If I can’t fix the generator. 
+
+Christina: Then die from oxygen loss or dehydration.
+
+Christina: If the reactor gets fixed. 
+
+Christina: We become best friends forever or I die from insaity!   
+
+Christina: Or I could take my mom’s way out. 
+
+[[Reactor Shut down 4B3&lt;- You mean leave?]] 
+
+[[Reactor Shut down 4B&lt;-Why not leave?]]@if(BunkerSam=1)then(show)@
+
+[[Reactor Shut down 4A&lt;-Why don&#39;t you leave?]]@if(UtopiaSam=1)then(show)@</tw-passagedata><tw-passagedata pid="1154" name="Reactor Shut down 4B3" tags="" position="3490,2753" size="100,100">Christina: Not exactly. 
+
+
+[[Reactor Shut down 4B4&lt;-What do you mean?]]@if(Trust&lt;5)then(show)@
+
+[[Mom&#39;s Pistol&lt;- What do you mean?]]@if(Trust&gt;5)then(show)@</tw-passagedata><tw-passagedata pid="1155" name="Reactor Shut down 4B4" tags="" position="3396,2538" size="100,100">Christina: I don’t want to get into it. 
+
+[[Reactor Shut down 4B&lt;-Why not leave then?]]@if(BunkerSam=1)then(show)@
+
+[[Reactor Shut down 4A&lt;-Why don&#39;t you leave?]]@if(UtopiaSam=1)then(show)@</tw-passagedata><tw-passagedata pid="1156" name="Happened to Mom 2P" tags="" position="2833,2559" size="100,100">Christina: What?
+
+Christina: She took a radioactive suit and went out to be great!
+
+Christina: Don&#39;t jude her!!! 
+
+Christina: I don’t expect an alien to understand ok.
+
+Christina: I’m sorry. I didn’t mean that.@wait(5sec)@
+
+[[Leaving Bunker 5B2&lt;- I&#39;m sorry too.]]@set(Trust+2)@
+
+[[Leaving Frustrated&lt;-Your mom is twisted.]]@set(Trust-2)@
+ 
+</tw-passagedata><tw-passagedata pid="1157" name="Leaving Frustrated" tags="" position="2550,2744" size="100,100">Christina: Don&#39;t you ever talk about her like that ok!! 
+
+Christina: Who do you think you are??? 
+
+Christina: High and mighty!! 
+
+Christina: She did what she thought she needed to do to help the human race!!! 
+
+Christina: I&#39;m done, thanks for ruing this.
+
+[[Onward&lt;-Christina?]]@wait(5sec)@
+
+</tw-passagedata><tw-passagedata pid="1158" name="Leaving Bunker 6P" tags="" position="2971,2833" size="100,100">Christina: You guys don’t have guns? 
+
+Christina: They are used to kill and defend your self.
+
+Christina: With the trigger of a gun we killed other humans. 
+
+
+[[Leaving Bunker 6P2&lt;- She gave it to you to defend your self?]]
+</tw-passagedata><tw-passagedata pid="1159" name="Leaving Bunker 6P2" tags="" position="2836,2826" size="100,100">Christina: Against my own insanity maybe.
+
+Christina: Look, she had to leave ok. 
+
+[[Happened to Mom 2P&lt;-And left you alone with a killing device?]]@if(UtopiaSam=1)then(show)@</tw-passagedata><tw-passagedata pid="1160" name="Leaving Bunker 5B2" tags="" position="2555,2574" size="100,100">Christina: It&#39;s fine.
+
+[[Find mom 1&lt;- Why not leave and go search for her.]]
+</tw-passagedata><tw-passagedata pid="1161" name="INTRO Final Push" tags="" position="1393.75,3127" size="100,100">SID: Incoming message.@wait(5sec)@
+
+[[Christina Final Push&lt;-Show me.]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,o=!1,i=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(o)throw i}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
