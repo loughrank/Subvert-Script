@@ -1280,7 +1280,7 @@ Christina: In the bunker you felt like you knew the whole world, you know? Like 
 
 Christina: Have you ever felt that way?@wait(4sec)##set(Steps=0)@
 
-[[Can you take a closer look?-&gt;No Viewing]]@if(Rifle=1)then(hide)@
+[[Can you take a closer look?-&gt;No Viewing]]@if(Rifle=1)then(hide)##set(Cynicism+1)@
 
 [[Viewing Rifle&lt;-Can you see anything from there?]]@if(Rifle=1)then(show)##set(Cynicism+1)@
 
@@ -1308,7 +1308,7 @@ Christina: I can&#39;t tell anything else from here.
 
 [[Can you take a closer look?-&gt;Viewing Rifle]]@if(Rifle=1)then(show)@
 
-[[We are wasting time, go back.-&gt;Back from Ridge]]@set(Cynicism+1)@</tw-passagedata><tw-passagedata pid="81" name="Read Receipt" tags="" position="1204,2181" size="100,100">SID: Seems to be distressed =Christina. 
+[[We are wasting time, go back.-&gt;Leave Ridge]]@set(Cynicism+1)@</tw-passagedata><tw-passagedata pid="81" name="Read Receipt" tags="" position="1204,2181" size="100,100">SID: Seems to be distressed =Christina. 
 
 SID: Interaction =Dangerous
 
@@ -1334,48 +1334,49 @@ Christina: That&#39;s about all I can see.
 
 [[Can you take a closer look?-&gt;Viewing Rifle]]@if(Rifle=1)then(show)@
 
-[[We are wasting time, go back.-&gt;Back from Ridge]]@set(Cynicism+1)@</tw-passagedata><tw-passagedata pid="83" name="Viewing Rifle" tags="" position="3529,8656" size="100,100">Christina: The rifle has a scope on it, so maybe.
+[[We are wasting time, go back.-&gt;Leave Ridge]]@set(Cynicism+1)@</tw-passagedata><tw-passagedata pid="83" name="Viewing Rifle" tags="" position="3529,8656" size="100,100">Christina: The rifle has a scope on it, so maybe.
 
-Christina: Okay. I see some big dome in the distance. It looks completely artificial, like somebody decided to build a big, smooth, mountain. 
+Christina: Hold on.@wait(10sec)@ 
 
-Christina: It&#39;s HUGE! 
+Christina: Tree’s, Tree’s, and more Tree’s, 
 
-Chrisitna: You can see the seams from here. There&#39;s no trees on it, and it looks too steep for anything anyway.
+Christina: Oh wait… Mountain. 
 
-Christina: Maybe it&#39;s some kind of shelter from the war?
+Christina: More Tree’s.
 
-Christina: Oh wait, there is a town.
+Christina: Woah.
 
-Christina: Oh.@wait(5sec)@
+[[What?-&gt;Viewing Rifle 2]]
 
-Christina: The town looks rough.
+[[Another tree?-&gt;Viewing Rifle 2]]
 
-Christina: The streets are covered in trash, and there&#39;s like holes in all the walls. 
 
-Christina: I see... I see someone, though! It looks like a kid, playing in the trash!@set(Heart=2)@
 
-Christina: A real live kid, Sam!
 
-[[I hope so.-&gt;Kid]]
 
-[[Stay focused.-&gt;Focused]]@set(Trust+1)@</tw-passagedata><tw-passagedata pid="84" name="Kid" tags="" position="3608,8769" size="100,100">
-Christina: Me too, Sam.@set(Steps=1)@
 
-Christina: I never talked to another kid before! 
+</tw-passagedata><tw-passagedata pid="84" name="Kid" tags="" position="3598,8914" size="100,100">
+Christina: Yeah. He is skinny and has like a mask on or something.@set(Steps=1)@
 
-Christina: Kinda nervous.
+Christina: I think it&#39;s an  old gas mask.
 
-Christina: What if he tries to eat me?
+Christina: What if he is a Rager?@set(Steps=0)@
+
+Christina: What if there is more of them? 
+
+Christina: Oh no. 
 
 [[KId 2&lt;-What?]] 
 
 
 
-</tw-passagedata><tw-passagedata pid="85" name="Focused" tags="" position="3418,8810" size="100,100">Christina: Yeah. you are right. 
+</tw-passagedata><tw-passagedata pid="85" name="Focused" tags="" position="3347,8895" size="100,100">Christina: Yeah. you are right. 
 
-Christina: I&#39;ll check out the rest of this place, first, but I&#39;m sure my mom passed by there!@set(Steps=1)##set(Heart=1)@
+Christina: Shouldn&#39;t get ahead of my self.@set(Steps=1)@
 
-[[Yeah, head back.-&gt;Back from Ridge]]</tw-passagedata><tw-passagedata pid="86" name="Blood" tags="" position="1141,8533" size="100,100">
+Christina: I have one more pill. I think I&#39;m going to take it.
+
+[[Are you ok?-&gt;Leave Ridge]]</tw-passagedata><tw-passagedata pid="86" name="Blood" tags="" position="1141,8533" size="100,100">
 Christina: Its blood!@wait(10sec)##set(Heart=2)@
 
 Christina: The smell is blood.@set(Steps=0)@ 
@@ -13462,7 +13463,7 @@ Christina: Ok…@wait(5sec)@
 
 Christina: So I&#39;m here, standing in this little clearing.@set(Heart=1)@
 
-Christina: I think it&#39;s a radio tower and there&#39;s this building underneath it.
+Christina: I think it&#39;s a radio tower.
 
 Christina: It&#39;s seen better days. The door is bashed in.
 
@@ -13567,11 +13568,11 @@ Christina: Any other thoughts?
 [[Open the Hatch-&gt;No Hatch]]@if(Trust&lt;4)then(hide)@
 
 [[Go Back-&gt;Back to Start]]
-</tw-passagedata><tw-passagedata pid="1154" name="Back from Ridge" tags="" position="3217,8814" size="100,100">Christina: Yeah, ok.
+</tw-passagedata><tw-passagedata pid="1154" name="Leave Ridge" tags="" position="3217,8814" size="100,100">Christina: Yeah. 
 
-Christina: Where should I go?.@set(Steps=1)@
+Christina: Where should I go next?@set(Steps=1)@
 
-[[Walk Building&lt;-Go to the building.]]@set(Tower Task+1)@
+[[Walk Building&lt;-Go to the building.]]
 
 [[Walking Wreck&lt;-Check out the wreck.]]</tw-passagedata><tw-passagedata pid="1155" name="Radio Tower Clearing 1.5" tags="" position="1946,7885" size="100,100">Christina: I have literally never walked that much.
 
@@ -13616,27 +13617,85 @@ Christina: What do you think I should do?
 
 [[Go Back-&gt;Back to Start]]</tw-passagedata><tw-passagedata pid="1157" name="Walk Building" tags="" position="2508,8101" size="100,100">Christina: Heading over.
 
-[[Building Entry&lt;-Ok]]</tw-passagedata><tw-passagedata pid="1158" name="No Viewing" tags="" position="3376,8659" size="100,100">Christina: Um, I didn’t see any binoculars in the bag. 
+[[Building Entry&lt;-Ok]]</tw-passagedata><tw-passagedata pid="1158" name="No Viewing" tags="" position="3366,8659" size="100,100">Christina:  Straight to business, huh...
+
+Christina: Um, I didn’t see any binoculars in the bag. 
 
 Christina: Which is kinda surprising.
 
 Christina: The pistol doesn&#39;t have a scope or anything either.
 
-Christina: So all I can see is trees and mountains, a small town and a big dome way off in the distance.
+Christina: So all I can see is trees and mountains. 
 
-Christina: But that&#39;s about  it.
+Christina: Wait I see some dome way off in the distance.
 
-[[We are wasting time, check out somewhere else.-&gt;Back from Ridge]]
-</tw-passagedata><tw-passagedata pid="1159" name="KId 2" tags="" position="3568,8893" size="100,100">Christina: I’m just saying, how do we know he is civilized.
+Christina: There is a little town actually.
 
-Christina: I know I mentioned Ragers to you before. 
+Christina: I can&#39;t make much of it.
 
-Christina: I heard they eat people...
+Christina: But that&#39;s about it.
+
+Christina: What if we go down to the town instead of staying up here?
+
+[[We are wasting time, you should continue up here.-&gt;Leave Ridge]]
+
+[[What about the Dome?-&gt;Dome?]]
+
+[[You want to leave?-&gt;Leave Early]]
+
+
+</tw-passagedata><tw-passagedata pid="1159" name="KId 2" tags="" position="3474,8904" size="100,100">Christina: What if he has my mom? 
+
+Christina: I’m just saying, how do we know he is civilized.
+
+Christina: I heard ragers, they eat people...
 
 Christina: For fun!
 
 [[Focused&lt;-Just focus.]] 
 
+</tw-passagedata><tw-passagedata pid="1160" name="Dome?" tags="" position="3724,8665" size="100,100">Christina: Yeah, probably some other shelter or something.@set(Heart=1)@ 
+
+Christina: My mom said there was a point during the war they were building some weird stuff trying to win.
+
+Christina: She never got deep into it or anything. 
+
+Christina: She said it was so far in the past it wasn’t worth getting into the details. 
+
+Christina: IDK. 
+</tw-passagedata><tw-passagedata pid="1161" name="Viewing Rifle 2" tags="" position="3548,8783" size="100,100">Christina: I see some big dome in the distance. It looks completely artificial, like somebody decided to build a big, smooth, mountain. 
+
+Christina: It&#39;s HUGE! 
+
+Chrisitna: You can see the seams from here. There&#39;s no trees on it or anything just an ugly big dome.
+
+Christina: Maybe it&#39;s some kind of shelter from the war?
+
+Christina: Wait, wait, wait.@set(Heart=2)@
+
+Christina: There is a town too a little bit closer.
+
+Christina: Oh.@wait(5sec)@
+
+Christina: The town looks rough.
+
+Christina: The streets are covered in trash, and there&#39;s like holes in all the walls. 
+
+Christina: I see... I see someone, though! It looks like a kid, playing in the trash!
+
+Christina: A real live kid, Sam!
+
+[[Another Human?-&gt;Kid]]
+
+[[What about this dome?-&gt;Dome?]]
+
+[[Stay focused.-&gt;Focused]]@set(Trust+1)@
+
+</tw-passagedata><tw-passagedata pid="1162" name="Leave Early" tags="" position="3812,8862" size="100,100">Christina: What am I going to learn up here about my mom. 
+
+Christina: What am I going to find inside an abandoned radio tower?
+
+Christina: I just want to find my mom, that&#39;s it.
 </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,o=!1,i=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(o)throw i}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
