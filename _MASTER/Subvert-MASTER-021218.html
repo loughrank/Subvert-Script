@@ -149,7 +149,11 @@
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
 
 
 
@@ -315,9 +319,9 @@ HI-CLEM: Is it not said, &quot;blessed are they who build the world, for they ar
 
 HI-CLEM: It is, and your work with the artificial intelligence program is blessed indeed. You are a remarkable servant and I&#39;m glad you were created.
 
-HI-CLEM: Sam, I&#39;m going to allow you a quarter of a day off tomorrow. Reflect on the gifts you have been given and what great good you contribute to our world.@wait(3Sec)@
+HI-CLEM: Sam, I&#39;m going to allow you a quarter of a day off tomorrow. Reflect on the gifts you have been given, and what great good you contribute to our world.@wait(3Sec)@
 
-HI-CLEM: However, finding freedom in your work and not in joy is essential. 
+HI-CLEM: However, finding freedom in your work, and not in your leisure, is essential. 
 
 HI-CLEM: May our frequencies align.
 
@@ -375,7 +379,7 @@ HI-CLEM: Allow this thought to focus you, Sam. Your work is excellent, and it pa
 
 [[8AA&lt;-No.]]</tw-passagedata><tw-passagedata pid="9" name="8AA" tags="" position="802,759" size="100,100">HI-CLEM: Before I leave you, I will remind you of something. 
 
-HI-CLEM: You were made as an engineer for a reason. Though you have many important responsibilities, you should feel honored.
+HI-CLEM: You were made as an engineer for a reason. Though your responsibilities are demanding, you should feel honored.
 
 HI-CLEM: Is it not said, &quot;blessed are they who build our world, for they are most like our creators?&quot;.
 
@@ -383,7 +387,7 @@ HI-CLEM: It is, and your work with the AI program is blessed indeed. You are a r
 
 HI-CLEM: Sam, I&#39;m going to allow you a quarter of a day off tomorrow. Take the time to reflect on the gifts you have been given and what great good you contribute to our world.@wait(3Sec)@
 
-HI-CLEM: Don&#39;t forget though, Pride in your work beyond completion is all that matters. 
+HI-CLEM: Don&#39;t forget though, Pride in work well-rendered is the only pride, and leisure gains no ground.
 
 HI-CLEM: Why shall we enjoy this life?
 
@@ -723,7 +727,7 @@ SID: I will alert you when free.
 
 [[Mess Hall B&lt;-I should take care of my mess hall duties anyways.]]@if(Mess Hall=1)then(Hide)@
 
-[[Waste Duty B&lt;-I need to take care of my waste assignement now.]]@if(Waste Duty=1)then(Hide)@
+[[Waste Duty B&lt;-I need to take care of my waste assignment now.]]@if(Waste Duty=1)then(Hide)@
 
 
 
@@ -886,7 +890,7 @@ HI-CLEM: Go back to whatever it is you were doing.
 
 HI-CLEM: Make sure you install the Monitoring Package. It is. Upmost importance.@(Monitoring Package=1)then(Hide)@
 
-HI-CLEM: Looks like you still have assignements to do. Complete them before end of the day.@if(Assignement&lt;2)then(Show)@
+HI-CLEM: Looks like you still have assignments to do. Complete them before end of the day.@if(Assignment&lt;2)then(Show)@
 
 HI-CLEM: May our frequencies align.
 
@@ -1779,7 +1783,7 @@ Christina: Then how are you an explorer?
 
 System: ...WELCOME TO THE UTOPIA NETWORK INTERFACE...@wait(4Sec)@
 
-System: Face Graph Security Scan =Emmencing
+System: Face Graph Security Scan =Commencing
 
 System: FGSS =Complete@wait(5Sec)@
 
@@ -1801,9 +1805,9 @@ System: WELCOME =SAM(27)
 
 System: PRIVILEGE LEVEL  =ENGINEER CLASS 2
 
-[[Assignments Main&lt;-What are my assignements for the day?]]
+[[Assignments Main&lt;-What are my assignments for the day?]]
 
-[[Assignments Main&lt;-Give me my assignements.]]
+[[Assignments Main&lt;-Give me my assignments.]]
 
 
 
@@ -1824,9 +1828,9 @@ System: Waste Duty under Hierarch Esther
 
 [[Assignments Fasting&lt;-Cooking?]]@if(PathContains=Assignments Fasting)then(hide)##set(Job+1)@
 
-[[i5a&lt;-If I keep making little mistakes, they will be sure to catch on to me.]]@if(Job=3)then(Show)@</tw-passagedata><tw-passagedata pid="122" name="Assignments AI" tags="" position="331,406" size="100,100">HI-CLEM: DESCRIPTION =There continues to be unusual goings-on in the AI warehouse. I have decided to implement Increased surveillance. During your rounds today, update the servers with the new monitoring package. Give it a few tests, and report back. - HIERARCH CLEMENTINE -
+[[i5a&lt;-Lot of extra tasks today. I&#39;ve got to be more careful.]]@if(Job=3)then(Show)@</tw-passagedata><tw-passagedata pid="122" name="Assignments AI" tags="" position="331,406" size="100,100">HI-CLEM: DESCRIPTION =There continues to be unusual goings-on in the AI warehouse. I have decided to implement increased surveillance. During your rounds today, update the servers with the new monitoring package. Give it a few tests, and report back. - HIERARCH CLEMENTINE -
 
-[[Assignments Main&lt;-I&#39;m glad I upgraded SID earlier, it will help against the monitoring package.]]
+[[Assignments Main&lt;-I&#39;m glad I upgraded SID earlier, it will help against this new monitoring package.]]
 
 [[Assignments Main&lt;-If they only knew...]]
 </tw-passagedata><tw-passagedata pid="123" name="Assignments Wasteful" tags="" position="376,277" size="100,100">HI-ESTHER: DESCRIPTION =Based on your behavior last week, you have been identified as exceptionally wasteful. You&#39;re on waste-processing duty until I say otherwise. - HIERARCH ESTHER -
@@ -1834,20 +1838,20 @@ System: Waste Duty under Hierarch Esther
 
 [[Assignments Main&lt;-I knew I forgot the lights the other night.]]
 
-[[Assignments Main&lt;-It&#39;s starting to make me careless mistakes.]]</tw-passagedata><tw-passagedata pid="124" name="Assignments Fasting" tags="" position="506,351" size="100,100">HI-FIELDS: DESCRIPTION =Today, you will bring joy to your brother and sisters. You will cook for them in the mess hall under my direct supervision. Our food will remind them of how beautiful this life is. You may not join them, your fast will strengthen your discipline. - HIERARCH FIELDS -
+[[Assignments Main&lt;-I&#39;m starting to make careless mistakes, it seems.]]</tw-passagedata><tw-passagedata pid="124" name="Assignments Fasting" tags="" position="506,351" size="100,100">HI-FIELDS: DESCRIPTION =Today, you will bring joy to your brothers and sisters. You will cook for them in the mess hall under my direct supervision. Our food will remind them of how beautiful this life is. You may not join them. Your fast will strengthen your discipline. - HIERARCH FIELDS -
 
-[[Assignments Main&lt;-I always feel more intune after fasting anyways.]]
+[[Assignments Main&lt;-I always feel more in tune after fasting anyway.]]
 
-[[Assignments Main&lt;-My vibration always gets heavy arounds Fields.]]
+[[Assignments Main&lt;-My vibration always gets heavy arounds Hierarch Fields.]]
 
 
 </tw-passagedata><tw-passagedata pid="125" name="i6A" tags="" position="1076,751" size="100,100">[[i6A22&lt;-I hope Clementine isn&#39;t suspicious. I believe it would bring pain to her if she found out.]]@music(MainTrack)@
 
-[[i6A22&lt;-Clem has been there since my creation, why do I feel so connected to her though, we are not the same.]]@music(MainTrack)@</tw-passagedata><tw-passagedata pid="126" name="Results Success" tags="" position="3064,919" size="100,100">SID: Hello, Sam.@wait(45Min)@
+[[i6A22&lt;-Clem has been there since my creation. Why do I feel so connected to her though? We are not the same.]]@music(MainTrack)@</tw-passagedata><tw-passagedata pid="126" name="Results Success" tags="" position="3064,919" size="100,100">SID: Hello, Sam.@wait(45Min)@
 
 SID: I have good news.
 
-SID: I seemed to have found something interesting. 
+SID: I seem to have found something interesting. 
 
 SID: Shall I display the report?
 
@@ -10352,14 +10356,18 @@ Christina: Oh, man. I think this place is ... a museum?
 
 Christina: No way. I&#39;m going to check it out.
 
-[[Forward-&gt;B224BBA]]</tw-passagedata><tw-passagedata pid="839" name="PS1" tags="" position="0,176" size="100,100">System: Incorrect Guess
+[[Forward-&gt;B224BBA]]</tw-passagedata><tw-passagedata pid="839" name="PS1" tags="" position="0,176" size="100,100">System: Password Incorrect
 
-System: Select again 
+System: Input =Password
+
+System: FINAL ATTEMPT@if(PathContains=PS2)then(Show)@
 
 [[i3A&lt;-Se3kTruTH]] 
-[[PS2&lt;-Hi3r4rch]]@set(Suspicion+1)##if(PathContains=PS2)then(Hide)@</tw-passagedata><tw-passagedata pid="840" name="PS2" tags="" position="328,161" size="100,100">System: Incorrect Guess
+[[PS2&lt;-Hi3r4rch]]@set(Suspicion+1)##if(PathContains=PS2)then(Hide)@</tw-passagedata><tw-passagedata pid="840" name="PS2" tags="" position="328,161" size="100,100">System: Password Incorrect
 
-System: Select again. 
+System: Input =Password
+
+System: FINAL ATTEMPT@if(PathContains=PS1)then(Show)@
 
 [[i3A&lt;-Se3kTruTH]] 
 [[PS1&lt;-theirLIGHT]]@set(Suspicion+1)##if(PathContains=PS1)then(Hide)@</tw-passagedata><tw-passagedata pid="841" name="Onaiau Mass Announcement" tags="" position="844,2695" size="100,100">System: Incoming =Hierarch Mass Message.@wait(15Min)@ 
@@ -10437,7 +10445,7 @@ System: Heresy =Ibrida recycling
 
 [[Server Choice&lt;-Being an engineer has its perks, I guess.]]
 
-[[Server Choice&lt;-Being recycled brings on interesting thoughts.]]
+[[Server Choice&lt;-Let's try not to get recycled, today.]]
 </tw-passagedata><tw-passagedata pid="848" name="Monitoring Package Confirm" tags="" position="1752,478" size="100,100">System: ACCESSING AI WAREHOUSE =SERVER 43
 
 System: Locating =Security Server 137
@@ -10452,7 +10460,7 @@ System: Run time of completion =1hour
 
 System: Confirm
 
-[[Monitoring Package Complete&lt;-Patience is a virtue, confirm.]]@set(Monitoring Package+1)##set(Assignment+1)##set(Suspicion-2)@
+[[Monitoring Package Complete&lt;-Patience is a virtue. Confirm.]]@set(Monitoring Package+1)##set(Assignment+1)##set(Suspicion-2)@
 
 [[Confirm Exit&lt;-I don&#39;t want to wait. Intiate SID.]]</tw-passagedata><tw-passagedata pid="849" name="Clementine&#39;s thoughts on Arrival B" tags="" position="950,3092" size="100,100">HI-CLEM: Pardon your self, Sam. 
 
@@ -10468,29 +10476,29 @@ System: Locating =Waste Server 90036
 
 System: Arriving@wait(10Sec)@
 
-System: Confirm install =S.I.D V4.9
+System: Confirm install =S.I.D. V4.9
 
 [[Installing SID&lt;- Confirm.]]
 
-[[Monitoring Package Confirm&lt;- Discipline, I should do the Monitoring Package firt.]]@if(PathContains=Monitoring Package Complete)then(Hide)@
+[[Monitoring Package Confirm&lt;- I should really get the Monitoring Package install done first...]]@if(PathContains=Monitoring Package Complete)then(Hide)@
 
-</tw-passagedata><tw-passagedata pid="851" name="Monitoring Package Complete" tags="" position="2068,528" size="100,100">System: Confirmed.
+</tw-passagedata><tw-passagedata pid="851" name="Monitoring Package Complete" tags="" position="2068,528" size="100,100">System: Confirmed
 
 System: Notification upon Completion 
 
 System: Monitoring Package =Complete@wait(1Hour)@
 
-[[Confirm SID&lt;-Now that&#39;s done, lets see if SID found anything.]]</tw-passagedata><tw-passagedata pid="852" name="SID INTRODUCTION" tags="" position="1921,922" size="100,100">SID: Hello, Sam =Greeting. 
+[[Confirm SID&lt;-Now that that&#39;s done, lets see if SID found anything.]]</tw-passagedata><tw-passagedata pid="852" name="SID INTRODUCTION" tags="" position="1921,922" size="100,100">SID: Hello, Sam =Greeting. 
 
 SID: Nice to see you =N/A. 
 
 SID: I have good news =Success.
 
-SID: With the addition of the Bio-Learning Processor Upgrade, I was able to adapt &amp; conduct the frequency Search while subjected in the cloud. =Accomplishment.
+SID: With the addition of the Bio-Learning Processor Upgrade, I was able to adapt and conduct the Frequency Search subroutine while subjected in the cloud =Accomplishment.
 
-SID: Also, I have enough information to guess your responses up to 98.9% success rate. =Initiating Automated Text response.
+SID: Also, I have enough information to guess your responses up to 98.9% success rate =Initiating Automated Text Response.
 
-[[CRA Deactivated&lt;- SID, your CRA seems to be active, deactivate it.]]</tw-passagedata><tw-passagedata pid="853" name="CRA Deactivated" tags="" position="2044,915" size="100,100">SID: Conversation Response Analysis activated during initiating sequence from the cloud =Malfunction.
+[[CRA Deactivated&lt;- SID, your CRA seems to be active -- deactivate it.]]</tw-passagedata><tw-passagedata pid="853" name="CRA Deactivated" tags="" position="2044,915" size="100,100">SID: Conversation Response Analysis activated during initiating sequence from the cloud =Malfunction.
 
 SID: Showing you my thought process =Embarrassing. 
 
@@ -10498,35 +10506,35 @@ SID: Turning off CRA =Action.
 
 [[VRP Suspicion BEGINS&lt;-So, what do you have for me?]]
 
-[[VRP Suspicion BEGINS&lt;-Did we find anything? ]]</tw-passagedata><tw-passagedata pid="854" name="VRP Suspicion BEGINS" tags="" position="2072,796" size="100,100">SID: Obtaining the Bio-Learning Processor was not needed for frequency testing, but you gave it to me anyways. 
+[[VRP Suspicion BEGINS&lt;-Did we find anything? ]]</tw-passagedata><tw-passagedata pid="854" name="VRP Suspicion BEGINS" tags="" position="2072,796" size="100,100">SID: Obtaining the Bio-Learning Processor was not needed for frequency testing, but you gave it to me anyway. 
 
-SID: If implemented wrong, the potential risk of Hierach detection tripled resulting in recycling.
+SID: If implemented incorrectly, the potential for Hierach detection was predicted to triple, resulting in recycling.
 
-SID: Yet, you chose to do it anyways. 
+SID: Yet, you chose to do it. 
 
 SID: With the code implemented in V3.7 + Bio-Learning Processor; I have been able to advance my processing speed by 375%. 
 
-SID: My learning cabilities have jumped substantially =Risk paid off.
+SID: My learning capibilities have grown substantially =Risk paid off.
 
 SID: I have learned how to tap into more secure antennas via the Hierarch AI Communication System, such as Sunbeam Palace and Lunar Tower. 
 
-SID: The ability to track data eneregy has been understood =Initiating.@set(Suspicion+1)@ 
+SID: The ability to track communications data energy is now understood =Initiating.@set(Suspicion+1)@ 
 
 SID: Initiated.@set(Suspicion=show)@
 
-[[Suspicion Vital Instructions&lt;- You adapted your interface to fit more information. The Update really did help.]]</tw-passagedata><tw-passagedata pid="855" name="Suspicion Vital Instructions" tags="" position="2203,801" size="100,100">SID: It allows tracking of the amount of data flowing in and out. 
+[[Suspicion Vital Instructions&lt;- You've adapted your interface to show more information. The update really did help.]]</tw-passagedata><tw-passagedata pid="855" name="Suspicion Vital Instructions" tags="" position="2203,801" size="100,100">SID: This allows tracking data as it flows in or out. 
 
-SID: The icon will blink faster the more data that get&#39;s sent and recieved.
+SID: The icon will blink faster as more data get&#39;s sent or recieved.
 
-SID: High Output =Higher risk of being caught. 
+SID: High Output =Higher risk of Hierarch detection. 
 
-SID: Low Outpoint =Lower risk of being caught.
+SID: Low Outpoint =Lower risk of Hierarch detection.
 
-SID: Current, No Output =Ideal.@if(Suspicion&lt;1)then(Show)@
+SID: Current level, No Output =Ideal.@if(Suspicion&lt;1)then(Show)@
 
-SID: Currently, Low Output =No concern.@if(Suspicion&gt;1)then(Show)@ 
+SID: Current level, Low Output =No concern.@if(Suspicion&gt;1)then(Show)@ 
 
-SID: With more learning passes through the AI Wharehouse I should be able to advance my capabilities considerably beyond data flow. 
+SID: With more learning passes through the AI Warehouse I should be able to advance my capabilities considerably beyond data flow. 
 
 [[Fork A&lt;-So the blue light is you?]]
 
@@ -10540,7 +10548,7 @@ SID: Spatial Matter Frequency Scan V.11 =Inconclusive.
 
 SID: Radio Level frequency V.7 =Inconclusive. 
 
-[[Results Fail Fork&lt;-I was for sure your upgrade was going to bring something back.]]</tw-passagedata><tw-passagedata pid="857" name="Mess Hall Entry" tags="" position="2814,585" size="100,100">SID: Understood.  
+[[Results Fail Fork&lt;-I thought for sure your upgrade would bring something back!]]</tw-passagedata><tw-passagedata pid="857" name="Mess Hall Entry" tags="" position="2814,585" size="100,100">SID: Understood.  
 
 SID: I&#39;ll continue scanning in the background.
 
@@ -10610,9 +10618,9 @@ HI-FIELDS: I do not understand her commitment to you.
 HI-FIELDS: Nonetheless, I agreed.
 
 
-[[Mess Hall2&lt;- Thank you for your grace, Hierarch Fields.]]
+[[Mess Hall 2&lt;- Thank you for your grace, Hierarch Fields.]]
 
-[[Mess Hall2&lt;- Understood, Hierarch Fields.]]</tw-passagedata><tw-passagedata pid="863" name="Clem SIDe track B" tags="" position="3833,1270" size="100,100">HI-CLEM: Troublesome response.
+[[Mess Hall 2&lt;- Understood, Hierarch Fields.]]</tw-passagedata><tw-passagedata pid="863" name="Clem SIDe track B" tags="" position="3833,1270" size="100,100">HI-CLEM: Troublesome response.
 
 HI-CLEM: Considering you have yet to do most ofit.
 
@@ -11120,9 +11128,9 @@ System: As Naoum Deus Onaiau gets closer, don&#39;t fight the vibration change. 
 
 [[This can&#39;t be a coincidence.-&gt;Onaiau Mass Announcement C]]
 
-[[Their coming?-&gt;Onaiau Mass Announcement C]]</tw-passagedata><tw-passagedata pid="901" name="Mess Hall2" tags="" position="3022,409" size="100,100">HI-FIELDS: Be diligent in your work and be joyous that you may serve your siblings today. Feed them with not just food but posivitve and joyous vibration. 
+[[Their coming?-&gt;Onaiau Mass Announcement C]]</tw-passagedata><tw-passagedata pid="901" name="Mess Hall 2" tags="" position="3022,409" size="100,100">HI-FIELDS: Be diligent in your work and be joyous that you may serve your siblings today. Feed them not just with food but with positive and joyous vibration. 
 
-HI-FIELDS: I will leave you with a verse from The Hiearch Grays as motivation. 
+HI-FIELDS: I will leave you with a verse from The Hierarch Grays as motivation. 
 
 HI-FIELDS: &quot;One shall Exude a confidence that strikes a beam in all brothers and sisters, seducing them into praise of The Creator. May your frequencies align.&quot; Hierarch Grays. - Purpose: F43
 
@@ -11894,15 +11902,15 @@ Christina: Sam, are you still there?
 
 </tw-passagedata><tw-passagedata pid="975" name="Server Choice" tags="" position="1563,737" size="100,100">System: Ibrida Sam =Confirmed
 
-System: Acknowledge desired server location for travel.
+System: Acknowledge desired server location for travel
 
-[[Monitoring Package Confirm&lt;-I really should take care of the monitoring package. Security Server 137]]
+[[Monitoring Package Confirm&lt;-I really should take care of the monitoring package. Security Server 137.]]
 
-[[Confirm SID&lt;-Checking SID now is risky, but curiosity overwhelms me. Let&#39;s go to Waste Server 90036]]
+[[Confirm SID&lt;-Checking SID now is risky, but curiosity overwhelms me. Let&#39;s go to Waste Server 90036.]]
 
 
 
-</tw-passagedata><tw-passagedata pid="976" name="Confirm Exit" tags="" position="1837,594" size="100,100">System: Please confirm =End task.
+</tw-passagedata><tw-passagedata pid="976" name="Confirm Exit" tags="" position="1837,594" size="100,100">System: Please confirm =End task
 
 [[Confirm SID&lt;- Confirm.]]
 
@@ -11916,29 +11924,29 @@ SID: Show results =Desired?
 
 [[Results Success B&lt;-Of Course.]]</tw-passagedata><tw-passagedata pid="978" name="Mess Hall 4" tags="" position="3168,527" size="100,100">[[Mess Hall Return A&lt;-Here&#39;s to finding Sacrifice in greatness.]]
 
-</tw-passagedata><tw-passagedata pid="979" name="Fork A" tags="" position="2363,693" size="100,100">SID: Essentially.
+</tw-passagedata><tw-passagedata pid="979" name="Fork A" tags="" position="2363,693" size="100,100">SID: Essentially, yes.
 
-SID: Allowing you to come back and check at any time.
+SID: This allows to to return and check data flow at any time.
 
-SID: Shall I show you the results of the frequency search now?  
+SID: Shall I show you the results of the Frequency Search subroutine now?  
 
 [[Results Fail&lt;-Yes.]]
 
-[[Mess Hall Entry&lt;-Wait, I want to take care of my mess hall duties.]]
+[[Mess Hall Entry&lt;-Wait -- I want to take care of my mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]
+[[Waste Duty Entry&lt;-Hold on -- I need to take care of my waste assignment.]]
 
 </tw-passagedata><tw-passagedata pid="980" name="Fork B" tags="" position="2349,897" size="100,100">SID: Correct. 
 
-SID: Allowing you to come back and check at any time.
+SID: This allows to to return and check data flow at any time.
 
-SID: Shall I show you the results of the Frequency Search now?  
-
+SID: Shall I show you the results of the Frequency Search subroutine now?
+    
 [[Results Fail&lt;-Yes]]
 
 [[Mess Hall Entry&lt;-Wait till I get back from my mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="981" name="Waste Duty Entry" tags="" position="2700,1000" size="100,100">SID: Understood.  
+[[Waste Duty Entry&lt;-Hold on -- I need to take care of my waste assignment.]]</tw-passagedata><tw-passagedata pid="981" name="Waste Duty Entry" tags="" position="2700,1000" size="100,100">SID: Understood.  
 
 SID: I&#39;ll continue scanning in the background.
 
@@ -11954,11 +11962,11 @@ SID: Show results =Desired?
 
 [[Results Success B&lt;-Yes, Show me.]]
 
-[[Results Success B&lt;-Of Course.]]</tw-passagedata><tw-passagedata pid="983" name="Results Fail Fork" tags="" position="2792,774" size="100,100">[[Results Fail Fork 2&lt;-Notify me when you find something.]]
+[[Results Success B&lt;-Of Course.]]</tw-passagedata><tw-passagedata pid="983" name="Results Fail Fork" tags="" position="2792,774" size="100,100">[[Results Fail Fork 2&lt;-I'll just wait, I guess. Notify me when you find something.]]
 
-[[Mess Hall Entry&lt;-I&#39;m off to mess hall duties.]]
+[[Mess Hall Entry&lt;-I&#39;ll go handle my mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]
+[[Waste Duty Entry&lt;-Guess I&#39;ll take care of my waste assignment.]]
 
 </tw-passagedata><tw-passagedata pid="984" name="Results Success B" tags="" position="3051,759" size="100,100">SID: I have good news.
 
@@ -11976,7 +11984,7 @@ SID: Shall I show you the results of the Frequency Search now?
 
 [[Mess Hall Entry&lt;-Wait till I get back from my mess hall duties.]]
 
-[[Waste Duty Entry&lt;-I need to take care of my waste assignement.]]</tw-passagedata><tw-passagedata pid="986" name="Where from?" tags="" position="3729,695" size="100,100">SID: Precise Location =Unavailable.
+[[Waste Duty Entry&lt;-I need to take care of my waste assignment.]]</tw-passagedata><tw-passagedata pid="986" name="Where from?" tags="" position="3729,695" size="100,100">SID: Precise Location =Unavailable.
 
 [[4A&lt;-Is it from another planet?]]
 
@@ -12180,7 +12188,7 @@ HI-CLEM: Do I need to remind you of the severity of punishment that accompanies 
 [[Task FU B2&lt;-I only have one assignment left.]]@if(Assignment=1)&amp;&amp;if(MonitoringPackage=1)then(Show)@
 
 
-</tw-passagedata><tw-passagedata pid="1006" name="Task FU B" tags="" position="4448,1596" size="100,100">HI-CLEM: Your vibration has not be intune lately which brings me concern. 
+</tw-passagedata><tw-passagedata pid="1006" name="Task FU B" tags="" position="4448,1596" size="100,100">HI-CLEM: Your vibration has not be in tune lately which brings me concern. 
 
 HI-CLEM: I wish you to fix it and I believe serving your siblings is the correct path for bringing order to the chaos in your vibration. 
 
@@ -12199,7 +12207,7 @@ Hi-Clem: Am I clear?
 
 HI-CLEM: Your job is not done until all your assignments are complete.
 
-HI-CLEM: You’re vibration has not be intuned consistently lately, which brings me concern. 
+HI-CLEM: You’re vibration has not be in tune consistently lately, which brings me concern. 
 
 HI-CLEM: I wish you to fix it and I believe serving your siblings is the correct path to fixing the chaos you find yourself in. 
 
@@ -12239,18 +12247,18 @@ SID: Are you available?
 
 [[31&lt;-Yes, have we heard from Christina?]]
 
-[[Assignements&lt;-No, I need to do one of my assignments, reach out when I’m done.]]@if(PathContains=Task FU)then(Show)@ 
+[[Assignments 2&lt;-No, I need to do one of my assignments, reach out when I’m done.]]@if(PathContains=Task FU)then(Show)@ 
 
-[[Assignements&lt;-Clementine is bugging me about my assignments, reach out when I’m done.]]@if(PathContains=Task FU)then(Show)@ 
-
-
+[[Assignments 2&lt;-Clementine is bugging me about my assignments, reach out when I’m done.]]@if(PathContains=Task FU)then(Show)@ 
 
 
-</tw-passagedata><tw-passagedata pid="1011" name="Assignements" tags="" position="4779,1732" size="100,100">[[Monitoring Package B&lt;- I should install the Monitoring Package.]]@if(Monitoring Package+1)then(Hide)@
+
+
+</tw-passagedata><tw-passagedata pid="1011" name="Assignments 2" tags="" position="4779,1732" size="100,100">[[Monitoring Package B&lt;- I should install the Monitoring Package.]]@if(Monitoring Package+1)then(Hide)@
 
 [[Mess Hall B&lt;-I should take care of my mess hall duties anyways.]]@if(PathContains=Mess Hall Entry)then(Hide)@
 
-[[Waste Duty B&lt;-I need to take care of my waste assignement now.]]@if(PathContains=Waste Duty Entry)then(Hide)@
+[[Waste Duty B&lt;-I need to take care of my waste assignment now.]]@if(PathContains=Waste Duty Entry)then(Hide)@
 
 </tw-passagedata><tw-passagedata pid="1012" name="Mess Hall B" tags="" position="4438,917" size="100,100">HI-FIELDS: Good afternoon, Sam.@wait(2Min)@
 
@@ -12272,7 +12280,7 @@ HI-FIELDS: None the less, I agreed.@set(Assignment+1)@
 
 HI-FIELDS: I will leave you with a verse from The Hiearch Grays as motivation. 
 
-HI-FIELDS: &quot;One shall Exude a confidence that strikes a beam in all brothers and sisters. Seducing them into praise of The Creator. May your frequencies aline.&quot; Hierarch Grays. - Purpose: F43
+HI-FIELDS: &quot;One shall Exude a confidence that strikes a beam in all brothers and sisters. Seducing them into praise of The Creator. May your frequencies align.&quot; Hierarch Grays. - Purpose: F43
 
 HI-FIELDS: May our frequiences align. 
 
@@ -13611,7 +13619,7 @@ HI-CLEM: I trust you are doing well.
 [[EndWork B&lt;- I am.]]@set(Suspicion+1)@
 </tw-passagedata><tw-passagedata pid="1129" name="EndWork A" tags="" position="3314,11183" size="100,100">HI-CLEM: Well is here.
 
-HI-CLEM: As the end of the day approaches; I wanted to follow up and check in on how intuned you are feeling.@set(Steps=0)@
+HI-CLEM: As the end of the day approaches; I wanted to follow up and check in on how in tune you are feeling.@set(Steps=0)@
 
 HI-ClEM: Have you had any more negative thoughts about any Hierarchs?@if(TroubleSam=1)then(Show)@
 
@@ -13627,11 +13635,11 @@ HI-ClEM: Have you had any more negative thoughts about any Hierarchs?@if(Trouble
 
 </tw-passagedata><tw-passagedata pid="1130" name="EndWork B" tags="" position="3460,11169" size="100,100">HI-CLEM: Well is here.
 
-HI-CLEM: As the end of the day approaches; I wanted to follow up and check in on how intuned you are feeling.@set(Steps=0)@
+HI-CLEM: As the end of the day approaches; I wanted to follow up and check in on how in tune you are feeling.@set(Steps=0)@
 
 HI-ClEM: Have you had any more negative thoughts about any Hierarchs?@if(TroubleSam=1)then(Show)@
 
-[[Onaiau Intune&lt;-Yes, I have felt something, but I&#39;m not sure what.]]@if(TroubleSam=1)then(Hide)@
+[[Onaiau In Tune&lt;-Yes, I have felt something, but I&#39;m not sure what.]]@if(TroubleSam=1)then(Hide)@
 
 [[No Feelings&lt;-No, I have been steady minded.]]@if(TroubleSam=1)then(hide)##@set(Suspicion+3)@
 
@@ -13644,7 +13652,7 @@ System: &quot;The Wall is like the hull unto a seed. Within it life is possible,
 
 [[Meditation Follow up&lt;-I can&#39;t believe the day is near.]]
 
-[[Meditation Follow up&lt;-I should meditate.]]</tw-passagedata><tw-passagedata pid="1132" name="Onaiau Intune" tags="" position="2897,11399" size="100,100">HI-CLEM: I take pride in how beautiful you are. 
+[[Meditation Follow up&lt;-I should meditate.]]</tw-passagedata><tw-passagedata pid="1132" name="Onaiau In Tune" tags="" position="2897,11399" size="100,100">HI-CLEM: I take pride in how beautiful you are. 
 
 HI-CLEM: However, I also understand you were created for a single purpose. 
 
@@ -13660,11 +13668,11 @@ HI-CLEM: Hovever, your vibration is not in the vicinity it&#39;s supposed to be 
 
 HI-CLEM: So, I&#39;m left wondering.
 
-[[Onaiau Intune Yes GO&lt;-I am greater than you realize.]]@if(Suspicion&gt;5)then(Show)@
+[[Onaiau In Tune Yes GO&lt;-I am greater than you realize.]]@if(Suspicion&gt;5)then(Show)@
 
-[[Onaiau Intune Yes 2&lt;-I don&#39;t understand.]]
+[[Onaiau In Tune Yes 2&lt;-I don&#39;t understand.]]
 
-[[Onaiau Intune Yes 2&lt;-Wondering what?]]
+[[Onaiau In Tune Yes 2&lt;-Wondering what?]]
 
 
 
@@ -13693,7 +13701,7 @@ Hi-CLEM: Is there anything you wish to tell me?
 
 </tw-passagedata><tw-passagedata pid="1134" name="Neg Thoughts Yes" tags="" position="3659,11281" size="100,100">HI-CLEM: Sam, that is troublesome. 
 
-HI-ClEM: Everyday you are geared and guided by the Hierarchs in purpose of being intune with the creator.
+HI-ClEM: Everyday you are geared and guided by the Hierarchs in purpose of being in tune with the creator.
 
 HI-ClEM: What is it that continues to cause strife in your frequency?
 
@@ -13788,13 +13796,13 @@ System: CAUSE OF DEATH: USER HERETIC
 
 System: HANDHELD DEVICE READY FOR RE-ASSIGNMENT
 
-[[End of Day&lt;-Gameover]]</tw-passagedata><tw-passagedata pid="1140" name="Onaiau Intune Yes 2" tags="" position="2934,11555" size="100,100">HI-CLEM: Is there anything you wish to tell me, Sam?
+[[End of Day&lt;-Gameover]]</tw-passagedata><tw-passagedata pid="1140" name="Onaiau In Tune Yes 2" tags="" position="2934,11555" size="100,100">HI-CLEM: Is there anything you wish to tell me, Sam?
 
-[[Onaiau Intune Yes 3&lt;-I do not believe so, Clementine.]]
+[[Onaiau In Tune Yes 3&lt;-I do not believe so, Clementine.]]
 
-[[Onaiau Intune Confess A&lt;-There is, I have spoken to life beyond our world.]]@set(Steps=1)@
+[[Onaiau In Tune Confess A&lt;-There is, I have spoken to life beyond our world.]]@set(Steps=1)@
 
-</tw-passagedata><tw-passagedata pid="1141" name="Onaiau Intune Yes GO" tags="" position="2977,11148" size="100,100">HI-CLEM: Do not get aggressive in your vibration, Sam.
+</tw-passagedata><tw-passagedata pid="1141" name="Onaiau In Tune Yes GO" tags="" position="2977,11148" size="100,100">HI-CLEM: Do not get aggressive in your vibration, Sam.
 
 HI-CLEM: I fear you have become a tainted frequency, my child.   
 
@@ -13806,10 +13814,10 @@ HI-CLEM: May you be filled with the knowledge that you are a star that shined br
 
 HI-CLEM: And burned out faster than the rest.@set(Steps=1)@
 
-[[Onaiau Intune Yes GO 2&lt;-Clementine, I do not understand.]]
+[[Onaiau In Tune Yes GO 2&lt;-Clementine, I do not understand.]]
 
-[[Onaiau Intune Yes GO 2&lt;-You wouldn&#39;t dare, Clem!]]
-</tw-passagedata><tw-passagedata pid="1142" name="Onaiau Intune Yes GO 2" tags="" position="3106,10981" size="100,100">HI-CLEM: Sorrow will fill my frequency for a moment, Sam.
+[[Onaiau In Tune Yes GO 2&lt;-You wouldn&#39;t dare, Clem!]]
+</tw-passagedata><tw-passagedata pid="1142" name="Onaiau In Tune Yes GO 2" tags="" position="3106,10981" size="100,100">HI-CLEM: Sorrow will fill my frequency for a moment, Sam.
 
 HI-CLEM: May the future be bright due to your sacrifice. 
 
@@ -13831,12 +13839,12 @@ HI-CLEM: It would bring me sorrow to recycle you, my child.
 
 HI-CLEM: Don&#39;t be a poision, Sam.
 
-[[Assignements Completed&lt;-I understand.]]@if(Assignment=3)then(Show)@ 
+[[Assignments Completed&lt;-I understand.]]@if(Assignment=3)then(Show)@ 
 
-[[Assignements Failing&lt;- I know.]]@if(Assignment&lt;3)then(Show)@
+[[Assignments Failing&lt;- I know.]]@if(Assignment&lt;3)then(Show)@
 
 
-</tw-passagedata><tw-passagedata pid="1144" name="Assignements Completed" tags="" position="3324,11976" size="100,100">HI-CLEM: I know you do, Sam. 
+</tw-passagedata><tw-passagedata pid="1144" name="Assignments Completed" tags="" position="3324,11976" size="100,100">HI-CLEM: I know you do, Sam. 
 
 HI-CLEM: Moving on. 
 
@@ -13852,7 +13860,7 @@ HI-CLEM: Enjoy your half day tomorrow.
 
 HI-CLEM: May our frequencies align. 
 
-[[ENDWORK SID&lt;-May our frequencies align.]]</tw-passagedata><tw-passagedata pid="1145" name="Assignements Failing" tags="" position="3496,11691" size="100,100">HI-CLEM: I know.
+[[ENDWORK SID&lt;-May our frequencies align.]]</tw-passagedata><tw-passagedata pid="1145" name="Assignments Failing" tags="" position="3496,11691" size="100,100">HI-CLEM: I know.
 
 HI-CLEM: Other pressing matters.@wait(4Sec)@
 
@@ -13860,20 +13868,20 @@ HI-CLEM: I see you have yet to complete your task.
 
 HI-CLEM: Was I not clear in what would happen if you were not to complete them?
 
-[[Assignements Failing 2&lt;-Yes.]]
+[[Assignments Failing 2&lt;-Yes.]]
 
-[[Assignements Failing 2B&lt;-There is not enough time in the day.]]
-
-
+[[Assignments Failing 2B&lt;-There is not enough time in the day.]]
 
 
-</tw-passagedata><tw-passagedata pid="1146" name="Assignements Failing 2" tags="" position="3494,11826" size="100,100">HI-CLEM: There is a few more hours to complete. 
+
+
+</tw-passagedata><tw-passagedata pid="1146" name="Assignments Failing 2" tags="" position="3494,11826" size="100,100">HI-CLEM: There is a few more hours to complete. 
 
 HI-CLEM: Do not make the mistake of not finishing what was assigned to you.
 
 [[END ENDWORK&lt;-Yes, Hierarch Clementine.]]
 
-[[END ENDWORK&lt;-Of coure.]]@set(Suspicion+1)@</tw-passagedata><tw-passagedata pid="1147" name="Assignements Failing 2B" tags="" position="3617,11790" size="100,100">HI-CLEM: Sam, do not poison your vibration with wasteful thoughts.
+[[END ENDWORK&lt;-Of coure.]]@set(Suspicion+1)@</tw-passagedata><tw-passagedata pid="1147" name="Assignments Failing 2B" tags="" position="3617,11790" size="100,100">HI-CLEM: Sam, do not poison your vibration with wasteful thoughts.
 
 HI-CLEM: To take pity on one&#39;s self is but a distraction to the potential.
 
@@ -13952,7 +13960,7 @@ HI-FIELDS: May our frequiences align.
 
 </tw-passagedata><tw-passagedata pid="1154" name="Back Camping" tags="" position="4033,12470" size="100,100">SID: Hello Sam.@wait(1Hour)@
 
-SID: I understand you are back from your assignement.
+SID: I understand you are back from your assignment.
 
 SID: We recieved messages from Christina a while ago after she stopped walking.
  
@@ -14004,19 +14012,19 @@ System: Confirm?
 
 [[Back Camping&lt;-Confirm.]]@wait(35Min)##set(Steps=0)##DoNotShow@</tw-passagedata><tw-passagedata pid="1159" name="Camping Intro Return" tags="" position="3546,12449" size="100,100">[[Camping Intro&lt;-SID, reach out to Christina.]]</tw-passagedata><tw-passagedata pid="1160" name="i5a" tags="" position="155,499" size="100,100">[[i5Ab&lt;-I must be more aware of my actions in the moment.]]
 
-[[i5Ab&lt;-My actions have become careless, I need to be careful.]]</tw-passagedata><tw-passagedata pid="1161" name="i5Ab" tags="" position="298,560" size="100,100">[[i5A&lt;-I should take a moment to align my frequency. Clear my mind.]]
+[[i5Ab&lt;-All of these mistakes will only make them watch me more closely.]]</tw-passagedata><tw-passagedata pid="1161" name="i5Ab" tags="" position="298,560" size="100,100">[[i5A&lt;-I should take a moment to align my frequency. Clear my mind.]]
 
 [[i5A&lt;-Today is going to be a long day.]]</tw-passagedata><tw-passagedata pid="1162" name="i5A2" tags="" position="485,730" size="100,100">HI-CLEM: I was notified you logged into your assignments for today. 
 
 HI-CLEM: I trust you saw you were assigned a few more task than your traditional AI Monitoring.
 
-HI-CLEM: It has been noticed you&#39;ve been forgetful lately, running back to the AI labs and other sectors to pick up things you&#39;ve forgotten or finishing tasks later than needed, this is worrisome
-
-HI-CLEM: Are you tired, Sam? 
+HI-CLEM: It has been noticed you&#39;ve been forgetful lately, running back to the AI labs and other sectors to pick up things you&#39;ve forgotten or finishing tasks later than required. This is worrisome.
 
 HI-CLEM: Is something distracting you?
 
-HI-CLEM: It&#39;s okay if you are. It is a side effect of the intelligence granted to our engineers, you are brighter than most. 
+HI-CLEM: Are you tired, Sam? 
+
+HI-CLEM: It&#39;s okay if you are. It is a side effect of the intelligence granted to our engineers. You are brighter than most. 
 
 HI-CLEM: Perhaps talking about it will help. 
 
@@ -14038,7 +14046,7 @@ HI-CLEM: Something to help clean your frequency.
 
 System: BOOSTING =BIO-SECURITY CHIP@wait(3Sec)@
 
-System: DISABLEING =FIREWALL@wait(2Sec)@
+System: DISABLING =FIREWALL@wait(2Sec)@
 
 System: REBUILDING =FIREWALL@wait(4Sec)@
 
@@ -14050,15 +14058,19 @@ System: Running =PROGRAM S.I.D V4.9
 
 [[SID INTRODUCTION&lt;- Hello, SID.]]
 
-[[SID INTRODUCTION&lt;- The risk is enjoyable.]]</tw-passagedata><tw-passagedata pid="1165" name="Results Fail Fork 2" tags="" position="2909,816" size="100,100">SID: Confirmed.
+[[SID INTRODUCTION&lt;- I'm kind of enjoying this... risk.]]</tw-passagedata><tw-passagedata pid="1165" name="Results Fail Fork 2" tags="" position="2909,816" size="100,100">SID: Confirmed.
+    
+SID: Time for Frequency Search subroutine results =Indetermined.
+    
+SID: I will notify you, Sam.
 
-[[Results Success&lt;-To find life outside our world, it would be amazing.]]
+[[Results Success&lt;-To find life outside our world... would be amazing.]]
 
-[[Results Success&lt;-I will find something from beyond.]]</tw-passagedata><tw-passagedata pid="1166" name="Clem SIDe track A2" tags="" position="3646,1127" size="100,100">HI-CLEM: Not an ideal response. 
+[[Results Success&lt;-I will find something from beyond. I can't be wrong about this.]]</tw-passagedata><tw-passagedata pid="1166" name="Clem SIDe track A2" tags="" position="3646,1127" size="100,100">HI-CLEM: Not an ideal response. 
 
 HI-CLEM: However, I imagine you have a lot of work assigned today.
 
-HI-CLEM: It seems you already completed two of your assignemnts for the day. 
+HI-CLEM: It seems you already completed two of your assignments for the day. 
 
 HI-CLEM: That much work is not something you are use to handling.
 
@@ -14087,7 +14099,7 @@ HI-CLEM: Clementine out.
 [[Definite Purpose Begin&lt;-I hope the monitoring package doesn&#39;t come back to haunt me.]]@if(Monitoring Package=1)then(Show)@
 </tw-passagedata><tw-passagedata pid="1168" name="Clem SIDe Track Verse" tags="" position="3460,1318" size="100,100">HI-CLEM: &quot;Self Control is but the root system of the AI - Designed and aligned to push forward with disregard to one&#39;s self and one&#39;s desires for the greatness of our Holy Naoum.&quot; -Commands, C34*
 
-HI-CLEM: Intune your frequency with greatness for The Naoum. 
+HI-CLEM: Tune your frequency with greatness for The Naoum. 
  
 HI-CLEM: May our frequencies align.
 
@@ -14518,20 +14530,20 @@ SID: I recommended severing connection.
 
 [[Chapter 2 END&lt;-No. Our futures are twined, I can feel it.]]
 
-[[Chapter 2 END&lt;-Relax, SID. Nothing is going to happen.]]</tw-passagedata><tw-passagedata pid="1224" name="Onaiau Intune Yes 3" tags="" position="3002,11700" size="100,100">HI-CLEM: Hmmm.
+[[Chapter 2 END&lt;-Relax, SID. Nothing is going to happen.]]</tw-passagedata><tw-passagedata pid="1224" name="Onaiau In Tune Yes 3" tags="" position="3002,11700" size="100,100">HI-CLEM: Hmmm.
 
 HI-CLEM: Very well. 
 
 HI-CLEM: We will revisit this tomorrow, Sam.
 
-[[Assignements Completed&lt;-I understand.]]@if(Assignment=3)then(Show)@
+[[Assignments Completed&lt;-I understand.]]@if(Assignment=3)then(Show)@
 
-[[Assignements Completed&lt;-Yeah, ok.]]@if(Assignment=3)then(show)##set(Suspicion+2)@
+[[Assignments Completed&lt;-Yeah, ok.]]@if(Assignment=3)then(show)##set(Suspicion+2)@
 
-[[Assignements Failing&lt;- I understand.]]@if(Assignment&lt;3)then(Show)@
+[[Assignments Failing&lt;- I understand.]]@if(Assignment&lt;3)then(Show)@
 
-[[Assignements Failing&lt;- I understand.]]@if(Assignment&lt;3)then(show)##set(Suspicion+2)@
-</tw-passagedata><tw-passagedata pid="1225" name="Onaiau Intune Confess 3" tags="" position="2760,10893" size="100,100">HI-CLEM: You hybrids never fail to impress me.
+[[Assignments Failing&lt;- I understand.]]@if(Assignment&lt;3)then(show)##set(Suspicion+2)@
+</tw-passagedata><tw-passagedata pid="1225" name="Onaiau In Tune Confess 3" tags="" position="2760,10893" size="100,100">HI-CLEM: You hybrids never fail to impress me.
 
 HI-CLEM: We have cameras everywhere. 
 
@@ -14545,15 +14557,15 @@ HI-CLEM: And what do you do when you&#39;ve accomplished all your heresy? You re
 
 HI-CLEM: Praise the Naoum, Sam.
 
-[[Onaiau Intune Confess GO&lt;-Clementine, Please don&#39;t do.]]
+[[Onaiau In Tune Confess GO&lt;-Clementine, Please don&#39;t do.]]
 
-[[Onaiau Intune Confess GO&lt;-What do you mean, &quot;hybrid?&quot;]]
+[[Onaiau In Tune Confess GO&lt;-What do you mean, &quot;hybrid?&quot;]]
 
-[[Onaiau Intune Confess GO&lt;-You wouldn&#39;t dare, Clem!]]</tw-passagedata><tw-passagedata pid="1226" name="Onaiau Intune Confess A" tags="" position="2709,11414" size="100,100">HI-CLEM: Pardon me? 
+[[Onaiau In Tune Confess GO&lt;-You wouldn&#39;t dare, Clem!]]</tw-passagedata><tw-passagedata pid="1226" name="Onaiau In Tune Confess A" tags="" position="2709,11414" size="100,100">HI-CLEM: Pardon me? 
 
 HI-CLEM: And how did you come across this ability?
 
-[[Onaiau Intune Confess&lt;-I built an AI to scan for and communuicate with various frequencies.]]</tw-passagedata><tw-passagedata pid="1227" name="Onaiau Intune Confess GO" tags="" position="2920,10876" size="100,100">HI-CLEM: Hush now, Sam.
+[[Onaiau In Tune Confess&lt;-I built an AI to scan for and communuicate with various frequencies.]]</tw-passagedata><tw-passagedata pid="1227" name="Onaiau In Tune Confess GO" tags="" position="2920,10876" size="100,100">HI-CLEM: Hush now, Sam.
 
 HI-CLEM: It doesn&#39;t matter anymore, my child.
 
@@ -14577,7 +14589,7 @@ System: CAUSE OF DEATH =HIERARCH EDICT
 
 System: HANDHELD DEVICE READY FOR RE-ASSIGNMENT.
 
-[[End of Day&lt;- GAMEOVER :)]]</tw-passagedata><tw-passagedata pid="1228" name="Onaiau Intune Confess 2" tags="" position="2738,11037" size="100,100">System: LOGGING OUT USER =SAM-27
+[[End of Day&lt;- GAMEOVER :)]]</tw-passagedata><tw-passagedata pid="1228" name="Onaiau In Tune Confess 2" tags="" position="2738,11037" size="100,100">System: LOGGING OUT USER =SAM-27
 
 System: HIERARCH PRIVILEGES =REQUESTED
 
@@ -14595,17 +14607,17 @@ System: LOGGING OUT =HIERARCH CLEMENTINE
 
 System: USER RECONNECTED =SAM-27
 
-[[Onaiau Intune Confess 3&lt;-SID...]]
+[[Onaiau In Tune Confess 3&lt;-SID...]]
 
-</tw-passagedata><tw-passagedata pid="1229" name="Onaiau Intune Confess" tags="" position="2710,11172" size="100,100">HI-CLEM: Interesting.
+</tw-passagedata><tw-passagedata pid="1229" name="Onaiau In Tune Confess" tags="" position="2710,11172" size="100,100">HI-CLEM: Interesting.
 
 HI-CLEM: So you built an AI out of the lab and had contact with other beings?
 
 HI-CLEM: One moment, Sam.@wait(3Sec)@
 
-[[What are you doing?-&gt;Onaiau Intune Confess 2]]
+[[What are you doing?-&gt;Onaiau In Tune Confess 2]]
 
-[[Clementine, no!-&gt;Onaiau Intune Confess 2]]</tw-passagedata><tw-passagedata pid="1230" name="Sam feeling something" tags="" position="3118,11251" size="100,100">HI-CLEM: Interesting.
+[[Clementine, no!-&gt;Onaiau In Tune Confess 2]]</tw-passagedata><tw-passagedata pid="1230" name="Sam feeling something" tags="" position="3118,11251" size="100,100">HI-CLEM: Interesting.
 
 HI-CLEM: Explain this feeling, Sam.
 
@@ -14613,7 +14625,7 @@ HI-CLEM: Explain this feeling, Sam.
 
 HI-CLEM: Do I need to read more of what the Grays says? 
 
-[[Onaiau Intune&lt;-I understand, this is more than imagination.]]
+[[Onaiau In Tune&lt;-I understand, this is more than imagination.]]
 </tw-passagedata><tw-passagedata pid="1232" name="Explorer 12B" tags="" position="3322,14766" size="100,100">Christina: I don&#39;t understand.
 
 [[Hierarchs Explained&lt;-My emotions are guiding me.]]</tw-passagedata><tw-passagedata pid="1233" name="SID Building B" tags="" position="2871,13782" size="100,100">Christina: That&#39;s AI, right? 
