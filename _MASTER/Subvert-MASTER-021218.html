@@ -435,13 +435,13 @@ SID: Authentication successful.@wait(20Min)##set(Suspicion-4)@
 
 [[What do you have, SID?-&gt;12A]]
 
-[[Pull it up.-&gt;12A]]</tw-passagedata><tw-passagedata pid="14" name="12A" tags="" position="1953,1326" size="100,100">SID: I have found access to a user portal. 
+[[Pull it up.-&gt;12A]]</tw-passagedata><tw-passagedata pid="14" name="12A" tags="" position="1953,1326" size="100,100">SID: I have discovered remote access to a user terminal. 
 
 SID: Interface language =Unknown. 
 
 [[Translate&lt;-Can you translate it?]]
 
-[[Translate&lt;-Learn and translate.]]</tw-passagedata><tw-passagedata pid="15" name="Messages" tags="" position="1024,2167" size="100,100">SID: Time =7Days.
+[[Translate&lt;-Run translation algorithm.]]</tw-passagedata><tw-passagedata pid="15" name="Messages" tags="" position="1024,2167" size="100,100">SID: Time =7Days.
 
 SID: “Hey? Mom? Are you out there? It’s been a week. I miss you.” 
 
@@ -475,15 +475,15 @@ SID: &quot;Sorry, yesterday was a bad day. If anyone is out there, please help. 
 
 SID: &quot;Anybody?&quot;
 
-SID: Time =3Days.
+SID: Time =3 Days.
 
 SID: &quot;AUTOMATED MESSAGE// This is Bunker 49. Sending out a distress signal.&quot;
 
-SID: Time =2Days.
+SID: Time =2 Days.
 
 SID: &quot;AUTOMATED MESSAGE// This is  Bunker 49. Sending out a distress signal.&quot;
 
-SID: Time =1Day.
+SID: Time =1 Day.
 
 SID: &quot;AUTOMATED MESSAGE// This is Bunker 49. Sending out a distress signal.&quot;
 
@@ -498,9 +498,9 @@ SID: &quot;Hydroponics - Error&quot;
 
 SID: &quot;Nuclear Reactor - Error&quot;
 
-SID: &quot;Communication Arrays - Error&quot;
+SID: &quot;Communications Array - Error&quot;
 
-SID: &quot;Maitenance Units - Error&quot;
+SID: &quot;Maintenance Unit - Error&quot;
 
 SID: &quot;Habitat Level 1 - Warning&quot;
 
@@ -549,23 +549,23 @@ SID: &quot;Log Date 11/4/2104: Bunker Status - Error&quot;
 
 [[Main Screen&lt;-Commander Grays?]]
 
-[[Main Screen&lt;-Waste of time.]]
+[[Main Screen&lt;-Hrm... That was a waste of time.]]
 
-</tw-passagedata><tw-passagedata pid="19" name="HL1" tags="" position="400,1472" size="100,100">SID: &quot;Environment Warnings for Habitat Levels 1&quot;
+</tw-passagedata><tw-passagedata pid="19" name="HL1" tags="" position="400,1472" size="100,100">SID: &quot;Environment Warnings for Habitat Level 1&quot;
 
 SID: &quot;Low Temperature - (5°C)&quot;
 
 SID: &quot;Atmosphere - (Atmospheric Ammonia Detected)&quot;
 
-SID: &quot;Inhabitable&quot;
+SID: &quot;Uninhabitable&quot;
 
-[[Bunker Systems&lt;-There appears to be no life here, Go back.]]
+[[Bunker Systems&lt;-There appears to be no life here, Go back.]]@if(PathContains=HL2 && PathContains=HL3)then(Hide)@
 
 [[Main Screen&lt;-Ammonia? We must have similar chemical compounds. Take me to the main screen.]]
 
-</tw-passagedata><tw-passagedata pid="20" name="HL3" tags="" position="506,1652" size="100,100">SID: &quot;All sensors for habitat level 3 are offline.&quot;
+</tw-passagedata><tw-passagedata pid="20" name="HL3" tags="" position="506,1652" size="100,100">SID: &quot;All sensors for Habitat Level 3 are offline.&quot;
 
-[[Bunker Systems&lt;-Go back a screen.]]
+[[Bunker Systems&lt;-Go back a screen.]]@if(PathContains=HL1 && PathContains=HL2)then(Hide)@
 
 [[Main Screen&lt;-Take me to the main screen.]]</tw-passagedata><tw-passagedata pid="21" name="First Interaction" tags="" position="1779,1847" size="100,100">Christina: Hello???@wait(5Min)@
 
@@ -1922,9 +1922,9 @@ SID: Returning to subject =Survey report.
 
 [[Origin B&lt;-Any other information you can find?]]</tw-passagedata><tw-passagedata pid="132" name="Main Screen" tags="" position="790,1636" size="100,100">SID: Accessing now.
 
-SID: &quot;Welcome to the US Lifeline Satelite Network.&quot; 
+SID: &quot;Welcome to the U.S. Lifeline Satellite Network.&quot; 
 
-SID: &#39;Connnecting - Bunker 37A.&#39; 
+SID: &quot;Connecting - Bunker 37A.&quot; 
 
 SID: &quot;Current Status - Error.&quot;
 
@@ -1932,15 +1932,15 @@ SID: &quot;Please select option below.&quot;
 
 SID: &quot;Bunker Systems.&quot;
 
+SID: &quot;Bunker Commands.&quot;
+    
 SID: &quot;Commander Log Archives.&quot;
 
-SID: &quot;Bunker Commands.&quot;
-
-SID: &quot;457 Unread Messages.&quot;
+SID: &quot;Unread Messages (457).&quot;
 
 [[Bunker Systems&lt;-Show me the Bunker Systems.]]@if(PathContains=Bunker Status)then(Hide)@
 
-[[Log Library&lt;-Review Commander Log Library.]]@if(PathContains=14BB)then(Hide)@
+[[Log Library&lt;-Review Commander Log Archive.]]@if(PathContains=14BB)then(Hide)@
 
 [[Command Authorization&lt;-Initiate Commands.]]@if(PathContains=Command Authorization)then(Hide)@
 
@@ -10728,9 +10728,9 @@ SID: Translating =Fail.@wait(8seconds)##set(Suspicion-3)@
 
 SID: Translating.@wait(7seconds)##set(Suspicion+3)@
 
-SID: Translating =Succeess.@wait(10seconds)##set(Suspicion-3)@ 
+SID: Translating =Success.@wait(10seconds)##set(Suspicion-3)@ 
 
-[[Great, continue.-&gt;Main Screen]]
+[[Good work, SID. Continue.-&gt;Main Screen]]
 
 [[Man I&#39;m good.-&gt;Main Screen]]
 
@@ -11411,11 +11411,11 @@ Christina: I’m still not sure I believe any of this.
 
 Christina: For all I know you&#39;re part of my madness.
 
-[[Christina Final Push C3&lt;-SID, scan reactor system.]]</tw-passagedata><tw-passagedata pid="929" name="Down the Rabbit Hole" tags="" position="935,1750" size="100,100">SID: It appears an automated message has been recieved everyday for the past 3 years. 
+[[Christina Final Push C3&lt;-SID, scan reactor system.]]</tw-passagedata><tw-passagedata pid="929" name="Down the Rabbit Hole" tags="" position="935,1750" size="100,100">SID: It appears an automated message has been recieved every day for the past 3 years. 
 
 SID: Scanning accessibility.
 
-SID: Access to past 7days =Available.@wait(10Sec)@
+SID: Access to past 7 days =Available.@wait(10Sec)@
 
 [[Really? Show me.-&gt;Warning]]
 
@@ -11999,15 +11999,15 @@ SIDL: For your theory of life outside known Naoum Galaxy =Potential Proof.
 [[Where from?&lt;-Do we know the location the signal is broadcasting from?]] 
 
 [[Clem SIDe track A&lt;-Holy Feather Tales, I can&#39;t believe it, we did it!!]]@set(Suspicion+3)@
-</tw-passagedata><tw-passagedata pid="988" name="HL2" tags="" position="348,1595" size="100,100">SID: &quot;Environment Warnings for Habitat Levels 2&quot;
+</tw-passagedata><tw-passagedata pid="988" name="HL2" tags="" position="348,1595" size="100,100">SID: &quot;Environment Warnings for Habitat Level 2&quot;
 
 SID: &quot;Low Temperature - (5°C)&quot;
 
 SID: &quot;Atmosphere - (Atmospheric Ammonia Detected)&quot;
 
-SID: &quot;Inhabitable&quot;
+SID: &quot;Uninhabitable&quot;
 
-[[Bunker Systems&lt;-I wonder what happened. Let&#39;s check the other levels.]]
+[[Bunker Systems&lt;-I wonder what happened... Let&#39;s check the other levels.]]@if(PathContains=HL1 && PathContains=HL3)then(Hide)@
 
 [[Main Screen&lt;-Take me to the main screen.]]</tw-passagedata><tw-passagedata pid="989" name="30 min wait." tags="" position="936,2315" size="100,100">SID: Are you ready, Sam?@wait(30Min)@
 
