@@ -627,7 +627,7 @@ SID: Be careful.@if(HushSID=1)then(Hide)@
 
 </tw-passagedata><tw-passagedata pid="23" name="UtopiaPlanet" tags="" position="3047,1767" size="100,100">Christina: Your planet, right?@if(UtopiaSam=1)then(Show)@
 
-Christina: I guess the bunker can seem like a world in its self. @if(UtopiaSam=1)then(Show)@
+Christina: I guess the bunker can seem like a world in itself.@if(UtopiaSam=1)then(Show)@
 
 Christina: Oh man, I was worried you were lying.@if(BunkerSam=1)then(Show)@
 
@@ -787,7 +787,7 @@ Christina: They stop a plot to cannibalize the poorer ark-ships, and the two bec
 
 [[Good Book.&lt;-I... guess that&#39;s interesting?]]@set(Cynicism+1)@
 
-[[No Books.&lt;-It&#39;s not worth the weight, Christina.]] @set(Cynicism+1)##@set(Trust-1)@</tw-passagedata><tw-passagedata pid="35" name="Good Book." tags="" position="1404,6385" size="100,100">Christina: I definitely thought it was.
+[[No Books.&lt;-It&#39;s not worth the weight, Christina.]]@set(Cynicism+1)##@set(Trust-1)@</tw-passagedata><tw-passagedata pid="35" name="Good Book." tags="" position="1404,6385" size="100,100">Christina: I definitely thought it was.
 
 Christina: So what do you say? Worth it, right?
 
@@ -1100,7 +1100,7 @@ Christina: Imagine a giant metal spider. Like, the size of a horse.
 
 Christina: But its got a bunch of guns sticking out of its back.@wait(4Sec)@
 
-Christina: You know what those animals are, right?
+Christina: You know what spiders and horses are, right?
 
 [[Yes.-&gt;Wreck]]
 
@@ -1113,13 +1113,13 @@ Christina: This thing looks pretty dangerous.
 
 Christina: I think it got into a fight.
 
-Christina: It&#39;s covered in bullet holes, and it&#39;s not moving. I think I hear a humming noise.
+Christina: It&#39;s covered in bullet holes, and it&#39;s not moving. It&#39;s still making a faint humming noise.
 
 Christina: Come to think of it I think this is a kill-bot. I saw a history video on them once.@set(Steps=0)@
 
 Christina: I&#39;m not sure my mom would have messed with it though.
 
-Christina: She didn&#39;t have any guns.@set(Steps=1)@
+Christina: I don&#39;t think she had any guns.@set(Steps=1)@
 
 [[Suggestions&lt;-What are you going to do?]]
 
@@ -1147,15 +1147,15 @@ Christina: I saw a history video on them, once.
 
 Christina: There&#39;s a hatch on the side of it, but I&#39;m not sure how I feel about getting too close.@set(Steps=0)@
 
-[[Shoot it.-&gt;Shoot it]]@if(Rifle=1)then(show)##if(Trust&gt;3)then(Show)@
+[[Shoot it.-&gt;Shoot it]]@if(Rifle=1)&amp;&amp;if(Trust&gt;3)then(Show)@
 
 [[Shoot it.-&gt;Shoot it Pistol]]@if(Rifle=1)then(Hide)@
 
-[[Throw a rock at it-&gt;Throw rock]] 
+[[Throw a rock at it?-&gt;Throw rock]] 
 
-[[Open the Hatch-&gt;Hatch GO]]@if(Trust&gt;3)then(Hide)@
+[[Open the hatch.-&gt;Hatch GO]]@if(Trust&gt;3)then(Hide)@
 
-[[Open the Hatch-&gt;No Hatch]]@if(Trust&lt;4)then(Hide)@
+[[Open the hatch.-&gt;No Hatch]]@if(Trust&lt;4)then(Hide)@
 
 
 
@@ -1163,7 +1163,7 @@ Christina: There&#39;s a hatch on the side of it, but I&#39;m not sure how I fee
 
 Christina: I mean I guess it beats poking it with a stick.@set(Steps=1)@
 
-Christina: I&#39;m going to get behind this boulder and try it.@wait(3Sec)@
+Christina: I&#39;m going to get behind this boulder and I&#39;ll try it.@wait(3Sec)@
 
 Christina: Hold on.@set(Steps=0)##wait(5Sec)@
 
@@ -1195,7 +1195,7 @@ Christina: I could probably open the hatch, but are you sure this is a good idea
 
 [[It&#39;s fine, open it.-&gt;Game Over Hatch]]
 
-[[Let&#39;s try something else.-&gt;Options 2 &amp; Leave]]@set(Trust+1)@ </tw-passagedata><tw-passagedata pid="66" name="No Hatch" tags="" position="2872,9158" size="100,100">Christina: That&#39;s not going to happen. That thing looks super scary, and it might still be on.
+[[Let&#39;s try something else.-&gt;Options 2 Leave]]@set(Trust+1)@ </tw-passagedata><tw-passagedata pid="66" name="No Hatch" tags="" position="2872,9158" size="100,100">Christina: That&#39;s not going to happen. That thing looks super scary, and it might still be on.
 
 Christina: Let&#39;s do something else, okay?
 
@@ -1223,22 +1223,24 @@ Christina: My heart is racing so fast right now.
 
 </tw-passagedata><tw-passagedata pid="68" name="No bullets" tags="" position="2479,9565" size="100,100">Christina:: It&#39;s making a clicking sound.
 
-Christina: Sounds like it&#39;s out of bullets.
+Christina: Sounds like it&#39;s out of bullets!
 
-Christina: What&#39;s next?@set(Steps=0)@
+Christina: Haha! We outsmarted a broken death-machine!   
+    
+Christina: So... I should probably try the hatch out. Gimme a sec.@set(Steps=0)@
 
-[[Check the Hatch-&gt;Siphon]]@set(Steps=1)@
-
-
-
-
+[[Good plan.-&gt;Siphon]]@set(Steps=1)@
 
 
-</tw-passagedata><tw-passagedata pid="69" name="Siphon" tags="" position="2491,9798" size="100,100">Christina: Is that a good idea?
 
-Christina: It is out of bullets.
 
-Christina: If this goes wrong it&#39;s on you.
+
+
+</tw-passagedata><tw-passagedata pid="69" name="Siphon" tags="" position="2491,9798" size="100,100">Christina: I&#39;m not entirely sure it&#39;s the best idea...
+
+Christina: But the thing is definitely out of bullets.
+
+Christina: Let&#39;s hope it doesn&#39;t have any stabby parts to attack with, still.
 
 Christina: Okay. I&#39;ve lifted up the hatch, but, uh...@wait(5Sec)##set(Steps=0)@ 
 
@@ -1248,7 +1250,7 @@ Christina: It looks like it has a reserve gas tank.
 
 Christina: Not much I can do though.@if(Siphon=1)then(Hide)@
 
-Christina: Where should I go?@if(Siphon=1)then(Hide)@
+Christina: Where should I go next?@if(Siphon=1)then(Hide)@
 
 [[Gas&lt;-Can you siphon out the gas?]]@if(Siphon=1)then(Show)@
 
@@ -1258,9 +1260,9 @@ Christina: Where should I go?@if(Siphon=1)then(Hide)@
 
 Christina: Should I go fill up the generator or go to the ridge?
 
-[[Back to generator&lt;-Generator.]]@set(Steps=1)@
+[[Back to generator&lt;-The generator seems like a good idea.]]@set(Steps=1)@
 
-[[Walk Ridge&lt;-Ridge.]]@set(Steps=1)@
+[[Walk Ridge&lt;-Head to the ridge.]]@set(Steps=1)@
 
 </tw-passagedata><tw-passagedata pid="71" name="Threw rock" tags="" position="2528,9254" size="100,100">Christina: SAM!!!@wait(4Sec)@
 
@@ -1274,20 +1276,22 @@ Christina: to be alive
 
 Christina: right now.
 
-Christina: That thing almost killed me! I hit it with the rock and it started shooting back!!!! 
+Christina: That thing almost killed me! I hit it with the rock and it started shooting everywhere!!!! 
 
 [[Threw rock 2&lt;-Christina, are you ok?]]
 
 </tw-passagedata><tw-passagedata pid="72" name="Out of Bullets" tags="" position="2627,9647" size="100,100">
 Christina: Okay.@set(Steps=1)@
 
-Christina: It worked.
+Christina: It worked!
 
 Christina: It&#39;s making this nasty clicking sound, and it&#39;s not shooting at the rocks anymore, so I think that means it&#39;s out of bullets.
 
+Christina: Haha! We outsmarted a broken death-machine!   
+       
 Christina: What&#39;s next?@set(Steps=0)@
 
-[[Check the Hatch-&gt;Siphon]]@set(Steps=1)@
+[[Check the hatch.-&gt;Siphon]]@set(Steps=1)@
 
 </tw-passagedata><tw-passagedata pid="73" name="Hatch Fail Leave" tags="" position="2711,9342" size="100,100">Christina: You&#39;re right.
 
@@ -1308,15 +1312,15 @@ SID: The machinery must have killed her.
 
 SID: Shall I initiate another scan for further lifeforms? 
 
-[[RT Beginning&lt;-Game Over.]]@set(Heart=1)@</tw-passagedata><tw-passagedata pid="75" name="Options 2 &amp; Leave" tags="" position="2837,9431" size="100,100">Christina: I guess &quot;provoke the military terror-weapon&quot; isn&#39;t a great idea, is it?
+[[RT Beginning&lt;-Game Over.]]@set(Heart=1)@</tw-passagedata><tw-passagedata pid="75" name="Options 2 Leave" tags="" position="2837,9431" size="100,100">Christina: I guess &quot;provoke the military terror-weapon&quot; isn&#39;t a great idea, is it?
 
-Christina: What&#39;s next?
+Christina: If I&#39;m not going to poke at it&#39;s innards... what do you suggest next?
 
 [[Shoot it.-&gt;Shoot it]]@if(Rifle=1)&amp;&amp;if(Trust&gt;3)then(Show)@
 
 [[Shoot it.-&gt;Shoot it Pistol]]@if(Rifle=1)then(Hide)@
 
-[[Throw a rock at it-&gt;Throw rock]]
+[[Throw a rock at it.-&gt;Throw rock]]
 
 [[Walk Ridge&lt;-I guess go to the ridge.]]@set(Steps=1)@
 
@@ -1330,17 +1334,19 @@ Christina: It’s a machine from back in the war.
 
 [[KillBot 2&lt;-What where they used for?]]
 
-</tw-passagedata><tw-passagedata pid="77" name="Ridge Entry" tags="" position="4037,8392" size="100,100">Christina: Sam, It’s gorgeous.@set(Steps=0)##set(Heart=2)##wait(30Sec)@
+</tw-passagedata><tw-passagedata pid="77" name="Ridge Entry" tags="" position="4037,8392" size="100,100">Christina: Sam... It’s just gorgeous.@set(Steps=0)##set(Heart=2)##wait(30Sec)@
 
 Christina: I’m kinda overwhelmed by how pretty it is. 
 
-Christina: I can see all these trees, and the sun is huge, but then you look and it just goes on.
+Christina: I can see all these trees, and the sun is huge, but then you look out and it just goes on.
 
 Christina: And on.
 
 Christina: And on.
 
-Christina: I always thought looking at the world would make me full, complete or something.
+Christina: It goes on forever.
+    
+Christina: I always thought looking at the world would make me full... like complete or something.
 
 Christina: Don’t get me wrong, it’s gorgeous.@wait(5Sec)@
 
@@ -1350,17 +1356,17 @@ Christina: It makes you feel tiny and insignificant though.
 
 Christian: More so than normal, I guess.@set(Heart=1)##set(Steps=1)@
 
-Christina: In the bunker you felt like you knew the whole world, you know? Like if you put something down, you could find it again. You knew your pupose and role.
+Christina: In the bunker you felt like you knew the whole world, you know? Like if you put something down, you could find it again. You knew your purpose and role.
 
 Christina: Have you ever felt that way?@wait(4Sec)##set(Steps=0)@
 
 [[Can you take a closer look?-&gt;No Viewing]]@if(Rifle=1)then(hide)##set(Cynicism+1)@
 
-[[Viewing Rifle&lt;-Can you see anything from there?]]@if(Rifle=1)then(show)##set(Cynicism+1)@
+[[Viewing Rifle&lt;-Can you see anything from up there?]]@if(Rifle=1)then(show)##set(Cynicism+1)@
 
 [[Utopia Compare&lt;-Utopia is like that.]]@if(UtopiaSam=1)then(show)##set(Trust+3)@
 
-[[Goes on forever&lt;-Is it really forever?]]@if(SurfaceSam=1)then(Hide)@</tw-passagedata><tw-passagedata pid="78" name="Utopia Compare" tags="" position="3923,8507" size="100,100">Christina: Then you can imagine how scary this is.
+[[Goes on forever&lt;-It really goes on forever?]]@if(SurfaceSam=1)then(Hide)@</tw-passagedata><tw-passagedata pid="78" name="Utopia Compare" tags="" position="3923,8507" size="100,100">Christina: Then you can imagine how scary this is.
 
 Christina: You could leave a place and never, ever, come back. So long as you lived.
 
@@ -1368,9 +1374,9 @@ Christina: Anyway...
 
 Christina: I do see something at the foot of this mountain.
 
-Christina: I think it&#39;s...buildings? It looks like a towns from the old western movies.@set(Heart=2)@
+Christina: I think it&#39;s...buildings? It looks like a town from the old western movies.@set(Heart=2)@
 
-Christina: My mom loved those movies..@wait(5Sec)@
+Christina: My mom loved those movies...@wait(5Sec)@
 
 Christina: And in the distance I see something weird.@set(Heart=1)@ 
 
@@ -1394,13 +1400,13 @@ SID: It appears a read receipt has been issued.
 
 </tw-passagedata><tw-passagedata pid="80" name="Goes on forever" tags="" position="4185,8517" size="100,100">Christina: Technically...
 
-Christina: The whole world is a sphere, so you could walk the whole thing if you tried. Maybe?
+Christina: The planet is a sphere, so you could walk the whole thing if you tried. Maybe?
 
 Christina: It doesn&#39;t look like it, though. It just looks like forever.
 
 Christina: That&#39;s not to say it all looks the same. I see something at the foot of this mountain.
 
-Christina: I think it&#39;s...buildings? It looks like the towns in the old western movies.
+Christina: I think it&#39;s...buildings? It looks like the towns in those old western movies.
 
 Christina: And in the distance I see something weird. It&#39;s like a mountain or something.
 
@@ -1414,11 +1420,11 @@ Christina: That&#39;s about all I can see.
 
 Christina: Hold on.@wait(10Sec)@ 
 
-Christina: Tree’s, Tree’s, and more Tree’s, 
+Christina: Trees... some trees, and more trees, 
 
-Christina: Oh wait… Mountain. 
+Christina: Oh wait… mountain. 
 
-Christina: Then more Tree’s.
+Christina: Then more trees.
 
 Christina: Woah.
 
@@ -1458,7 +1464,7 @@ Christina: I have smelled this before.
 
 Christina: I can&#39;t remember where from though...  
 
-Christina: Sam, there&#39;s a ton of blood here... @wait(3Sec)@
+Christina: Sam, there&#39;s a ton of blood here...@wait(3Sec)@
 
 Christina: What if its my mom's???@wait(3Sec)##set(Heart=2)@
 
@@ -1468,7 +1474,7 @@ Christina: Sam???@set(Steps=1)@
 
 [[Building 2A&lt;-You don&#39;t know it&#39;s her blood.]]
 
-</tw-passagedata><tw-passagedata pid="85" name="Terminal" tags="" position="1486.3333333333335,8987.666666666666" size="100,100">Christina: It&#39;s buried under wrappers. Most of it I can&#39;t even make it out.@set(Steps=0)##wait(5Sec)@
+</tw-passagedata><tw-passagedata pid="85" name="Terminal" tags="" position="1486.3333333333335,8987.666666666666" size="100,100">Christina: It&#39;s buried under wrappers. Most of it I can&#39;t even make it out. One sec.@set(Steps=0)##wait(5Sec)@
 
 Christina: Oh there&#39;s a &quot;log-cake confection: cream filled iteration. Manufactured January 6, 2022. Enjoy by: October 10, 2853&quot;.@wait(4Sec)@ 
 
@@ -1478,7 +1484,7 @@ Christina: Let me clean it off, see if I can use it.
 
 Christina: Okay. Terminal&#39;s clear. The keyboard&#39;s in English! It&#39;s off, though.@wait(5Sec)@
 
-[[Can you turn it on?-&gt;Terminal Off]]
+[[Can you turn it on?-&gt;Terminal Off]]@if(PathContains=Gas)then(Hide)@
 
 [[Terminal On B&lt;-Do you know how to turn it on?]]@if(PathContains=Gas)then(Show)@
 
@@ -1492,7 +1498,7 @@ Christina: It doesn&#39;t turn on.
 
 Christina: I think it&#39;s out of gas.
 
-[[Check out to the Terminal.-&gt;Terminal]]@set(Steps=1)@
+[[Check out to the terminal.-&gt;Terminal]]@set(Steps=1)@
 
 [[Go to the other room.-&gt;Other Room]]@set(Steps=1)@
 
@@ -1511,7 +1517,7 @@ Christina: At least it covers up the body smell.
 
 [[Other Room NO&lt;-Can you check inside?]]@if(Trust&lt;4)then(Show)@
 
-</tw-passagedata><tw-passagedata pid="88" name="Other Room A" tags="" position="650.6666666666666,9556.666666666666" size="100,100">Christina: Uh..
+</tw-passagedata><tw-passagedata pid="88" name="Other Room A" tags="" position="650.6666666666666,9556.666666666666" size="100,100">Christina: Uh...
 
 Christina: I&#39;ve been living in a bubble, so I&#39;m sure my immune system is useless out here. 
 
@@ -1521,7 +1527,7 @@ Christina: Right?
 
 [[Other Room Siphon&lt;-Anything in the emergency bag you can use?]]
 
-[[Go to the Terminal.-&gt;Terminal]]@set(Steps=1)@
+[[Go to the terminal.-&gt;Terminal]]@set(Steps=1)@
 
 [[Check the generator.-&gt;Generator]]@set(Steps=1)@
 
@@ -1535,13 +1541,13 @@ Christina: Going in there unprotected is just asking for trouble.
 
 Christina: And what am I going to find in a bathroom, anyway?
 
-[[Is anything in your bag?-&gt;Other Room NO B]]
+[[Is there anything in your bag to help?-&gt;Other Room NO B]]
 
-[[Go to the Terminal then.-&gt;Terminal]]@set(Steps=1)@
+[[Go to the terminal then.-&gt;Terminal]]@set(Steps=1)@
 
 [[Check the generator.-&gt;Generator]]@set(Steps=1)@
 
-</tw-passagedata><tw-passagedata pid="90" name="Other Room Siphon" tags="" position="493.3333333333333,9628.666666666666" size="100,100">Christina: The radioactive suit.
+</tw-passagedata><tw-passagedata pid="90" name="Other Room Siphon" tags="" position="493.3333333333333,9628.666666666666" size="100,100">Christina: The rad suit? ahhh... gross... but it might work.
 
 Christina: Hm...
 
@@ -1551,27 +1557,29 @@ Christina: I&#39;ll put it on and take a look around.
 
 Christina: But if I get sick, I&#39;m coming after you!?@set(Steps=1)@
 
-Christina: Ugh. It&#39;s just...slush. To my ankles. That&#39;s almost all it is in here, slush.@wait(15Sec)@
+Christina: Ugh. It&#39;s just...sludge. To my ankles. That&#39;s almost all it is in here. I'm about to throw up IN the suit.@wait(45Sec)@
 
 [[Other Room Siphon 2&lt;-See if there is anything you can use.]]
 
 
-</tw-passagedata><tw-passagedata pid="91" name="Other Room NO B" tags="" position="563.3333333333334,9282.666666666666" size="100,100">Christina: No, I don&#39;t want too.
+</tw-passagedata><tw-passagedata pid="91" name="Other Room NO B" tags="" position="563.3333333333334,9282.666666666666" size="100,100">Christina: Doesn't matter. Not going in there.
 
 Christina: I&#39;m leaving this room.
 
-[[Go to the Terminal then.-&gt;Terminal]]@set(Steps=1)@
+[[Go to the terminal then.-&gt;Terminal]]@set(Steps=1)@
 
 [[Check the generator.-&gt;Generator]]@set(Steps=1)@
-</tw-passagedata><tw-passagedata pid="92" name="Terminal Off" tags="" position="1618.6666666666667,9326.333333333334" size="100,100">Christina: No. It looks like it&#39;s connected to the generator, and that&#39;s not on.@if(PathContains=Generator)then(Hide)@
+</tw-passagedata><tw-passagedata pid="92" name="Terminal Off" tags="" position="1618.6666666666667,9326.333333333334" size="100,100">Christina: No. It looks like it&#39;s connected to the generator, and that&#39;s not running.@if(PathContains=Generator)then(Hide)@
 
-Christina: Remember, no gas for the generator.@if(PathContains=Generator)then(Show)@
+Christina: Remember? No gas for the generator.@if(PathContains=Generator)then(Show)@
 
-Christina: I can&#39;t do anything here until the generator is on.
+Christina: I can&#39;t do anything here until I get the generator going.
 
-[[Check Other Room.-&gt;Other Room]]@set(Steps=1)@
+[[Check the other side room.-&gt;Other Room]]@set(Steps=1)@
 
-[[Check the generator.-&gt;Generator]]@set(Steps=1)@
+[[Head back to the generator.-&gt;Generator]]@set(Steps=1)##if(PathContains=Generator)then(Show)@
+    
+[[Check out the generator.-&gt;Generator]]@set(Steps=1)##if(PathContains=Generator)then(Hide)@
 
 [[Go check one of the other locations.-&gt;Leave Bunker]]@set(Steps=1)@
 </tw-passagedata><tw-passagedata pid="93" name="Terminal On" tags="" position="1241,9820" size="100,100">Christina: Okay. I&#39;m back at the terminal.@set(Steps=0)@ 
@@ -1604,7 +1612,7 @@ Christina: That must be what&#39;s on the front of the building.
 </tw-passagedata><tw-passagedata pid="95" name="Leave Area" tags="" position="3234,10317" size="100,100">
 Christina: Ok, it’s a little ways down the mountain.
 
-Christina: I’m not sure how long it’s going to take to get there. 
+Christina: I’m not sure how long it’s going to take to walk it. 
 
 Christina: Maybe a few hours.@set(Steps=0)@
 
@@ -1615,7 +1623,7 @@ Christina: Thank you, Sam.@set(Steps=0)@
 Christina: You too SID.
 [[End of Day&lt;-Be safe.]]@set(Trust+1)@
 
-[[End of Day&lt;-Yep, whatever.]]@set(Trust-1)@</tw-passagedata><tw-passagedata pid="96" name="ENDWORK SID" tags="" position="3425,12194" size="100,100">[[ENDWORK SID 2&lt;-SID, what&#39;s the status of Christina?]]</tw-passagedata><tw-passagedata pid="97" name="Camping Intro" tags="" position="3407,12515" size="100,100">Christina: Hey!@wait(10Min)@
+[[End of Day&lt;-Just hurry.]]@set(Trust-1)@</tw-passagedata><tw-passagedata pid="96" name="ENDWORK SID" tags="" position="3425,12194" size="100,100">[[ENDWORK SID 2&lt;-SID, what&#39;s the status of Christina?]]</tw-passagedata><tw-passagedata pid="97" name="Camping Intro" tags="" position="3407,12515" size="100,100">Christina: Hey!@wait(10Min)@
 
 Christina: Sorry, I didn&#39;t hear the notification.
 
@@ -2859,7 +2867,7 @@ Christina: I have this rifle, so hunting is an option.@if(gun==2)then(Show)@
 
 Christina: But gathering fruit sounds a lot easier.@if(gun==2)then(Show)@
 
-Christina: I only have a pistol, so that makes hunting quite difficult. @if(gun==1)then(Show)@
+Christina: I only have a pistol, so that makes hunting quite difficult.@if(gun==1)then(Show)@
 
 Christina: But I could still look for some fruit or something, right?@if(gun==1)then(Show)@
 
@@ -8272,7 +8280,7 @@ SID: Proceed?
 
 [[B856B&lt;-No, let Christina find a way in herself]]@if(Cynicism&gt;X)then(Show)@
 
-[[B856A&lt;-No, let Christina find a way in herself]] @if(Cynicism&gt;X)then(Hide)@
+[[B856A&lt;-No, let Christina find a way in herself]]@if(Cynicism&gt;X)then(Hide)@
 
 [[B856C&lt;-Proceed]]@if(Suspicion&lt;X)then(Show)@
 
@@ -9490,7 +9498,7 @@ SID: Sam, she is very resourceful.@if(christinaEscape==1)then(Show)@
 
 SID: Though, credit should be given to her companions, too.@if(christinaEscape==1)then(Show)@
 
-SID: I don&#39;t know what happened to her during the blackout. @if(christinaEscape==1)then(Show)@
+SID: I don&#39;t know what happened to her during the blackout.@if(christinaEscape==1)then(Show)@
 
 SID: In the past six hours I have simulated 128 possible outcomes of her escape. 94 involved her returning to the bunker.@if(christinaEscape==1)then(Show)@
 
@@ -11398,7 +11406,7 @@ SID: Hello, Christina.
 
 SID: Scanning Nuclear Reactor Q485 systems.
 
-SID: I am sorry, Christina. @wait(15Sec)@
+SID: I am sorry, Christina.@wait(15Sec)@
 
 SID: The chances of repairing the Nuclear Reactor Q485 system WITHOUT triggering explosion =2.5%.
 
@@ -12871,16 +12879,15 @@ Christina: Any thought&#39;s on what I should check out first?
 
 Christina: Give me a bit to take this suit off and get out of here.
 
-[[Walking Wreck&lt;-Ok]]@set(Steps=1)@
-
+[[Walking Wreck&lt;-Ok.]]@set(Steps=1)@
 
 </tw-passagedata><tw-passagedata pid="1073" name="Other Room Siphon B2" tags="" position="583.3333333333334,9961" size="100,100">Christina: I&#39;ll carry it around for a bit.
 
 Christina: Who knows what it could come in handy for. 
 
-[[Go check out the Terminal.-&gt;Terminal]]@set(Steps=1)@
+[[Go check out the terminal.-&gt;Terminal]]@set(Steps=1)@
 
-[[Check to generator.-&gt;Generator]]@set(Steps=1)@
+[[Check the generator.-&gt;Generator]]@set(Steps=1)@
 
 [[Go check one of the other locations.-&gt;Leave Bunker]]
 
@@ -12890,13 +12897,13 @@ Christina: I didn&#39;t get hit though.
 
 Christina: I&#39;m glad I took some medication earlier.
 
-Christina: I would be freaking out way more.@set(Heart=1)@
+Christina: I would be freaking out wayyy more.@set(Heart=1)@
 
 Christina: This is not how I thought my day would go.
 
 Christina: I think it&#39;s like blind or something, because it was shooting all over the place. 
 
-Christina: It missed me, but right as I rolled away some of the bullets started coming through the rock I was hiding behind.
+Christina: It missed me, but right as I rolled away some of the bullets started coming through the rocks I was hiding behind.
 
 Christina: I&#39;m covered in dust. Um.
 
@@ -12941,7 +12948,7 @@ Christina: What do you think?
 [[Hatch Fail Leave&lt;-You&#39;re right, it&#39;s too dangerous]]@set(Trust+1)@
 
 
-</tw-passagedata><tw-passagedata pid="1078" name="Shoot it Pistol" tags="" position="2591,9008" size="100,100">Christina: All I have is my pistol with one bullet, remember? @set(Steps=0)@ 
+</tw-passagedata><tw-passagedata pid="1078" name="Shoot it Pistol" tags="" position="2591,9008" size="100,100">Christina: All I have is my pistol with one bullet, remember?@set(Steps=0)@ 
 
 Christina: I don’t want to waste it.
 
@@ -12949,11 +12956,11 @@ Christina: Just in case I might need it.
 
 Christina: Any other thoughts? 
 
-[[Throw a rock at it-&gt;Throw rock]] 
+[[Throw a rock at it?-&gt;Throw rock]] 
 
-[[Open the Hatch-&gt;Hatch GO]]@if(Trust&gt;3)then(Hide)@
+[[Open the hatch.-&gt;Hatch GO]]@if(Trust&gt;3)then(Hide)@
 
-[[Open the Hatch-&gt;No Hatch]]@if(Trust&lt;4)then(Hide)@
+[[Open the hatch.-&gt;No Hatch]]@if(Trust&lt;4)then(Hide)@
 
 </tw-passagedata><tw-passagedata pid="1079" name="Leave Ridge" tags="" position="3709,8662" size="100,100">Christina: Yeah. 
 
@@ -13005,7 +13012,7 @@ Christina: What do you think I should do?
 
 [[Building Entry&lt;-Ok.]]
 
-[[Revisit Building&lt;-Ok.]]@if(PathContains=Building Entry)then(Show)@</tw-passagedata><tw-passagedata pid="1083" name="No Viewing" tags="" position="3960,8646" size="100,100">Christina:  Straight to business, huh...
+[[Revisit Building&lt;-Ok.]]@if(PathContains=Building Entry)then(Show)@</tw-passagedata><tw-passagedata pid="1083" name="No Viewing" tags="" position="3960,8646" size="100,100">Christina: Straight to business, huh...@if(PathContains=Utopia Compare)||if(PathContains=Goes on forever)then(Hide)@
 
 Christina: Um, I didn’t see any binoculars in the bag. 
 
@@ -13029,7 +13036,7 @@ Christina: For fun!
 
 [[Focus&lt;-Just focus.]] 
 
-</tw-passagedata><tw-passagedata pid="1085" name="Dome?" tags="" position="4009,9118" size="100,100">Christina: Yeah, probably some other shelter or something.@set(Heart=1)@ 
+</tw-passagedata><tw-passagedata pid="1085" name="Dome?" tags="" position="4009,9118" size="100,100">Christina: I dunno, probably some other shelter or something?@set(Heart=1)@ 
 
 Christina: My mom said there was a point during the war they were building some weird stuff trying to win.@set(Steps=1)@
 
@@ -13039,9 +13046,9 @@ Christina: She said it was so far in the past it wasn’t worth getting into the
 
 Christina: IDK.@set(Steps=0)@
 
-Christina: Nothing worth wasting our time on.
+Christina: It's probably not worth considering at this point.
 
-Christina: That thing is way to far off in the distance. 
+Christina: It looks like it's about a zillion miles off. No way I could walk there. 
 
 [[Kid&lt;-Do you still see the kid?]]@if(PathContains=Viewing Rifle 2)then(Show)@
 
@@ -13057,7 +13064,7 @@ Christina: Maybe it&#39;s some kind of shelter from the war?
 
 Christina: Wait, wait, wait.@set(Heart=2)@
 
-Christina: There is a town too at the bottom of the mountain.@set(Town=1)@
+Christina: There is a town down there too, at the bottom of the mountain.@set(Town=1)@
 
 Christina: Oh.@wait(4Sec)@
 
@@ -13071,7 +13078,7 @@ Christina: A real live kid, Sam!@set(Kid=1)@
 
 [[Another Human?-&gt;Kid]]
 
-[[What about this dome?-&gt;Dome?]]
+[[Tell me about the dome.-&gt;Dome?]]
 
 [[Stay focused.-&gt;Focus]]@set(Trust+1)@
 
@@ -13079,11 +13086,11 @@ Christina: A real live kid, Sam!@set(Kid=1)@
 
 Christina: What am I going to find inside an abandoned radio tower?
 
-CHristina: If I leave now I might be able to mmake it down to the town before dark.
+CHristina: If I leave now I might be able to make it down to the town before dark.
 
 Christina: I just want to find my mom, that&#39;s it.
 
-[[Leave Area&lt;-Let&#39;sead to the town.]]@if(Town=1)then(show)##set(Steps=1)@
+[[Leave Area&lt;-Let&#39;s head to the town.]]@if(Town=1)then(show)##set(Steps=1)@
 </tw-passagedata><tw-passagedata pid="1088" name="No Viewing 2" tags="" position="3942,8767" size="100,100">Christina: Actually, I see some dome way off in the distance.
 
 Christina: Must be some shelter or something.
@@ -13302,8 +13309,6 @@ Christina: Sam, I’m crying so hard right now...
 
 [[RT Body end&lt;-See? I told you.]]
 
-
-
 </tw-passagedata><tw-passagedata pid="1107" name="RT Body end" tags="" position="1331.3333333333333,8450.666666666666" size="100,100">
 Christina: Hang on, let me gather myself.@set(Heart=2)@
     
@@ -13313,9 +13318,9 @@ Christina: Ok.@wait(15Sec)##music(track1)@
 
 Christina: Let me see what&#39;s around.@set(Steps=1)@
 
-Christina: There&#39;s a terminal covered in trash, a generator and then some kind of side room.@set(Heart=1)##wait(5Sec)@
+Christina: There&#39;s a terminal covered in trash, a generator, and then some kind of side room.@set(Heart=1)##wait(5Sec)@
 
-[[Go to the Terminal.-&gt;Terminal]]@set(Steps=1)@
+[[Go to the terminal.-&gt;Terminal]]@set(Steps=1)@
 
 [[Check the generator.-&gt;Generator]]@set(Steps=1)@
 
@@ -13335,14 +13340,15 @@ Christina: I don’t care.
 
 </tw-passagedata><tw-passagedata pid="1109" name="RT Body GO 3" tags="" position="812,8145" size="100,100">SID: Connection =Lost.@set(Heart=0)##set(Steps=0)@
 
-SID: Her instabilities seemed to have been too much. 
+SID: Christina seems to have powered off her communicator. 
 
-SID: Christina mission failure =Imminent. 
+SID: Mission failure =Imminent. 
 
-SID: Shall I notify you when another connection is found?
+SID: I'm sorry, Sam. I know this was important to you.
+
+SID: Shall I notify you if another connection is found?
 
 [[Building Entry&lt;-GAME OVER.]]@set(Trust=3)@
-
 
 </tw-passagedata><tw-passagedata pid="1110" name="RT Body GO 2" tags="" position="635,8257" size="100,100">Christina: Leave me alone, Sam.
 
@@ -13350,9 +13356,9 @@ Christina: I’m going home!
 
 Christina: She didn’t want me so why am I going to go find her???
 
-[[RT Body GO 3&lt;-Christina?, you don&#39;t know if that&#39;s why she left.]]
+[[RT Body GO 3&lt;-Christina, you don&#39;t know that&#39;s why she left.]]
 
-[[RT Body GO 3&lt;-Yeah, I guess you&#39;re right.]]
+[[RT Body GO 3&lt;-She was going to look for help!]]
 </tw-passagedata><tw-passagedata pid="1111" name="Leave Bunker" tags="" position="2143.333333333333,9441.666666666666" size="100,100">Christina: You sure?
 
 Christina: What if there is some information in here about her?
@@ -13366,7 +13372,7 @@ Christina: What if there is some information in here about her?
 [[Walk Ridge&lt;-Go to the ridge.]]@set(Steps=1)@
 </tw-passagedata><tw-passagedata pid="1112" name="Other Room Siphon 2" tags="" position="408,9772.666666666666" size="100,100">Christina: There&#39;s something metallic in the tub.@set(Steps=0)@ 
 
-Christina: It&#39;s a pump! Or a siphon? Like if you wanted to suck water out of something into this conainer.@set(Siphon=1)@
+Christina: It&#39;s a pump! Or a siphon? Like if you wanted to suck water out of something into a container.@set(Siphon=1)@
 
 Christina: Stupid, why&#39;s it in here?
 
@@ -13374,7 +13380,7 @@ Christina: It&#39;s full of who knows what, let me empty it....
 
 Christina: oh it&#39;s nasty.@wait(4Sec)@
 
-Christina: Okay. We&#39;re done here.@wait(3Sec)##set(Steps=1)@
+Christina: Okay. We&#39;re done here. Get me outta heeeere. ACK.@wait(3Sec)##set(Steps=1)@
 
 Christina: Maybe I can find fuel somewhere for the generator.@if(PathContains=Generator)then(Show)@
 
@@ -13382,9 +13388,9 @@ Christina: Maybe I can find fuel somewhere for the generator.@if(PathContains=Ge
 
 [[That&#39;s random.-&gt;Other Room Siphon B2]]</tw-passagedata><tw-passagedata pid="1113" name="Terminal On B" tags="" position="1097,9819" size="100,100">Christina: I’m not an idiot. 
 
-Christina: I messed with the terminals back at the bunker.
+Christina: I messed with the terminals back at the bunker all the time.
 
-Christina: Thsi one is crazy older though. 
+Christina: This one is crazy older though. 
 
 Christina: It may be pre-war.
 
@@ -13395,13 +13401,13 @@ Christina: I&#39;m surprised it still works.
 
 Christina: What do you want me to check?
 
-[[Go to the Terminal-&gt;Terminal]]@set(Steps=1)##if(PathContains=Terminal)then(Hide)@
+[[Go to the terminal-&gt;Terminal]]@set(Steps=1)##if(PathContains=Terminal)then(Hide)@
 
 [[Check the generator-&gt;Generator]]@set(Steps=1)##@set(Steps=1)##if(PathContains=Generator)then(Hide)@
 
 [[Check the other room-&gt;Other Room]]@set(Steps=1)##if(PathContains=Other Room)then(Hide)@
 
-[[Go back to the Terminal.-&gt;Terminal revisit]]@set(Steps=1)##if(PathContains=Terminal)then(Show)@
+[[Go back to the terminal.-&gt;Terminal revisit]]@set(Steps=1)##if(PathContains=Terminal)then(Show)@
 
 [[Check out the generator again.-&gt;Generator revisit]]@set(Steps=1)##@set(Steps=1)##if(PathContains=Generator)then(Show)@
 
@@ -13417,30 +13423,30 @@ Christina: What do you want me to check?
 
 [[Go check one of the other locations.-&gt;Leave Bunker unsure]]@set(Steps=1)@</tw-passagedata><tw-passagedata pid="1116" name="Generator revisit" tags="" position="1699.0000000000002,8642.333333333334" size="100,100">Christina: Unless I find gas there is nothing I can do with it. 
 
-Christina: I bet the wreck might have some.@if(Siphon=1)then(Show)@
+Christina: I wonder if the wreck outside might have some?@if(Siphon=1)then(Show)@
 
 Christina: What should I do?
 
-[[Go to the Terminal-&gt;Terminal]]@set(Steps=1)##if(PathContains=Terminal)then(Hide)@
+[[Go to the terminal-&gt;Terminal]]@set(Steps=1)##if(PathContains=Terminal)then(Hide)@
 
 [[Check the other room-&gt;Other Room]]@set(Steps=1)##if(PathContains=Other Room)then(Hide)@
 
-[[Go back to the Terminal.-&gt;Terminal revisit]]@set(Steps=1)##if(PathContains=Terminal)then(Show)@
+[[Go back to the terminal.-&gt;Terminal revisit]]@set(Steps=1)##if(PathContains=Terminal)then(Show)@
 
 [[Back to the other room.-&gt;Other Room revisit]]@set(Steps=1)##if(PathContains=Other Room)then(Show)@
 
 [[Go check one of the other locations.-&gt;Leave Bunker unsure]]@set(Steps=1)@
 </tw-passagedata><tw-passagedata pid="1117" name="Other Room revisit" tags="" position="1730.3333333333333,8875" size="100,100">Christina: I’m not going back there, it’s such a waste of time.@if(PathContains=Other Room NO)then(Show)@
 
-Christina: I have the Siphon, I just need to find something to siphon out with.@if(Siphon=1)then(Show)@
+Christina: I have the Siphon, I just need to find something to siphon fuel out of.@if(Siphon=1)then(Show)@
 
 Christina: Maybe the wreck?@if(Siphon=1)then(Show)@
 
-[[Go to the Terminal-&gt;Terminal]]@set(Steps=1)##if(PathContains=Terminal)then(Hide)@
+[[Go to the terminal-&gt;Terminal]]@set(Steps=1)##if(PathContains=Terminal)then(Hide)@
 
 [[Check the generator-&gt;Generator]]@set(Steps=1)##if(PathContains=Generator)then(Hide)@
 
-[[Go back to the Terminal.-&gt;Terminal revisit]]@set(Steps=1)##if(PathContains=Terminal)then(Show)@
+[[Go back to the terminal.-&gt;Terminal revisit]]@set(Steps=1)##if(PathContains=Terminal)then(Show)@
 
 [[Check out the generator again.-&gt;Generator revisit]]@set(Steps=1)##if(PathContains=Generator)then(Show)@
 
@@ -13464,7 +13470,7 @@ Christina: Let&#39;s do something else, okay?
 
 [[Leave Area&lt;-I guess head to the town.]]@if(Town=1)then(show)##set(Steps=1)@</tw-passagedata><tw-passagedata pid="1120" name="RHT Intro 2" tags="" position="1156,10134" size="100,100">Christina: I caught the word &#39;refuge&#39;.
 
-Christina: Something about gladiators, weird.
+Christina: Something about gladiators? Weird.
 
 Christina: I wonder if it&#39;s talking about the town down the street.@if(Town=1)then(Show)@ 
 
@@ -13482,7 +13488,6 @@ Christina: Right?@if(Town=1)then(Show)@
 
 Christina: Do you know anything about them?@if(BunkerSam=1)then(show)##wait(5Sec)@
 
-
 [[Feel&lt;-How do you feel?]]@set(Trust+3)@
 
 [[RHT Sam&lt;-What would I know?]]@if(BunkerSam=1)then(Show)@
@@ -13491,21 +13496,21 @@ Christina: Do you know anything about them?@if(BunkerSam=1)then(show)##wait(5Sec
 
 </tw-passagedata><tw-passagedata pid="1121" name="Feel" tags="" position="1081,10262" size="100,100">Christina: Oh…
 
-Christina: Fine I guess, thanks for asking. 
+Christina: Fine I guess, thanks for asking? 
 
-Christina: It’s all like a surreal nightmare. 
+Christina: It’s all pretty much just a surreal nightmare. 
 
 Christina: I guess it’s better than an apocalyptic world. 
 
-Christina: ….A non-habitable apocalyptic world. 
+Christina: ... A non-habitable apocalyptic world. 
 
-[[Feel 2&lt;-It will be ok, we are going to help you.]] 
+[[Feel 2&lt;-It will be ok. We are going to help you.]] 
 
 
 
-</tw-passagedata><tw-passagedata pid="1122" name="RHT Sam" tags="" position="1231,10284" size="100,100">Christina: I don’t know, maybe your Bunker heard of them. 
+</tw-passagedata><tw-passagedata pid="1122" name="RHT Sam" tags="" position="1231,10284" size="100,100">Christina: I don’t know, maybe your bunker heard of them? 
 
-[[RHT Sam 2&lt;-Oh, yeah. No I don’t.]]
+[[RHT Sam 2&lt;-Oh, yeah. No I haven’t.]]
 </tw-passagedata><tw-passagedata pid="1123" name="RHT Sam 2" tags="" position="1360,10411" size="100,100">Christina: You?
 
 Christina: Hmmm…@set(Trust-3)@
@@ -13516,10 +13521,10 @@ Christina: What’s next?
 
 [[Walk Ridge&lt;-Check the ridge.]]@set(Steps=1)@
 
-[[Leave Area&lt;-Let&#39;sead to the town.]]@if(Town=1)then(show)##set(Steps=1)@
+[[Leave Area&lt;-Let&#39;s head to the town.]]@if(Town=1)then(show)##set(Steps=1)@
 </tw-passagedata><tw-passagedata pid="1124" name="Feel 2" tags="" position="1081,10412" size="100,100">Christina: Thank you, Sam. 
 
-Christina: It&#39;s just stuff like gladiators makes me feel uneasy. 
+Christina: It&#39;s just things like &#39;gladiators&#39; make me feel uneasy. 
 
 Christina: Have you seen the movie Gladiator?@if(BunkerSam=1)then(Show)@
 
@@ -13529,15 +13534,15 @@ Christina: What if they have my mom?
 
 Christina: I feel like she left me knowing that I couldn&#39;t survive out here. 
 
-Christina:  She might be dead, what chance do I have? 
+Christina:  She might be dead... What chance do I have? 
 
-[[Feel Exit&lt;-Just focus, one thing at a time]]
+[[Feel Exit&lt;-Just focus. One thing at a time]]
 
-[[Feel Exit B&lt;-Well, can you blame her?]]@set(Trust-1)@</tw-passagedata><tw-passagedata pid="1125" name="Feel Exit" tags="" position="1006,10562" size="100,100">Christina: You are right. 
+[[Feel Exit B&lt;-Well, can you blame her?]]@set(Trust-1)@</tw-passagedata><tw-passagedata pid="1125" name="Feel Exit" tags="" position="1006,10562" size="100,100">Christina: You&#39;re right. 
 
 Christina: Thank you. 
 
-Christina: Again. @wait(3Sec)@
+Christina: Again.@wait(3Sec)@
 
 Christina: Enough sippy sappy
 
@@ -13545,12 +13550,12 @@ Christina: What’s next?
 
 [[Walk Ridge&lt;-Check the ridge.]]@set(Steps=1)@
 
-[[Leave Area&lt;-Let&#39;sead to the town.]]@if(Town=1)then(show)##set(Steps=1)@
+[[Leave Area&lt;-Let&#39;s head to the town.]]@if(Town=1)then(show)##set(Steps=1)@
 </tw-passagedata><tw-passagedata pid="1126" name="Feel Exit B" tags="" position="1156,10562" size="100,100">Christina: I guess not.
 
 Christina: I just wish she had stayed with me in the bunker. 
 
-Christina: Leave this place together.
+Christina: Or we could have left together... I dunno.
 
 Christina: Whatever. 
 
