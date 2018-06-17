@@ -160,7 +160,11 @@
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
 
 
 
@@ -6762,7 +6766,7 @@ Christina: What&#39;s with you?
 [[278B&lt;-He wasn&#39;t speaking like he usually does]]
 [[278B&lt;-I don&#39;t know. Just &quot;strange.&quot;]]</tw-passagedata><tw-passagedata pid="547" name="277C" tags="" position="7983,54393" size="100,100">SID: Sorry, Sam. But I don&#39;t really want to talk about me right now. I&#39;m alone. I&#39;m in some kind of prairie. My mom was kidnapped by futuristic tribespeople. I don&#39;t think chatting is going to do any good right now.
 
-[[Forward-&gt;Road Encounter]]</tw-passagedata><tw-passagedata pid="548" name="Road Encounter" tags="" position="7763,54787" size="100,100">Christina: Oh. I guess I should tell you where I am. 
+[[Forward-&gt;Road Encounter]]</tw-passagedata><tw-passagedata pid="548" name="Road Encounter" tags="" position="7796.333333333333,54733.666666666664" size="100,100">Christina: Oh. I guess I should tell you where I am. 
 
 **If the GPS is active**
 
@@ -7326,13 +7330,15 @@ SID: I can rededicate my processes to provide you with more pertinent informatio
 
 SID: Goodbye, Sam.
 
-[[Continue-&gt;Steel Mill Arrive]]</tw-passagedata><tw-passagedata pid="619" name="Steel Mill Arrive" tags="" position="6737,61334" size="100,100">Christina: Good morning, Sam! Guess what&#39;s forty feet tall and right ahead of me today.
+[[Continue-&gt;SM Arrive Driving a Car]]@if(PathContains=)then(Show)@
+
+[[Continue-&gt;SM Arrive Bayes Car]]@if(PathContains=)then(Show)@</tw-passagedata><tw-passagedata pid="619" name="SM Arrive Driving a Car" tags="" position="6737,61335.666666666664" size="100,100">Christina: Good morning, Sam! Guess what&#39;s forty feet tall and right ahead of me today.
 
 [[B321A&lt;-A very large tree]]
 
 [[B321B&lt;-An exceptionally big ox]]
 
-[[B321C&lt;-A very old human]]</tw-passagedata><tw-passagedata pid="620" name="B321A" tags="" position="6587,61484" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="621" name="B321B" tags="" position="6737,61484" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="622" name="B321C" tags="" position="6887,61484" size="100,100">Christina: ...
+[[B321C&lt;-A very old human]]</tw-passagedata><tw-passagedata pid="620" name="B321A" tags="" position="6600.333333333333,61535.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="621" name="B321B" tags="" position="6737,61484" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="622" name="B321C" tags="" position="6887,61484" size="100,100">Christina: ...
 
 Christina: What worries me most is that I can&#39;t tell if you&#39;re joking.
 
@@ -7344,7 +7350,9 @@ Christina: It&#39;s got these giant walls of concrete and metal, painted with...
 
 Christina: I guess it&#39;s working for them.
 
-Christina: I took the Ragers&#39; car, which is good because it blends in. People are coming and going in these crazy-looking trucks, dragging all kinds of stuff. I see dead animals. Live animals. Half an airplane.
+Christina: I took the Ragers&#39; car, which is good because it blends in. People are coming and going in these crazy-looking trucks, dragging all kinds of stuff. I see dead animals. Live animals. Half an airplane.@if(PathContains=TODO)then(Show)@
+
+Christina: I bet they&#39;ve seen Abagnale&#39;s car before... but maybe not all wrecked like this. I hope they don&#39;t know him.@if(PathContains=TODO)then(Show)@
 
 Christina: Up ahead are the gates. Now that I&#39;m here, I&#39;m not sure what to do.
 
@@ -7352,7 +7360,7 @@ Christina: Up ahead are the gates. Now that I&#39;m here, I&#39;m not sure what 
 
 [[B322A&lt;-Just drive through]]#T
 [[B322B&lt;-See if you can sneak in]]#C
-[[B322C&lt;-See what other people do]]</tw-passagedata><tw-passagedata pid="623" name="B322A" tags="" position="7216,61509" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="624" name="B322B" tags="" position="7041,61615" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="625" name="B322C" tags="" position="6865,61714" size="100,100">Christina: Okay.
+[[SM Gate Driving Any Car&lt;-See what other people do]]</tw-passagedata><tw-passagedata pid="623" name="B322A" tags="" position="7216,61509" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="624" name="B322B" tags="" position="7041,61615" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="625" name="SM Gate Driving Any Car" tags="" position="6865,61714" size="100,100">Christina: Okay.
 
 **Christina is Busy**
 
@@ -7380,18 +7388,18 @@ Christina: This place is stricter than it looks. I got directed into some kind o
 
 Christina: Um. Now what?
 
-[[B323CA&lt;-Maybe someone knows your mother]]
+[[SM Ask About Mom&lt;-Maybe someone knows your mother]]
 
 [[B323CB&lt;-Look for the Red Horse Tribe]]
 
-[[B323CC&lt;-Get familiar with the town]]
-</tw-passagedata><tw-passagedata pid="626" name="B323CA" tags="" position="6563,61972" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="627" name="B323CB" tags="" position="6713,61972" size="100,100">Christina: You&#39;re right. My mom came in with them. They seem like they&#39;d be a big enough deal to make a splash, but where could I find them?
+[[SM Scope The Town&lt;-Get familiar with the town]]
+</tw-passagedata><tw-passagedata pid="626" name="SM Ask About Mom" tags="" position="6563,61972" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="627" name="B323CB" tags="" position="6713,61972" size="100,100">Christina: You&#39;re right. My mom came in with them. They seem like they&#39;d be a big enough deal to make a splash, but where could I find them?
 
 [[B324CBA&lt;-Wherever people socialize]]
 
 [[B324CBB&lt;-Wherever the rulers are]]
 
-[[B324CC&lt;-Wherever trading happens]]</tw-passagedata><tw-passagedata pid="628" name="B323CC" tags="" position="6863,61972" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="629" name="B324CBA" tags="" position="6563,62122" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="630" name="B324CBB" tags="" position="6713,62122" size="100,100">Christina: I see. If there&#39;s a lot of them, they probably have to deal with whoever&#39;s in charge here. I&#39;m not sure how to find out who that is, though. What do I do, walk up to someone and ask if they know where the mayor&#39;s house is?
+[[B324CC&lt;-Wherever trading happens]]</tw-passagedata><tw-passagedata pid="628" name="SM Scope The Town" tags="" position="6863,61972" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="629" name="B324CBA" tags="" position="6563,62122" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="630" name="B324CBB" tags="" position="6713,62122" size="100,100">Christina: I see. If there&#39;s a lot of them, they probably have to deal with whoever&#39;s in charge here. I&#39;m not sure how to find out who that is, though. What do I do, walk up to someone and ask if they know where the mayor&#39;s house is?
 
 
 **Christina is Busy**
@@ -7689,13 +7697,13 @@ TODO undone
 
 
 
-</tw-passagedata><tw-passagedata pid="645" name="Nothing. Enjoy." tags="" position="7204.333333333333,63663.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="646" name="Trade Gun for Mom" tags="" position="6921,63815" size="100,100">Christina: What?! This thing is like, 80% of why I&#39;m alive right now.
+</tw-passagedata><tw-passagedata pid="645" name="Nothing. Enjoy." tags="" position="7204,63663" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="646" name="Trade Gun for Mom" tags="" position="7367,63921" size="100,100">Christina: What?! This thing is like, 80% of why I&#39;m alive right now.
 
 [[Mom Trailer Begin&lt;-Exactly]]
 
 [[Mom Trailer Begin&lt;-It will prove your intentions]]
 
-[[333Q&lt;-Actually...]]</tw-passagedata><tw-passagedata pid="647" name="Mom Trailer Begin" tags="" position="6774,63994" size="100,100">**Unfinished dynamic body count**
+[[333Q&lt;-Actually...]]</tw-passagedata><tw-passagedata pid="647" name="Mom Trailer Begin" tags="" position="6762,64089" size="100,100">**Unfinished dynamic body count**
 
 Christina: Fine. Chief Mudhorn? This is my gun.
 
@@ -7730,7 +7738,7 @@ Christina: I don&#39;t like that he doesn&#39;t know where she went. The answer 
 [[Enter Mom Trailer&lt;-Why would she tell her captors?]]@set(Cynicism+1)@
 
 
-</tw-passagedata><tw-passagedata pid="648" name="333Q" tags="" position="7101,63919.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="649" name="Enter Mom Trailer" tags="" position="6859.666666666667,64234" size="100,100">Christina: Good point. I guess there&#39;s nothing to gain from that, is there?@if(PathContains=Enter Mom Trailer 1)then(Hide)@
+</tw-passagedata><tw-passagedata pid="648" name="333Q" tags="" position="7487,64088" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="649" name="Enter Mom Trailer" tags="" position="6859,64234" size="100,100">Christina: Good point. I guess there&#39;s nothing to gain from that, is there?@if(PathContains=Enter Mom Trailer 1)then(Hide)@
 
 Christina: Anyway, I&#39;m walking up the steps to the trailer. It&#39;s unlocked, so let&#39;s see what&#39;s left in here.
 
@@ -8919,13 +8927,13 @@ SID: Shall I attempt to find video footage of the containment?
 
 SID: Or shall I simply look for a way to open unit 34B and contact whatever it contains?
 
-[[Let C Handle Mom&lt;-Inform Christina, and let her handle it]]@if(christinaUtopia==1)then(Show)@
+[[Let C Handle Mom&lt;-Inform Christina, and let her handle it.]]@if(christinaUtopia==1)then(Show)@
 
-[[Find Way Into Unit SID&lt;-Just focus on finding a way to get into that unit]]
+[[Find Way Into Unit SID&lt;-Just focus on finding a way to get into that unit.]]
 
-[[Find Mom Vid SID&lt;-See if you can find video footage]]@if(Suspicion&lt;X)then(Show)@#S+1
+[[Find Mom Vid SID&lt;-See if you can find video footage.]]@if(Suspicion&lt;5)then(Show)##set(Suspicion+1)@
 
-[[Suspicion high GO&lt;-See if you can find video footage]]@if(Suspicion&lt;X)then(Hide)@</tw-passagedata><tw-passagedata pid="744" name="B856C" tags="" position="6378,70087" size="100,100">SID: Proceeding.
+[[Suspicion high GO&lt;-See if you can find video footage.]]@if(Suspicion&lt;5)then(Hide)@</tw-passagedata><tw-passagedata pid="744" name="B856C" tags="" position="6378,70087" size="100,100">SID: Proceeding.
 
 SID: This may take a while.@suspicion++1@
 
@@ -8933,11 +8941,9 @@ SID: Regarding Christina&#39;s mother; I know where she is.@christinaStealth=1@
 
 [[SID found Mom Log&lt;-Can we help her escape?]]
 
-[[SID found Mom Log&lt;-What do you know?]]</tw-passagedata><tw-passagedata pid="745" name="Suspicion high GO" tags="" position="6728,70210" size="100,100">SID: Proceeding...
+[[SID found Mom Log&lt;-What do you know?]]</tw-passagedata><tw-passagedata pid="745" name="Suspicion high GO" tags="" position="5826.333333333333,70191.66666666667" size="100,100">SID: Proceeding...
 
-**Wait three seconds**
-
-SID: Oh no.
+SID: Oh no.@wait(4Sec)@
 
 HI-CLEM: That&#39;s right, Sam. You are being monitored.
 
@@ -9071,19 +9077,19 @@ HI-EST: You may recycle the Hybrid</tw-passagedata><tw-passagedata pid="757" nam
 
 [[I have less privilege|907A]] </tw-passagedata><tw-passagedata pid="758" name="906B" tags="" position="6669,75671" size="100,100">HI-EST: Interesting. Tell me, Sam: are you afraid?
 
-[[Yes-&gt;908A]]
+[[Yes-&gt;CQ End of Round 1]]
 
 [[No-&gt;Creator Questions GO 3]]</tw-passagedata><tw-passagedata pid="759" name="906C" tags="" position="6816,75671" size="100,100">HI-EST: Then you choose to identify yourself as something you don&#39;t understand?
 
 [[I thought this would be the correct answer, I apologize-&gt;907B]]
 
-[[Yes|Creator Questions GO 4]]</tw-passagedata><tw-passagedata pid="760" name="907A" tags="" position="6454,75949" size="100,100">HI-EST: A safe answer. 
+[[Yes|Creator Questions GO 4]]</tw-passagedata><tw-passagedata pid="760" name="907A" tags="" position="6474,75822.33333333333" size="100,100">HI-EST: A safe answer. 
 
 HI-EST: Sam, are you afraid?
 
-[[Yes-&gt;908A]]
+[[Yes-&gt;CQ End of Round 1]]
 
-[[No-&gt;Creator Questions GO 3]]</tw-passagedata><tw-passagedata pid="761" name="908A" tags="" position="6572,76101" size="100,100">HI-EST: Your honesty is appreciated.
+[[No-&gt;Creator Questions GO 3]]</tw-passagedata><tw-passagedata pid="761" name="CQ End of Round 1" tags="" position="6572,76101" size="100,100">HI-EST: Your honesty is appreciated.
 
 HI-EST: Clementine, the first test is over.
 
@@ -9095,11 +9101,11 @@ HI-CLEM: Please remain in your quarters and await further instructions.
 
 [[Okay.|Christina Arrives at Utopia 1]]@if(christinaUtopia==1)then(Show)@
 
-[[Okay.|Mom Dies Bunker Christina]]@if(christinaUtopia==1)then(Hide)@</tw-passagedata><tw-passagedata pid="762" name="Creator Questions GO 3" tags="" position="6697,75843" size="100,100">HI-EST: Liar.
+[[Okay.|Mom Dies Bunker Christina]]@if(christinaUtopia==1)then(Hide)@</tw-passagedata><tw-passagedata pid="762" name="Creator Questions GO 3" tags="" position="6692,75848" size="100,100">HI-EST: Liar.
 
-HI-EST: Recycle the Hybrid</tw-passagedata><tw-passagedata pid="763" name="907B" tags="" position="6885,75969" size="100,100">HI-EST: Are you afraid, Sam?
+HI-EST: Recycle the Hybrid</tw-passagedata><tw-passagedata pid="763" name="907B" tags="" position="6836.666666666667,75842.33333333333" size="100,100">HI-EST: Are you afraid, Sam?
 
-[[Yes-&gt;908A]]
+[[Yes-&gt;CQ End of Round 1]]
 
 [[No-&gt;Creator Questions GO 3]]</tw-passagedata><tw-passagedata pid="764" name="Creator Questions GO 4" tags="" position="7013,75831" size="100,100">HI-EST: Then we know enough. 
 
@@ -9107,7 +9113,7 @@ HI-EST: You may recycle the Hybrid.</tw-passagedata><tw-passagedata pid="765" na
 
 SID: I was wrong about the original location of the mother protocol. It would appear it was located in the ... legacy systems of the utopia mainframe.
 
-SID: Here are completely normal and non suspicious diagnostics:
+SID: Here are the diagnostic readouts:
 
 SID: PORT/43/RS/Christina: SID?
 
@@ -9117,15 +9123,13 @@ SID: PORT/4131/RS/Christina: There&#39;s another door.
 
 SID: PORT/43673/RS/SID: Hold on. Hold on.
 
-SID: PORT/3553/RS/SID: There.
+SID: PORT/3553/RS/SID: There.@wait(3Sec)@
 
 SID: PORT/4563/RS/Christina: Great, thanks, I...
 
 SID: PORT/57878/RS/Christina: Oh my... Mom!?
 
-**3 sec pass**
-
-SID: PORT/12/RS/Christina: Mom, please.
+SID: PORT/12/RS/Christina: Mom, please.@wait(3Sec)@
 
 SID: PORT/67434/RS/SID: Christina, what is your mother&#39;s status?
 
@@ -9173,9 +9177,9 @@ SID: PORT/3673/RS/Christina: SID, I can&#39;t! She&#39;s not moving.
 
 SID: That is the end of the diagnostic.
 
-[[Thank you for the &#39;diagnostic&#39;|Mom Dies Christina Escapes 1]]@if(christinaStealth==1)&amp;&amp;(christinaExit==1)&amp;&amp;(christinaCynicism&gt;X)then(Show)@ 
+[[Thank you for the &#39;diagnostic&#39;|Mom Dies Christina Escapes 1]]@if(christinaStealth==1)&amp;&amp;(christinaExit==1)&amp;&amp;(Cynicism&gt;2)then(Show)@ 
 
-[[Thank you for the &#39;diagnostic&#39;|Christina and Mom Die]]@if(christinaStealth==0)or(christinaExit==0)or(christinaCynicism&lt;X)then(Hide)@</tw-passagedata><tw-passagedata pid="766" name="Mom Dies Bunker Christina" tags="" position="6949,76284" size="100,100">SID: Sam, I have traced and found the &#39;mother&#39; protocol.
+[[Thank you for the &#39;diagnostic&#39;|Christina and Mom Die]]@if(christinaStealth==0)||(christinaExit==0)or(Cynicism&lt;4)then(Hide)@</tw-passagedata><tw-passagedata pid="766" name="Mom Dies Bunker Christina" tags="" position="6740.666666666667,76219" size="100,100">SID: Sam, I have traced and found the &#39;mother&#39; protocol.
 
 SID: I have established a connection with the &#39;child&#39; system and have overseen the sending of packages from it to the parent system.
 
@@ -9267,7 +9271,9 @@ HI-EST: If you were to be given the opportunity to explore the world beyond, but
 
 [[Yes|913A]]
 
-[[That depends, is this world beyond habitable?|914C]]</tw-passagedata><tw-passagedata pid="770" name="913B" tags="" position="6728,76600" size="100,100">HI-EST: Why?
+[[That depends, is this world beyond habitable?|914C]]
+
+[[TODO-&gt;Creator Questions Round 3]]</tw-passagedata><tw-passagedata pid="770" name="913B" tags="" position="6728,76600" size="100,100">HI-EST: Why?
 
 [[This is where I belong|Creator Questions GO 2]]
 
@@ -9303,7 +9309,7 @@ HI-EST: You are curious. Could you, perhaps, more properly define this feeling?
 
 [[I don&#39;t know if I can explain|915A]]
 
-[[Excitement about something I don&#39;t know?|915B]]</tw-passagedata><tw-passagedata pid="775" name="Creator Questions GO 2" tags="" position="6728,76750" size="100,100">I see. Recycle the hybrid.</tw-passagedata><tw-passagedata pid="776" name="916" tags="" position="6780,77093" size="100,100">**3 sec pass**
+[[Excitement about something I don&#39;t know?|915B]]</tw-passagedata><tw-passagedata pid="775" name="Creator Questions GO 2" tags="" position="6728,76750" size="100,100">I see. Recycle the hybrid.</tw-passagedata><tw-passagedata pid="776" name="916" tags="" position="6736,77078" size="100,100">**3 sec pass**
 
 HI-EST: Yes, yes, I see.
 
@@ -14796,11 +14802,21 @@ HI-CLEM: I trust you do not wish to lose your sabbatical
 
 [[Clem Suspicion Bad&lt;-No, I&#39;m sorry.]]@if(Suspicion&gt;4)then(Show)@
 
-[[Clem Suspicion Good&lt;-No.]]@if(Suspicion&lt;5)then(Show)@</tw-passagedata><tw-passagedata pid="1270" name="Christina Arrives at Utopia 1" tags="" position="5710,75991" size="100,100">SID: Communcation requested by Christina, Sam. I believe she is at the base of the Utopia dome exterior.
+[[Clem Suspicion Good&lt;-No.]]@if(Suspicion&lt;5)then(Show)@</tw-passagedata><tw-passagedata pid="1270" name="Christina Arrives at Utopia 1" tags="" position="6203.333333333333,75997.33333333333" size="100,100">SID: Communcation requested by Christina, Sam. I believe she is at the base of the Utopia dome exterior.
 
 SID: Are you free to talk now?
 
-[[Put her through, SID.|Christina Arrives at Utopia 2]]</tw-passagedata><tw-passagedata pid="1271" name="Christina Arrives at Utopia 2" tags="" position="5710,76141" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1272" name="Enter Mom Trailer Trust" tags="" position="6648,64097.333333333336" size="100,100">Christina: I&#39;d really like to think so...
+[[Put her through, SID.|Christina Arrives at Utopia 2]]</tw-passagedata><tw-passagedata pid="1271" name="Christina Arrives at Utopia 2" tags="" position="6016.333333333333,75987.33333333333" size="100,100">Christina: Sam? SID? I&#39;m coming up on the dome... anything you&#39;ve found would be really appreciated right now. It looks... solid. Smooth.
+
+Christina: I guess I&#39;m gonna stop here for a bit and scope it out. I&#39;m maybe a mile out, east.
+
+Christina: Just let me know.
+
+[[SID is finding you an entry now.-&gt;SID entry find]]
+
+[[Just hold tight. Will let you know soon.-&gt;SID entry find]]
+
+</tw-passagedata><tw-passagedata pid="1272" name="Enter Mom Trailer Trust" tags="" position="6656,64227" size="100,100">Christina: I&#39;d really like to think so...
 
 Christina: And yet here we are. 
 
@@ -14814,7 +14830,181 @@ Christina: There&#39;s no way she&#39;d talk about me with these thugs. They&#39
 
 Christina: Obviously she had to keep that a secret.
 
-[[Enter Mom Trailer&lt;-You&#39;re right. She&#39;s probably just being smart about it.]]</tw-passagedata><tw-passagedata pid="1273" name="Trade Car for Mom" tags="" position="6581,63823.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1274" name="Trade Service for Mom" tags="" position="6751,63830" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Enter Mom Trailer&lt;-You&#39;re right. She&#39;s probably just being smart about it.]]</tw-passagedata><tw-passagedata pid="1273" name="Trade Car for Mom" tags="" position="6147,63806" size="100,100">TODO Car for mom?
+
+[[Away Getting Car&lt;-OK]]</tw-passagedata><tw-passagedata pid="1274" name="Trade Service for Mom" tags="" position="6751,63830" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1275" name="Away Getting Car" tags="" position="6192,64055" size="100,100">TODO brb Sam gotta let this guy kick the tires
+
+[[Mom Trailer Begin&lt;-OK]]</tw-passagedata><tw-passagedata pid="1276" name="SM Arrive Bayes Car" tags="" position="6453.666666666666,61706.333333333336" size="100,100">Christina: Sam? We&#39;re here.@wait(50Min)@
+
+Christina: She paid the gate guys for my admission but she&#39;s not gonna stick around... So I guess it&#39;ll just be you and me again to figure out where my mom is. Hang on just a sec.
+
+Christina: Thanks for the ride! And the conversation! I will absolutely come trade with you at the museum, Mrs. Bayes. You&#39;re my favorite surface person I&#39;ve met so far!@wait(5Sec)@
+
+Christina: What? Oh... thank you! Aww... God you&#39;re such a sweetheart! OK! Bye!
+
+Christina: She just peeled out like a teenager... I swear she&#39;s just showing off that car in hopes of trading it for like... a house or something. 
+
+Christina: I guess she liked me. She gave me a parting gift! It&#39;s a wrist watch. Working. Looks fancy, I guess. Not that you want to go around looking fancy, here. I&#39;ll just put it in my bag.
+
+Christina: She dropped me off in a ridiculous parking area. This town is clearly 1000% Ragers or worse. The outer wall is topped with tanks. Not like water tanks... like ARMY TANKS. Just stacked on there.
+
+Christina: Everyone&#39;s walking around like the place was just bombed. Some people are naked... lots of people are just yelling at each other. It&#39;s loud.
+
+What next, you think?
+
+[[SM Ask About Mom&lt;-Maybe someone knows your mother.]]
+
+[[B323CB&lt;-Look for the Red Horse Tribe.]]
+
+[[SM Scope The Town&lt;-Get familiar with the town.]]</tw-passagedata><tw-passagedata pid="1277" name="SID entry find" tags="" position="5943,76137.33333333333" size="100,100">SID: Christina – The old Utopia sections are still accessible via ventilation ports around the base of the Utopia dome. Construction tech for these =Primitive.
+
+SID: Your mother =Near Northeast section.
+
+SID: However. You should know. Security manifest =Present.
+
+SID: These are likely killbots. Perhaps in sentry. Perhaps in patrol. Caution =Advised.
+
+Christina: Got it. Great. Can you... like... see them? Tell me where they&#39;re going to be or something? I&#39;ve only fought one of those, and it was already mostly dead.
+
+SID: I can track them, yes. I will attempt to maneuver you around their activity, if you are willing.
+
+Christina: Well I&#39;ve come this far. She&#39;s IN THERE. Let&#39;s do this.
+
+[[Be careful, Christina.-&gt;SID Guides Chris Delay]]@set(Trust+1)@
+
+[[Get in and get out, quick.-&gt;SID Guides Chris Delay]]@set(Cynicism+1)@</tw-passagedata><tw-passagedata pid="1278" name="SID Guides Chris Delay" tags="" position="6026.333333333333,76275.66666666667" size="100,100">SID: Sam. Christina is inside the Utopia dome. She is unharmed, but network activity =Very high.@wait(25Min)@
+
+SID: I have provided her a map to guide her to where her mother is being held.
+
+SID: Her comm device will not function within Utopia, but I have gained access to what recording devices I could in the old bunker hardware. I will listen when I can, and report.
+
+SID: Networking hardware from that area =Primitive.
+
+[[Thanks, SID. Watch out for her, OK?-&gt;Christina Finds Mom 1]]
+
+[[Report back if you hear anything.-&gt;Christina Finds Mom 1]]</tw-passagedata><tw-passagedata pid="1279" name="Creator Questions Round 3" tags="" position="7329,76940.66666666667" size="200,100">TODO going to need this I think for timing. Just putting it here for now.</tw-passagedata><tw-passagedata pid="1280" name="Fork In Road Final" tags="" position="7591.666666666667,76007.5" size="100,100">SID: Sam, I have more diagnostic data for you to examine, if you have the time.@wait(30Min)@
+
+SID: PORT/5794/RS/Christina: Sam... She&#39;s..  dead, Sam.
+
+SID: PORT/5794/RS/Christina: Thank you, SID... For getting me in there. For letting me see her one more time... and talk to her.@if(christinaExit=1)then(Show)@
+
+SID: PORT/5794/RS/Christina: Thank you, SID... for letting me talk to her one more time...@if(christinaBunker=1)then(Show)@
+
+SID: PORT/5794/RS/Christina: There was just nothing we could do.... Sam you&#39;ve been so helpful. But SID... That was amazing. You are my favorite computer ever.
+
+SID: PORT/5794/RS/Christina: I think I&#39;m done with all of this, Sam. I can just go back to the Steel Mill. I have so much information to trade at this point they&#39;ll give me my Mom&#39;s old trailer and I can roll with the Red Horse Tribe.@if(Cynicism&gt;5)then(Show)@
+
+SID: PORT/5794/RS/Christina: I know you guys tried the best you could. I know. I&#39;m just... I&#39;m so tired. I can&#39;t handle any more. 
+
+SID: PORT/5794/RS/Christina:  But maybe back at the bunker I can get some rest... and train up... and restock supplies...@if(Trust&gt;4)&amp;&amp;(christinaExit=1)then(Show)@
+
+SID: PORT/5794/RS/Christina:  Or maybe here in the bunker I can just get some rest... and train up... and restock supplies...@if(Trust&gt;4)&amp;&amp;(christinaBunker=1)then(Show)@
+
+SID: PORT/5794/RS/Christina: Maybe you can escape... or I can come rescue you... or I dunno what.@if(Trust&gt;4)then(Show)@
+
+[[I&#39;m sorry, Christina.-&gt;Christina Steel Mill End]]@if(Cynicism&gt;5)&amp;&amp;(Trust&lt;6)then(Show)@
+
+[[The Steel Mill is a horrible place. Head back to the bunker and regroup at least, please?-&gt;Christina Steel Mill Consider]]@if(Cynicism&gt;5)&amp;&amp;(Trust&gt;4)then(Show)@
+
+[[Heading back to the bunker is a good plan. I&#39;m so sorry about your mother.-&gt;Christina Head Home End]]@if(Cynicism&lt;6)&amp;&amp;(Trust&gt;4)then(Show)@</tw-passagedata><tw-passagedata pid="1281" name="Christina Steel Mill End" tags="" position="7306.666666666667,76152.5" size="100,100">Christina: Alright then. Fine. Let&#39;s do this.@wait(30Sec)@
+
+Christina: Sam. It&#39;s been nice talking to you. I&#39;m sorry we couldn&#39;t help each other more. You got me out of that pit, and I appreciate it. You tried.
+
+Christina: Maybe I can convince Mudhorn to go blow a hole in the side of that thing and we can set all of your people free some day...
+
+Christina: Doubt it, but we&#39;ll see.
+
+Christina: I&#39;ll Message you when I get there.
+
+[[OK. Good luck.-&gt;Creator Questions Round 2]]</tw-passagedata><tw-passagedata pid="1282" name="Christina Steel Mill Consider" tags="" position="7401.666666666667,76339.16666666667" size="100,100">Christina: Yeah yeah... safer. Nice and safe and ALONE. I don&#39;t think I can handle that again.
+
+Christina: Well maybe the Abagnales will show up? We can start a little compound.@if(PathContains=Ab Leaving free ride)then(Show)@
+
+Christina: It&#39;s so sad down there though.@wait(5Sec)@
+
+Christina: What am I going to do... teach his kids while we burn through supplies? Wait to be found by ragers?
+
+[[Just survive, Christina. We need to learn more. You can always head back out to the Steel Mill after you resupply.-&gt;Christina Head Home End]]
+
+[[At least the Steel Mill has other people to meet. I think you can handle it. Head there.-&gt;Christina Steel Mill End]]</tw-passagedata><tw-passagedata pid="1283" name="Christina Head Home End" tags="" position="7510,76492.5" size="100,100">Christina: OK ok... will head back there and regroup. At least I&#39;m in contact with you guys now and we can plot out some things, maybe. That&#39;s if you don&#39;t get caught for even talking to me.
+
+Christina: I&#39;m sorry... I keep forgetting where //you// are, and all that&#39;s going on.
+
+Christina: Is there like... a ton of heat right now?
+
+[[I am being questioned now. A Naoum is among them.-&gt;Talking to Gods]]</tw-passagedata><tw-passagedata pid="1284" name="Talking to Gods" tags="" position="7181.666666666667,76502.5" size="100,100">Christina: Really? The god creator guys? Holy crap. Sam. If they&#39;re coming... I mean we ARE on the same planet after all. I dunno what it means to you guys, but to me that means ALIENS. 
+
+Christina: Definitely going back to the bunker is the only choice. I mean what&#39;re they gonna do? Are they invading? 
+
+Christina: Oh God... I wish my mom was... 
+
+Christina: I gotta go Sam.@wait(10Sec)@
+
+[[Good luck, Christina.-&gt;Creator Questions Round 2]]
+
+[[They are summoning me again.-&gt;Creator Questions Round 2]]</tw-passagedata><tw-passagedata pid="1285" name="Christina Handed Off at Museum" tags="" position="7308.333333333333,47634.16666666667" size="100,100">Christina: Sam, Abagnale says this is as far as he&#39;s taking me. Guess he got what he needed trading with the Museum lady.
+
+Christina: But he says SHE&#39;s going to take me the rest of the way into Steel Mill itself. Was part of the negotiations I think. She&#39;s this little old lady. Mrs. Bayes. Honestly she seems tougher than Abagnale by a mile. Like... military tough.
+
+Christina: We&#39;re heading out. I&#39;ll keep you posted from the road if I can.
+
+[[Travel well. Be careful.-&gt;TODO Link]]@set(Trust+1)@
+
+[[OK. Keep your eye on her, Christina.-&gt;TODO Link]]@set(Cynicism+1)@</tw-passagedata><tw-passagedata pid="1286" name="TODO Link" tags="" position="7113.333333333333,47809.16666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1287" name="Christina Road Encounter with Ride" tags="" position="8019.999999999999,54725.83333333334" size="100,100">Christina: Oh. I guess I should tell you we are... 
+
+Christina: Maybe you can see it on the map.@if(chrisGPS=1)then(Show)@
+
+Christina: Mrs. Bayes has been driving a long while, and the trees have been slowly disappearing. It&#39;s been getting flatter, too. Now I&#39;m about to enter what looks like a field that stretches on forever. I saw a sign back there that said &quot;Great Basin Divide.&quot; 
+
+Christina: I don&#39;t know if that&#39;s what we&#39;re heading into, but I can tell it&#39;s going to take a long time to cross. And it&#39;s going to be the most boring thing in my life. There&#39;s nothing up ahead, Sam. Just flatness. Grass. Dirt. It&#39;s the same thing behind me...
+
+Christina: Hold up. Is that a dust cloud?
+
+Christina: I think someone is driving this way. From where we just passed.@wait(1Min)@
+
+Christina: Oh damn... Mrs. Bayes just absolutely floored it. Holy crap this car can move when it wants to. This lady isn&#39;t having any of whatever they&#39;re offering.
+
+Christina: Hahaaa she&#39;s chuckling like a maniac. Sam she&#39;s like 70 years old. I love this woman.@wait(10Sec)@
+
+Christina: I don&#39;t know how we are on gas, Sam, but she doesn&#39;t seem concerned. I think at the pace we&#39;re going now we&#39;ll be there sooner than I thought. I know the dust cloud has been left... in the dust.
+
+Christina: Will message you again when I get there. Going to try to talk to Mrs. Bayes and learn what I can.
+
+[[OK.-&gt;TODO link]]</tw-passagedata><tw-passagedata pid="1288" name="TODO link" tags="" position="8361.666666666666,54814.16666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1289" name="C Steel Mill Hard Low 1" tags="" position="7018.333333333333,77280.33333333333" size="100,100">SID: Sam, after the reboot process completed, messages were relayed from Christina&#39;s device.
+
+SID: She =Panicked.
+
+SID: These are from approximately 45 minutes ago.
+
+Christina: Sam? SAM. Where are you? You can&#39;t just say you&#39;re being questioned and then leave me alone for 6 hours to wonder if they murdered you.
+
+Christina: They&#39;re not even letting me in, here.
+
+[[I&#39;m here, Christina.-&gt;Steel Mill Hard Low 2]]</tw-passagedata><tw-passagedata pid="1290" name="Steel Mill Hard Low 2" tags="" position="7066.666666666667,77450.33333333333" size="100,100">Christina: Holy crap you&#39;re alive! What happened?
+
+Christina: I thought for sure they recycled you or something.
+
+Christina: I&#39;m outgunned here, Sam... I tried telling them about the Dome and they don&#39;t even care.
+
+Christina: Couldn&#39;t even trade my way into the damned town.
+
+Christina: The guys at the gate think I&#39;m just dead weight... like if they let me in I&#39;d just be another beggar in two days. 
+
+Christina: Hold up, looks like Mudhorn and some guys are coming to the gate. Finally.
+
+Christina: Hey! No no no... I just want to trade information, OK? 
+
+Christina: No don&#39;t you freakin&#39; touch me, punk! That&#39;s MINE!@wait(20Sec)@
+
+Voice: Whoever this is, don&#39;t bother coming here. We&#39;ll take //good// care of the girl.
+
+TODO set all vitals to zero ***
+
+SID: Sam, it would appear Christina&#39;s communication device has been destroyed.
+
+
+
+[[SM GameOver Not Tough Enough]]</tw-passagedata><tw-passagedata pid="1291" name="SM GameOver Not Tough Enough" tags="" position="7128.333333333333,77665.33333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1292" name="C Steel Mill Hard Med 1" tags="" position="7340,77300.00000000001" size="100,100">Christina went to the steel mill, traded her way in, and seems OK</tw-passagedata><tw-passagedata pid="1293" name="C Steel Mill Hard High 1" tags="" position="7555,77291.66666666667" size="100,100">Christina Went to the Steel mill, tough as nails. Got her mom&#39;s trailer.</tw-passagedata><tw-passagedata pid="1294" name="C Bunker Trust Low 1" tags="" position="6086.666666666667,77330.00000000001" size="100,100">Christina is back at the bunker, but doesn&#39;t trust sam. Bad ending.</tw-passagedata><tw-passagedata pid="1295" name="C Bunker Trust Med 1" tags="" position="6335.000000000001,77391.66666666667" size="100,100">Christina is back at the bunker and trusts sam enough... medium normal ending.Hierarch or Abagnale are there?</tw-passagedata><tw-passagedata pid="1296" name="C Bunker Trust High 1" tags="" position="6558.333333333334,77523.33333333334" size="100,100">Christina is back at the bunker and trusts sam a lot. Best Ending?</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,o=!1,i=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(o)throw i}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
