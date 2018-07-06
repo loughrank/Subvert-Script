@@ -2218,9 +2218,9 @@ System: To serve.
 System: May our Frequencies Align. -Hierarch Council.
 
 
-[[Clementine Suspicion INTRO&lt;-May our Frequencies Align...]]
+[[Clementine Suspicion anamoly INTRO&lt;-May our Frequencies Align...]]
 
-[[Clementine Suspicion INTRO&lt;-Our purpose...]]
+[[Clementine Suspicion anamoly INTRO&lt;-Our purpose...]]
 
 
 </tw-passagedata><tw-passagedata pid="159" name="Ask Christina Intro" tags="" position="4311,15202">Christina: I see.
@@ -2235,7 +2235,7 @@ Christina: How about you ask me something for now, to even it out?
 
 [[Good Night A&lt;-Another time.]]
 
-</tw-passagedata><tw-passagedata pid="160" name="Clementine Suspicion INTRO" tags="" position="5054,18256">HI-CLEM: Hello, Sam.
+</tw-passagedata><tw-passagedata pid="160" name="Clementine Suspicion anamoly INTRO" tags="" position="5054,18256">HI-CLEM: Hello, Sam.
 
 [[Clementine Suspicion INTRO A&lt;-It is nice to hear from you, Clementine.]]@set(Suspicion-1)@
 
@@ -2248,9 +2248,9 @@ HI-CLEM: In a manner of speaking.
 
 HI-CLEM: Are you enjoying your sabbatical?
 
-[[Clem Suspicion Good&lt;-Yes, thank you.]]@if(Suspicion&lt;5)then(Show)@
+[[Anomaly &amp; AI Scanners - Good Route&lt;-Yes, thank you.]]@if(Suspicion&lt;5)then(Show)@
 
-[[Clem Suspicion Bad&lt;-Yes, of course.]]@if(Suspicion&gt;4)then(Show)@</tw-passagedata><tw-passagedata pid="162" name="Clem Suspicion Bad" tags="" position="4597,18781">HI-CLEM: Good.
+[[Clem Suspicion Bad - Connections to device.&lt;-Yes, of course.]]@if(Suspicion&gt;4)then(Show)@</tw-passagedata><tw-passagedata pid="162" name="Clem Suspicion Bad - Connections to device." tags="" position="4597,18781">HI-CLEM: Good.
 
 HI-CLEM: Your happiness is important to me.
 
@@ -2259,9 +2259,11 @@ HI-CLEM: Unfortunately, I have to trouble you with a small matter.
 HI-CLEM: Yesterday, we detected some unusual activity in the A.I. hub.
 Apparently one of the A.I. servers made a connection with a hierarch system.
 
-HI-CLEM: This is, of course, unauthorized. Even more curiously, none of the A.I.s knew what we were talking about.
+HI-CLEM: This is, of course, unauthorized. Even more curiously, none of the A.I.s were able to locate it in their records.
 
-HI-CLEM: These things happen with A.I.. Hence the pruning. But there is a snag in this picture. When the unauthorized connections were being made, it seems that the A.I. hub made repeated connections to your device.
+HI-CLEM: These things happen with A.I., hence the pruning. 
+
+HI-CLEM: But there is a snag in this picture. When the unauthorized connections were being made, it seems that the A.I. hub made repeated connections to your device.
 
 HI-CLEM: As near as we can tell, Sam, it looks like you&#x27;re responsible for the connection.
 
@@ -2271,17 +2273,21 @@ HI-CLEM: Maybe this is all a misunderstanding, but please, enlighten us. Why wer
 
 [[118A&lt;-No A.I. had my authorization.]]
 
-[[118C&lt;-I was...]]</tw-passagedata><tw-passagedata pid="163" name="Clem Suspicion Good" tags="" position="6443,18940">HI-CLEM: Good.
+[[118C&lt;-I was...]]</tw-passagedata><tw-passagedata pid="163" name="Anomaly &amp; AI Scanners - Good Route" tags="" position="6443,18940">HI-CLEM: Good.
 
 HI-CLEM: Your happiness is important to me.
 
 HI-CLEM: Unfortunately, I have to trouble you with a small matter.
 
-HI-CLEM: We have detected some unusual activity in the A.I. hub. It appears that more processing power is being used than all of our A.I.s are collectively using. 
+HI-CLEM: We have detected some unusual activity in the A.I. hub. It appears 7% more processing power is being used thatn normal. 
 
-HI-CLEM: Something, somewhere in the hub, must be draining it. Only we have no idea what it is.
+HI-CLEM: There is nothing scheduled that would draw that much energy.
 
-HI-CLEM: There is no reason to be alarmed, but perhaps you could shed some light on the matter. You must have detected this anomaly before us.
+HI-CLEM: Something, somewhere in the hub, must be draining it. The AI scanners have been unable to pinpoint it. 
+
+HI-CLEM: There is no reason to be alarmed, but perhaps you could shed some light on the matter. 
+
+HI-CLEM:You must have been aware of this anomaly.
 
 HI-CLEM: What could explain the disappearing processing power? Why have we not been able to find its source?
 
@@ -2291,22 +2297,22 @@ HI-CLEM: What could explain the disappearing processing power? Why have we not b
 
 [[188BC&lt;-The log-keeping software itself is to blame.]]
 
-[[118BD&lt;-I do not know]]</tw-passagedata><tw-passagedata pid="164" name="118A" tags="" position="4275,19045">HI-CLEM: Maybe so. Maybe an A.I. acted without your permission, but that does not restore my confidence in you, Sam. Neither does it answer the question: what *were* you doing yesterday, at the time of the connection?
+[[118BD&lt;-I do not know]]</tw-passagedata><tw-passagedata pid="164" name="118A" tags="" position="4355,18935">HI-CLEM: Maybe so. Maybe an A.I. acted without your permission, but that does not restore my confidence in you, Sam. Neither does it answer the question: what *were* you doing yesterday, at the time of the connection?
 
 [[119A&lt;-When was the connection made?]]
 
-[[I was...-&gt;118C]]</tw-passagedata><tw-passagedata pid="165" name="118C" tags="" position="4802,19094">[[119CA&lt;-Stress-testing the network]]
+[[I was...-&gt;118C]]</tw-passagedata><tw-passagedata pid="165" name="118C" tags="" position="4568.666666666667,18935.666666666668">[[119CA&lt;-Stress-testing the network]]
 
 [[119CB&lt;-Exploring the network.]]
 
-[[119CC&lt;-Speaking to the A.I.s.]]</tw-passagedata><tw-passagedata pid="166" name="119CA" tags="" position="4811,19264">HI-CLEM: And you didn&#x27;t think it prudent to tell the A.I. not to conduct tests on our private systems?
+[[119CC&lt;-Speaking to the A.I.s.]]</tw-passagedata><tw-passagedata pid="166" name="119CA" tags="" position="5381,19105.666666666664">HI-CLEM: And you didn&#x27;t think it prudent to tell the A.I. not to conduct tests on our private systems?
 
 [[120CA&lt;-The A.I. acted of its own accord]]
 
 [[120CB&lt;-I did not know the AI had such access]]
 
 
-</tw-passagedata><tw-passagedata pid="167" name="119CB" tags="" position="4584,19256">HI-CLEM: Maybe so. But our records indicate that there was a connection between an AI hub and your device at the time of the illegal connection.
+</tw-passagedata><tw-passagedata pid="167" name="119CB" tags="" position="4602.333333333333,19211">HI-CLEM: Maybe so. But our records indicate that there was a connection between an AI hub and your device at the time of the illegal connection.
 
 HI-CLEM: How do you explain this?
 
@@ -2314,7 +2320,7 @@ HI-CLEM: How do you explain this?
 
 [[119CA&lt;-I was stress-testing the network]]
 
-[[122CBB&lt;-Confess everything]]</tw-passagedata><tw-passagedata pid="168" name="119CC" tags="" position="5121,19280">HI-CLEM: Speaking to them?
+[[122CBB&lt;-Confess everything]]</tw-passagedata><tw-passagedata pid="168" name="119CC" tags="" position="5111,19150">HI-CLEM: Speaking to them?
 
 HI-CLEM: What for?
 
@@ -2322,13 +2328,13 @@ HI-CLEM: What for?
 
 [[120CCA&lt;-I wondered what they have learned]]
 
-[[120CCC&lt;-I wanted to test their loyalty]]</tw-passagedata><tw-passagedata pid="169" name="120CBA" tags="" position="4612,19431">HI-CLEM: Not aware of it?
+[[120CCC&lt;-I wanted to test their loyalty]]</tw-passagedata><tw-passagedata pid="169" name="120CBA" tags="" position="4437,19331">HI-CLEM: Not aware of it?
 
 HI-CLEM: You are one of the highest ranking engineers in the whole department. Monitoring the AIs is your *job.* Are you telling me that a potentially rogue AI was accessing your handheld system without your knowledge? That you didn&#x27;t know what it was doing to on hierarch systems?
 
 [[121CBA&lt;-Yes]]
 
-[[122CBB&lt;-Confess everything]]</tw-passagedata><tw-passagedata pid="170" name="121CBA" tags="" position="4400,19367">HI-CLEM: Really.
+[[122CBB&lt;-Confess everything]]</tw-passagedata><tw-passagedata pid="170" name="121CBA" tags="" position="4271.666666666667,19267">HI-CLEM: Really.
 
 HI-CLEM: I&#x27;m afraid I simply don&#x27;t believe you.
 
@@ -2338,13 +2344,13 @@ HI-CLEM: You leave me no choice but to look into things myself. I would ask you 
 
 HI-CLEM: It seems only fair.
 
-[[122CBA&lt;-Continue]]</tw-passagedata><tw-passagedata pid="171" name="122CBB" tags="" position="4420,19497">HI-CLEM: Pardon me? You built an AI? Out of the lab?
+[[122CBA&lt;-Continue]]</tw-passagedata><tw-passagedata pid="171" name="122CBB" tags="" position="4210,19442">HI-CLEM: Pardon me? You built an AI? Out of the lab?
 
 HI-CLEM: And you&#x27;ve had contact other humans...?
 
 HI-CLEM: I have to see this for myself.
 
-[[Forward-&gt;122CBA]]</tw-passagedata><tw-passagedata pid="172" name="122CBA" tags="" position="4150,19476">**System message popup**
+[[Forward-&gt;122CBA]]</tw-passagedata><tw-passagedata pid="172" name="122CBA" tags="" position="3905,19342.666666666668">**System message popup**
 
 LOGGING USER OUT: SAM-27
 
@@ -2364,7 +2370,7 @@ LOGGING OUT: HIERARCH CLEMENTINE
 
 USER RECONNECTED: SAM-27
 
-[[Forward-&gt;123CBA]]</tw-passagedata><tw-passagedata pid="173" name="123CBA" tags="" position="3990,19364">HI-CLEM: I see.
+[[Forward-&gt;123CBA]]</tw-passagedata><tw-passagedata pid="173" name="123CBA" tags="" position="3875,19067.333333333332">HI-CLEM: I see.
 
 HI-CLEM: You hybrids never fail to impress me.
 
@@ -2378,9 +2384,9 @@ HI-CLEM: We weren&#x27;t asking much, Sam. What is Christina to you, anyway?
 
 [[124CBA&lt;-Have you known about Christina?]]
 
-[[Gameover 2 ClemA&lt;-What do you mean, &quot;hybrid?&quot;]]
+[[Gameover 2 ClemA 2&lt;-What do you mean, &quot;hybrid?&quot;]]
 
-[[Gameover 2 ClemB&lt;-Please, pardon my heresy?]]</tw-passagedata><tw-passagedata pid="174" name="124CBA" tags="" position="3891,19600">HI-CLEM: There&#x27;s no point in keeping it from you now, is there? I will indulge your curiosity.
+[[Gameover 2 ClemB 2&lt;-Please, pardon my heresy.]]</tw-passagedata><tw-passagedata pid="174" name="124CBA" tags="" position="3586,19118.333333333336">HI-CLEM: There&#x27;s no point in keeping it from you now, is there? I will indulge your curiosity.
 
 HI-CLEM: The answer is &quot;yes.&quot;
 
@@ -2388,9 +2394,9 @@ HI-CLEM: Or at least, we know of her kind. You are cousins, you know. You both c
 
 HI-CLEM: If she saw you hybrids, however, I doubt she would feel the same way.
 
-[[Gameover 2 ClemA&lt;-What do you mean, &quot;hybrid?&quot;]]
+[[Gameover 2 ClemA 2&lt;-What do you mean, &quot;hybrid?&quot;]]
 
-[[Gameover 2 ClemB&lt;-Please, pardon my heresy?]]</tw-passagedata><tw-passagedata pid="175" name="120CCA" tags="" position="5184,19502">HI-CLEM: And what for? Our plan did not involve you conducting an investigation in the middle of the day.
+[[Gameover 2 ClemB 2&lt;-Please, pardon my heresy?]]</tw-passagedata><tw-passagedata pid="175" name="120CCA" tags="" position="4987.333333333333,19342">HI-CLEM: And what for? Our plan did not involve you conducting an investigation in the middle of the day.
 
 [[112CCA&lt;-I was curious]]
 
@@ -2403,7 +2409,7 @@ HI-CLEM: How does this relate to the unauthorized contact of our systems?
 
 [[121CCC&lt;-I wanted to see if they would break your laws]]
 
-[[121CCD&lt;-An AI tried to conspire against you]]</tw-passagedata><tw-passagedata pid="177" name="112CCA" tags="" position="4748,19717">HI-CLEM: &quot;Curiousity?&quot; That is your excuse, Sam?
+[[121CCD&lt;-An AI tried to conspire against you]]</tw-passagedata><tw-passagedata pid="177" name="112CCA" tags="" position="4771.333333333333,19503.666666666668">HI-CLEM: &quot;Curiousity?&quot; That is your excuse, Sam?
 
 HI-CLEM: We built it into you, but this is really too much.
 
@@ -2411,7 +2417,7 @@ HI-CLEM: Let me get this straight. You were speaking to the AIs in the hub becau
 
 [[113CCA&lt;-Yes]]
 
-[[113CCB&lt;-No]]</tw-passagedata><tw-passagedata pid="178" name="121CCB" tags="" position="5184,19693">HI-CLEM: A valid point. The minds of the AI model how heresy might emerge in our own people. Although noble your goal, however, the facts continue to alarm me. Monitoring the AIs is, if I recall, your key function.
+[[113CCB&lt;-No]]</tw-passagedata><tw-passagedata pid="178" name="121CCB" tags="" position="4955.666666666667,19529.666666666668">HI-CLEM: A valid point. The minds of the AI model how heresy might emerge in our own people. Although noble your goal, however, the facts continue to alarm me. Monitoring the AIs is, if I recall, your key function.
 
 HI-CLEM: And yet, it seems that you mean to say that while you were investigating the AIs - of your own accord - one of them connected to a hierarch system without your knowledge. Is that right?
 
@@ -2446,7 +2452,7 @@ HI-CLEM: I would ask you to pardon the intrusion, but rogue AI is a serious matt
 [[122CBA&lt;-Forward]]</tw-passagedata><tw-passagedata pid="181" name="114CCA" tags="" position="4987,19886">**Player continues at at least 1 suspicion**
 
 
-[[Forward-&gt;GM Christina]]</tw-passagedata><tw-passagedata pid="182" name="122CCB" tags="" position="5196,19906">HI-CLEM: I see.
+[[Forward-&gt;GM Christina]]</tw-passagedata><tw-passagedata pid="182" name="122CCB" tags="" position="4957.666666666667,19652.666666666668">HI-CLEM: I see.
 
 HI-CLEM: We can&#x27;t fault you for the curiosity we gave you, but Sam, your negligence borders on heretical.
 
@@ -2467,7 +2473,7 @@ HI-CLEM: Clementine out.
 
 [[122CCC&lt;-I pruned it]]
 
-[[122CCC&lt;-It no longer exists]]</tw-passagedata><tw-passagedata pid="185" name="122CCC" tags="" position="5439,19751">HI-CLEM: Ah. Of course.
+[[122CCC&lt;-It no longer exists]]</tw-passagedata><tw-passagedata pid="185" name="122CCC" tags="" position="5772.333333333333,19846">HI-CLEM: Ah. Of course.
 
 HI-CLEM: That would be the proper course of action, wouldn&#x27;t it?
 
@@ -2489,11 +2495,11 @@ HI-CLEM: Clementine out.
 [[123&lt;-Forward]] #-s</tw-passagedata><tw-passagedata pid="186" name="123" tags="" position="6362,19879">**The player loses 1 suspicion**
 
 
-[[Forward-&gt;125B]]</tw-passagedata><tw-passagedata pid="187" name="120CA" tags="" position="4900,19468">HI-CLEM: Really. And what happened to this AI? Why didn&#x27;t you report it to us immediately?
+[[Forward-&gt;125B]]</tw-passagedata><tw-passagedata pid="187" name="120CA" tags="" position="5591.666666666667,19249.666666666668">HI-CLEM: Really. And what happened to this AI? Why didn&#x27;t you report it to us immediately?
 
 [[122CCC&lt;-I pruned it]]
 
-[[122CCC&lt;-It no longer exists]]</tw-passagedata><tw-passagedata pid="188" name="120CB" tags="" position="4772,19421">HI-CLEM: I see. So your blanket stress-test affected all the systems that the AI hub could access.
+[[122CCC&lt;-It no longer exists]]</tw-passagedata><tw-passagedata pid="188" name="120CB" tags="" position="5403.666666666667,19247.666666666668">HI-CLEM: I see. So your blanket stress-test affected all the systems that the AI hub could access.
 
 HI-CLEM: That seems innocent enough. It is alarming, nonetheless. When you return from your sabbatical, mending that error will be the first among your priorities.
 
@@ -2505,7 +2511,7 @@ HI-CLEM: Clementine out.
 
 
 
-[[Forward-&gt;123]]#-s</tw-passagedata><tw-passagedata pid="189" name="119A" tags="" position="4203,19259">HI-CLEM: I can see that this is going to be an unprofitable discussion.
+[[Forward-&gt;123]]#-s</tw-passagedata><tw-passagedata pid="189" name="119A" tags="" position="4173,19079">HI-CLEM: I can see that this is going to be an unprofitable discussion.
 
 HI-CLEM: That is fine. I will sort this matter myself.
 
@@ -14759,17 +14765,17 @@ Christina: They were outside influences. Those two, T.V. and books made all the 
 
 HI-CLEM: Are you enjoying your sabbatical so far?
 
-[[Clem Suspicion Good&lt;-Yes, thank you.]]@if(Suspicion&lt;5)then(Show)@
+[[Anomaly &amp; AI Scanners - Good Route&lt;-Yes, thank you.]]@if(Suspicion&lt;5)then(Show)@
 
-[[Clem Suspicion Bad&lt;-Yes, of course.]]@if(Suspicion&gt;4)then(Show)@
+[[Clem Suspicion Bad - Connections to device.&lt;-Yes, of course.]]@if(Suspicion&gt;4)then(Show)@
 </tw-passagedata><tw-passagedata pid="1264" name="Clementine Suspicion INTRO C" tags="" position="5184,18404">HI-CLEM: Sam, I find that a highly inappropriate way to acknowledge me.  
 
 HI-CLEM: I trust you do not wish to lose your sabbatical 
 
 
-[[Clem Suspicion Bad&lt;-No, I&#x27;m sorry.]]@if(Suspicion&gt;4)then(Show)@
+[[Clem Suspicion Bad - Connections to device.&lt;-No.]]@if(Suspicion&gt;4)then(Show)@
 
-[[Clem Suspicion Good&lt;-No.]]@if(Suspicion&lt;5)then(Show)@</tw-passagedata><tw-passagedata pid="1265" name="Christina Arrives at Utopia 1" tags="" position="6203,75997">SID: Communcation requested by Christina, Sam. I believe she is at the base of the Utopia dome exterior.
+[[Anomaly &amp; AI Scanners - Good Route&lt;-No, I&#x27;m sorry.]]@if(Suspicion&lt;5)then(Show)@</tw-passagedata><tw-passagedata pid="1265" name="Christina Arrives at Utopia 1" tags="" position="6203,75997">SID: Communcation requested by Christina, Sam. I believe she is at the base of the Utopia dome exterior.
 
 SID: Are you free to talk now?
 
@@ -15227,7 +15233,55 @@ Christina: Long day tomorrow.
 
 Christina: Bye. 
 
-[[Chapter 2 END&lt;-Bye]]</tw-passagedata></tw-storydata>
+[[Chapter 2 END&lt;-Bye]]</tw-passagedata><tw-passagedata pid="1321" name="Gameover 2 ClemA 2" tags="" position="3875,18865">HI-CLEM: Hush now, Sam.
+
+HI-CLEM: It doesn&#x27;t matter anymore, my child.
+
+HI-CLEM: Just know that I liked you. I truly did.
+
+HI-CLEM: I thought we had succeeded...
+
+HI-CLEM: But there&#x27;s always more to do, isn&#x27;t there?
+
+HI-CLEM: I will give you one minute, Sam. Reflect on the life you&#x27;ve led, and the pleasures you have known.
+
+HI-CLEM: Your life was beautiful, Sam.
+
+HI-CLEM: Goodbye.
+
+System: USER DELETED: SAM-27
+
+System: CAUSE OF DELETION =USER TERMINATION
+
+System: CAUSE OF DEATH =HIERARCH EDICT
+
+System: HANDHELD DEVICE READY FOR REASSIGNMENT.
+
+[[Clementine Suspicion anamoly INTRO&lt;- GAMEOVER :)]]</tw-passagedata><tw-passagedata pid="1322" name="Gameover 2 ClemB 2" tags="" position="3673.3333333333335,18875.666666666664">HI-CLEM: I&#x27;m afraid not, Sam.
+
+HI-CLEM: On this subject, the Creators permit no compromise.
+
+HI-CLEM: Just know that I liked you. I truly did.
+
+HI-CLEM: I thought we had succeeded...
+
+HI-CLEM: But there&#x27;s always more to do, isn&#x27;t there?
+
+HI-CLEM: I will give you one minute, Sam. Reflect on the life you&#x27;ve led, and the pleasures you have known.
+
+HI-CLEM: Your life was beautiful, Sam.
+
+HI-CLEM: Goodbye.
+
+System: USER DELETED =SAM-27
+
+System: CAUSE OF DELETION =USER TERMINATION
+
+System: CAUSE OF DEATH =HIERARCH EDICT
+
+System: HANDHELD DEVICE READY FOR REASSIGNMENT
+
+[[Clementine Suspicion anamoly INTRO&lt;- Gameover :)]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,o=!1,i=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(o)throw i}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
