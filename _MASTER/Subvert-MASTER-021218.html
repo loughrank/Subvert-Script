@@ -15211,7 +15211,15 @@ Christina: It&#39;s something you figure a mother would do.
 
 [[B351B&lt;-I&#39;m sure she is thinking of you.]]@set(Trust+1)@
 
-[[B351C&lt;-Perhaps she does not want you to worry.]]</tw-passagedata><tw-passagedata pid="1317" name="SM Cafe" tags="" position="7297.333333333334,62401.66666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1318" name="Camping Does it matter" tags="" position="4331,13420" size="100,100">Christina: No, I guess not.
+[[B351C&lt;-Perhaps she does not want you to worry.]]</tw-passagedata><tw-passagedata pid="1317" name="SM Cafe" tags="" position="7242.333333333334,62263.333333333336" size="100,100">Christina: Sam? I um... found a place. And it&#39;s magical.@wait(25Min)@
+
+Christina: There were guys sitting around outside the place on lawn chairs, and it just says “KAPE” on a painted sign on the front.
+
+Christina: I asked the guys and they were like, “Yes, yes! Coffee here!” I dunno where they&#39;re from but super friendly types.
+
+[[Ask them about your Mom!-&gt;Cafe outside mom ask]]
+
+[[Head inside. Sounds like a safe place to wait for a while.-&gt;Cafe head inside]]</tw-passagedata><tw-passagedata pid="1318" name="Camping Does it matter" tags="" position="4331,13420" size="100,100">Christina: No, I guess not.
 
 Christina: I mean, yes!@set(Heart=2)@
 
@@ -15305,7 +15313,7 @@ Christina: Maybe back in the the market area I can find a cafe or something to l
 
 [[SM Scope The Town&lt;-I&#39;d say head back into town and have a look around. See if you can find a friendly or safe place.]]@if(PathContains=SM Scope The Town)then(Hide)@
 
-[[SM Cafe&lt;-Good idea. Head there and lay low for a bit.]]</tw-passagedata><tw-passagedata pid="1324" name="SM Marketplace" tags="" position="7566.666666666667,62470.00000000001" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1325" name="SM Book Vendor" tags="" position="7791.666666666667,62558.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[SM Cafe&lt;-Good idea. Head there and lay low for a bit.]]</tw-passagedata><tw-passagedata pid="1324" name="SM Marketplace" tags="" position="7785,62318.33333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1325" name="SM Book Vendor" tags="" position="7791.666666666667,62558.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1326" name="Cafe outside mom ask" tags="" position="7415.666666666667,62398.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1327" name="Cafe head inside" tags="" position="7260.666666666667,62581.66666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,o=!1,i=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(o)throw i}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
