@@ -166,7 +166,9 @@
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -7407,7 +7409,7 @@ Christina: Um. Now what?
 [[SM Look for Red Horse&lt;-Look for the Red Horse Tribe]]
 
 [[SM Scope The Town&lt;-Get familiar with the town]]
-</tw-passagedata><tw-passagedata pid="626" name="SM Ask About Mom" tags="" position="6711.333333333333,61737" size="100,100">Christina: Well yeah, I&#39;m sure somebody&#39;s seen her... but this place is freakin&#39; huge. The streets are crawling with people... Most of them look like poor people... most of the rest look like crazy warriors with no intention of talking to me.
+</tw-passagedata><tw-passagedata pid="626" name="SM Ask About Mom" tags="" position="6711,61737" size="100,100">Christina: Well yeah, I&#39;m sure somebody&#39;s seen her... but this place is freakin&#39; huge. The streets are crawling with people... Most of them look like poor people... most of the rest look like crazy warriors with no intention of talking to me.
 
 Christina: Where to I even start?
 
@@ -7417,13 +7419,13 @@ Christina: Maybe I should take another of these meds. I&#39;m starting to panic 
 
 [[Be calm, Christina. Take the time to look around. You don&#39;t want to get into any trouble, here.-&gt;SM Scope The Town]]
 
-[[You need to find the Red Horse Tribe as soon as possible, so you can get out of there..-&gt;SM Look for Red Horse]]</tw-passagedata><tw-passagedata pid="627" name="SM Look for Red Horse" tags="" position="6614.666666666667,61993.666666666664" size="100,100">Christina: You&#39;re right. My mom came in with them. They seem like they&#39;d be a big enough deal to make a splash, but where could I find them?
+[[You need to find the Red Horse Tribe as soon as possible, so you can get out of there..-&gt;SM Look for Red Horse]]</tw-passagedata><tw-passagedata pid="627" name="SM Look for Red Horse" tags="" position="6614,61993" size="100,100">Christina: You&#39;re right. My mom came in with them. They seem like they&#39;d be a big enough deal to make a splash, but where could I find them?
 
 [[SM Socialize 1&lt;-Wherever people socialize]]
 
 [[SM Rulers 1&lt;-Wherever the rulers are]]
 
-[[SM Trading 1&lt;-Wherever trading happens]]</tw-passagedata><tw-passagedata pid="628" name="SM Scope The Town" tags="" position="6871.333333333333,61991.333333333336" size="100,100">Christina: OK lemme have a look around.@wait(5Sec)@
+[[SM Trading 1&lt;-Wherever trading happens]]</tw-passagedata><tw-passagedata pid="628" name="SM Scope The Town" tags="" position="6871,61991" size="100,100">Christina: OK lemme have a look around.@wait(5Sec)@
 
 Christina: I&#39;ll let you know. Hold up.
 
@@ -7443,7 +7445,7 @@ Christina: But the guys giving speeches in the square might know more powerful p
 
 [[Don&#39;t draw attention to yourself. Find a restaurant or cafe if you can-&gt;SM Cafe]]@set(Trust+1)@
 
-[[The strongest are the most connected. Go look for the Red Horse Tribe in the Square.-&gt;SM Rulers 1]]@set(Cynicism+1)@</tw-passagedata><tw-passagedata pid="629" name="SM Socialize 1" tags="" position="6519.666666666667,62250" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="630" name="SM Rulers 1" tags="" position="6721,62214" size="100,100">Christina: Yeah that&#39;s probably the place to go.
+[[The strongest are the most connected. Go look for the Red Horse Tribe in the Square.-&gt;SM Rulers 1]]@set(Cynicism+1)@</tw-passagedata><tw-passagedata pid="629" name="SM Socialize 1" tags="" position="6519,62250" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="630" name="SM Rulers 1" tags="" position="6721,62214" size="100,100">Christina: Yeah that&#39;s probably the place to go.
 
 Christina: Those guys likely have to deal with whoever&#39;s in charge here. I&#39;m not sure how to find out who that is, though. What do I do, walk up to someone and ask if they know where the mayor&#39;s house is?
 
@@ -7457,7 +7459,7 @@ Christina: Well, uh. I&#39;m sure *your* mom has, uhm, undesirable qualities als
 
 Christina: I think this is going to take a different approach. Starting with a brisk walk.
 
-[[Forward-&gt;B325CBB]]</tw-passagedata><tw-passagedata pid="631" name="SM Trading 1" tags="" position="6327.666666666667,62214.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="632" name="B325CBB" tags="" position="6713,62499" size="100,100">**Christina is Busy**
+[[Forward-&gt;B325CBB]]</tw-passagedata><tw-passagedata pid="631" name="SM Trading 1" tags="" position="6327,62214" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="632" name="B325CBB" tags="" position="6713,62499" size="100,100">**Christina is Busy**
 
 Christina: Where do I start with this place? Probably with the smell. Like a kitchen that you haven&#39;t cleaned in weeks. There&#39;s smoke and grease sticking to everything. The buildings are ugly. 
 
@@ -7738,7 +7740,7 @@ TODO undone
 
 
 
-</tw-passagedata><tw-passagedata pid="645" name="Nothing. Enjoy." tags="" position="6950.666666666667,63614.666666666664" size="100,100">Christina: I will. 
+</tw-passagedata><tw-passagedata pid="645" name="Nothing. Enjoy." tags="" position="6950,63614" size="100,100">Christina: I will. 
 
 Christina: This is absolutely insane.
 
@@ -11809,9 +11811,9 @@ Christina: So books, right???
 
 Christina: So, Journal right? Yea? Nay?
 
-[[Journal Packing END A&lt;-I&#39;d say so, yes.]]@set(Trust+1)@
+[[Journal Packing END A&lt;-I&#39;d say so, yes.]]@set(Trust+1)##set(HasJournal=1)@
 
-[[Journal Packing END B&lt;-I think it&#39;s a waste of time, but ok.]]@set(cynicism+1)@
+[[Journal Packing END B&lt;-I think it&#39;s a waste of time, but ok.]]@set(cynicism+1)##set(HasJournal=1)@
 
 [[Journal Packing END C&lt;-Whatever, it&#39;s silly.]]@set(cynicism+3)##set(WhateverJournal=1)##set(Trust-1)@
 
@@ -15211,7 +15213,7 @@ Christina: It&#39;s something you figure a mother would do.
 
 [[B351B&lt;-I&#39;m sure she is thinking of you.]]@set(Trust+1)@
 
-[[B351C&lt;-Perhaps she does not want you to worry.]]</tw-passagedata><tw-passagedata pid="1317" name="SM Cafe" tags="" position="7242.333333333334,62263.333333333336" size="100,100">Christina: Sam? I um... found a place. And it&#39;s magical.@wait(25Min)@
+[[B351C&lt;-Perhaps she does not want you to worry.]]</tw-passagedata><tw-passagedata pid="1317" name="SM Cafe" tags="" position="7242,62263" size="100,100">Christina: Sam? I um... found a place. And it&#39;s magical.@wait(25Min)@
 
 Christina: There were guys sitting around outside the place on lawn chairs, and it just says “KAPE” on a painted sign on the front.
 
@@ -15303,7 +15305,7 @@ System: CAUSE OF DEATH =HIERARCH EDICT
 
 System: HANDHELD DEVICE READY FOR REASSIGNMENT
 
-[[Clementine Suspicion anamoly INTRO&lt;- Gameover :)]]</tw-passagedata><tw-passagedata pid="1323" name="wait somewhere safer" tags="" position="7063.333333333334,62654.666666666664" size="100,100">Christina: Well you&#39;re right about that. Maybe I can find a way into the Enclave of the Red Horse Tribe later when they&#39;re not all super preoccupied by a murder festival.
+[[Clementine Suspicion anamoly INTRO&lt;- Gameover :)]]</tw-passagedata><tw-passagedata pid="1323" name="wait somewhere safer" tags="" position="7034.666666666667,62475.666666666664" size="100,100">Christina: Well you&#39;re right about that. Maybe I can find a way into the Enclave of the Red Horse Tribe later when they&#39;re not all super preoccupied by a murder festival.
 
 Christina: I know they&#39;re all going to be in there though – the fight is literally about their right to stay here, I think.
 
@@ -15313,7 +15315,7 @@ Christina: Maybe back in the the market area I can find a cafe or something to l
 
 [[SM Scope The Town&lt;-I&#39;d say head back into town and have a look around. See if you can find a friendly or safe place.]]@if(PathContains=SM Scope The Town)then(Hide)@
 
-[[SM Cafe&lt;-Good idea. Head there and lay low for a bit.]]</tw-passagedata><tw-passagedata pid="1324" name="SM Marketplace" tags="" position="7785,62318.33333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1325" name="SM Book Vendor" tags="" position="7791.666666666667,62558.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1326" name="Cafe outside mom ask" tags="" position="7415.666666666667,62398.333333333336" size="100,100">Christina: Guys hey... I&#39;m looking for my mom, Wynona... she was with the Red Horse Tribe, serving as a doctor, I think? She looks... I guess about like me, but older. I don&#39;t think she wanted to be traveling with them, but...
+[[SM Cafe&lt;-Good idea. Head there and lay low for a bit.]]</tw-passagedata><tw-passagedata pid="1324" name="SM Marketplace" tags="" position="7983.333333333333,62299.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1325" name="SM Book Vendor" tags="" position="8022.666666666667,62614.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1326" name="Cafe outside mom ask" tags="" position="7415,62398" size="100,100">Christina: Guys hey... I&#39;m looking for my mom, Wynona... she was with the Red Horse Tribe, serving as a doctor, I think? She looks... I guess about like me, but older. I don&#39;t think she wanted to be traveling with them, but...
 
 Christina: Oh, she came here? Sometimes. For... coffee. Do you know where she is now?
 
@@ -15323,7 +15325,53 @@ Christina: They told me to ask the owner... Also I think they want me to buy a c
 
 Christina: Wait up.
 
-[[Good luck.-&gt;Cafe head inside]]</tw-passagedata><tw-passagedata pid="1327" name="Cafe head inside" tags="" position="7260.666666666667,62581.66666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Good luck.-&gt;Cafe head inside]]</tw-passagedata><tw-passagedata pid="1327" name="Cafe head inside" tags="" position="7260,62581" size="100,100">Christina: Sam. So I told you that I hadn&#39;t had coffee in weeks, right? I was wrong, Sam.@wait(12Min)@
+
+Christina: It turns out I had never had coffee before in my life.
+
+Christina: These guys are serving up liquid MAGIC in here. Also, the owner knows my mom! He said she&#39;s in the Red Horse enclave, but that there&#39;s no way I&#39;m getting in there right now. That big fight going on today at the Coliseum has all their guys on high alert for intruders.
+
+Christina: He said if I can wait until he closes shop for the day in a few hours he can get me in to see their chief (He&#39;s kind of a celebrity around here I think, because of this COFFEE).
+
+Christina: I don&#39;t really want to wait around for three hours though, if my Mom&#39;s just right down the street. I gotta get in there and find her!
+
+Christina: Suggestions? Ideas?
+
+[[If your Mom&#39;s staying with the Red Horse Tribe, she&#39;ll still be there in a few hours. Waiting it out seems the safest move.-&gt;coffeehouse wait 1]]
+
+[[There&#39;s no time. You can handle the guys at the enclave gate.-&gt;straight to enclave]]</tw-passagedata><tw-passagedata pid="1328" name="coffeehouse wait 1" tags="" position="7501.666666666667,62619.333333333336" size="100,100">Christina: I guess... but what the heck am I going to do for three hours? Just slam delicious coffee and fidget nervously? This place seems as safe as any I&#39;ll find, but it&#39;s going to be a long wait.
+
+Christina: I don&#39;t exactly have anything to DO.@if(HasJournal=0)&amp;&amp;if(SciFiBooks=0)then(Show)@
+
+Christina: I guess I could read my books...@if(SciFiBooks=1)then(Show)@
+
+Christina: I guess I could write in my journal...@if(HasJournal=1)then(Show)@
+
+[[Head back into town to see what else you can find. The more information you have the better.-&gt;head back to town]]
+
+[[I think it&#39;s best to wait it out there.-&gt;coffeehouse wait 2]]</tw-passagedata><tw-passagedata pid="1329" name="straight to enclave" tags="" position="7145,63134.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1330" name="head back to town" tags="" position="7753.333333333334,62524.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1331" name="coffeehouse wait 2" tags="" position="7576.666666666667,62766" size="100,100">Christina: Fine. I&#39;ll just twiddle my thumbs and get high on caffeine. I&#39;ll let you know when I head out.@if(HasJournal=0)&amp;&amp;if(SciFiBooks=0)then(Show)@
+
+Christina: Fine. I&#39;ll just read. I&#39;ll let you know when I head out.@if(SciFiBooks=1)then(Show)@
+
+Christina: Fine. I&#39;ll just sort my thoughts and write in my journal a bit. I&#39;ll let you know when I head out.@if(HasJournal=1)then(Show)@
+
+Christina: Saaaaam.@wait(2Hour)@
+
+Christina: I&#39;m going crazy here... Can I read you what I wrote?@if(HasJournal=1)then(Show)@
+
+Christina: I&#39;m at one of the best parts... it kinda matches up to what I&#39;m doing. Want to hear it?@if(SciFiBooks=1)then(Show)@
+
+Christina: I&#39;m... super caffeinated and going crazy. I&#39;m just gonna run down to the enclave and see what&#39;s what. I can&#39;t take this anymore. Going bonkers thinking about my mom being right HERE, and I&#39;m just twitching in a cafe. Sorry. Gotta try. Will keep you posted.@if(HasJournal=0)&amp;&amp;if(SciFiBooks=0)then(Show)@
+
+[[Of course, Christina.-&gt;coffeeshop poetry]]@if(HasJournal=1)then(Show)@
+
+[[Of course, Christina.-&gt;coffeeshop novel]]@if(SciFiBooks=1)then(Show)@
+
+[[Christina, I have other tasks to perform.-&gt;coffeeshop poetry shutdown]]@if(HasJournal=1)then(Show)@
+
+[[Christina, I have other tasks to perform.-&gt;coffeeshop novel shutdown]]@if(SciFiBooks=1)then(Show)@
+
+[[OK... just be careful, Christina.-&gt;straight to enclave]]@if(HasJournal=0)&amp;&amp;if(SciFiBooks=0)then(Show)@</tw-passagedata><tw-passagedata pid="1332" name="coffeeshop poetry" tags="" position="7833.333333333334,62832.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1333" name="coffeeshop novel" tags="" position="7710,62984.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1334" name="coffeeshop poetry shutdown" tags="" position="7563.333333333334,63077.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1335" name="coffeeshop novel shutdown" tags="" position="7413.333333333334,63062.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,o=!1,i=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(o)throw i}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
