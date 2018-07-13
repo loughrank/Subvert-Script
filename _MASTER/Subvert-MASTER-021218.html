@@ -15349,7 +15349,9 @@ Christina: I guess I could write in my journal...@if(HasJournal=1)then(Show)@
 
 [[Head back into town to see what else you can find. The more information you have the better.-&gt;head back to town]]
 
-[[I think it&#39;s best to wait it out there.-&gt;coffeehouse wait 2]]</tw-passagedata><tw-passagedata pid="1329" name="straight to enclave" tags="" position="7145,63134.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1330" name="head back to town" tags="" position="7753.333333333334,62524.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1331" name="coffeehouse wait 2" tags="" position="7576.666666666667,62766" size="100,100">Christina: Fine. I&#39;ll just twiddle my thumbs and get high on caffeine. I&#39;ll let you know when I head out.@if(HasJournal=0)&amp;&amp;if(SciFiBooks=0)then(Show)@
+[[I think it&#39;s best to wait it out there.-&gt;coffeehouse wait 2]]</tw-passagedata><tw-passagedata pid="1329" name="straight to enclave" tags="" position="7145,63134.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1330" name="head back to town" tags="" position="7753.333333333334,62524.333333333336" size="100,100">Christina: As much as I hate this place, that is a better plan for killing three hours. I promise I&#39;ll be careful, Sam. I&#39;ll let you know what I find.
+
+[[OK. Watch the people. Try to act as they do.-&gt;back in town map]]</tw-passagedata><tw-passagedata pid="1331" name="coffeehouse wait 2" tags="" position="7536.666666666667,62844.333333333336" size="100,100">Christina: Fine. I&#39;ll just twiddle my thumbs and get high on caffeine. I&#39;ll let you know when I head out.@if(HasJournal=0)&amp;&amp;if(SciFiBooks=0)then(Show)@
 
 Christina: Fine. I&#39;ll just read. I&#39;ll let you know when I head out.@if(SciFiBooks=1)then(Show)@
 
@@ -15363,15 +15365,15 @@ Christina: I&#39;m at one of the best parts... it kinda matches up to what I&#39
 
 Christina: I&#39;m... super caffeinated and going crazy. I&#39;m just gonna run down to the enclave and see what&#39;s what. I can&#39;t take this anymore. Going bonkers thinking about my mom being right HERE, and I&#39;m just twitching in a cafe. Sorry. Gotta try. Will keep you posted.@if(HasJournal=0)&amp;&amp;if(SciFiBooks=0)then(Show)@
 
-[[Of course, Christina.-&gt;coffeeshop poetry]]@if(HasJournal=1)then(Show)@
+[[Of course, Christina. You know I am interested in your creations.-&gt;coffeeshop poetry]]@if(HasJournal=1)then(Show)##set(Trust+3)@
 
-[[Of course, Christina.-&gt;coffeeshop novel]]@if(SciFiBooks=1)then(Show)@
+[[Of course, Christina. You know I am interested in your stories-&gt;coffeeshop novel]]@if(SciFiBooks=1)then(Show)##set(Trust+3)@
 
-[[Christina, I have other tasks to perform.-&gt;coffeeshop poetry shutdown]]@if(HasJournal=1)then(Show)@
+[[Christina, I have other tasks to perform.-&gt;coffeeshop poetry shutdown]]@if(HasJournal=1)then(Show)##set(Trust-3)@
 
-[[Christina, I have other tasks to perform.-&gt;coffeeshop novel shutdown]]@if(SciFiBooks=1)then(Show)@
+[[Christina, I have other tasks to perform.-&gt;coffeeshop novel shutdown]]@if(SciFiBooks=1)then(Show)##set(Trust-3)@
 
-[[OK... just be careful, Christina.-&gt;straight to enclave]]@if(HasJournal=0)&amp;&amp;if(SciFiBooks=0)then(Show)@</tw-passagedata><tw-passagedata pid="1332" name="coffeeshop poetry" tags="" position="7833.333333333334,62832.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1333" name="coffeeshop novel" tags="" position="7710,62984.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1334" name="coffeeshop poetry shutdown" tags="" position="7563.333333333334,63077.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1335" name="coffeeshop novel shutdown" tags="" position="7413.333333333334,63062.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[OK... just be careful, Christina.-&gt;straight to enclave]]@if(HasJournal=0)&amp;&amp;if(SciFiBooks=0)then(Show)##set(Trust+1)@</tw-passagedata><tw-passagedata pid="1332" name="coffeeshop poetry" tags="" position="7833.333333333334,62832.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1333" name="coffeeshop novel" tags="" position="7710,62984.333333333336" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1334" name="coffeeshop poetry shutdown" tags="" position="7563.333333333334,63077.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1335" name="coffeeshop novel shutdown" tags="" position="7413.333333333334,63062.666666666664" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="1336" name="back in town map" tags="" position="7965.000000000001,62456" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,o=!1,i=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){o=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(o)throw i}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
