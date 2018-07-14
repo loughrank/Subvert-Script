@@ -8632,13 +8632,13 @@ Christina: I&#39;m not as bad as most of the people out here.
 
 Christina: Sorry about this whole tangent.
 
-Christina: I think I just needed to figure it out. I&#39;m not far from Utopia, you know? At least where I think it is.@@if(christinaUtopia=1)then(Show)@@
+Christina: I think I just needed to figure it out. I&#39;m not far from Utopia, you know? At least where I think it is.@if(christinaUtopia=1)then(Show)@
 
-Christina: And my mom&#39;s in there, and...@@if(christinaUtopia=1)then(Show)@@
+Christina: And my mom&#39;s in there, and...@if(christinaUtopia=1)then(Show)@
 
-Christina: I think I just needed to figure it out. I&#39;m not far from the bunker, and I don&#39;t know what to make of all of this.@@if(christinaBunker=1)then(Show)@@
+Christina: I think I just needed to figure it out. I&#39;m not far from the bunker, and I don&#39;t know what to make of all of this.@if(christinaBunker=1)then(Show)@
 
-Christina: And you&#39;re going to find my Mom... and...@@if(christinaBunker=1)then(Show)@@
+Christina: And you&#39;re going to find my Mom... and...@if(christinaBunker=1)then(Show)@
 
 Christina: I just wonder if she knows me. I&#39;ve done all these things, but have I been out here long enough to change? I&#39;m still the same person.
 
@@ -8652,13 +8652,13 @@ Christina: I&#39;m going to choose to believe it. Thanks, Sam.
 
 **Christina is Busy**
 
-Christina: I&#39;m going to get going. I think I can reach Utopia by sunset if I leave now.@@if(christinaUtopia=1)then(Show)@@
+Christina: I&#39;m going to get going. I think I can reach Utopia by sunset if I leave now.@if(christinaUtopia=1)then(Show)@
 
-Christina: I&#39;m going to get going. I think I can reach home by sunset if I leave now.@@if(christinaBunker=1)then(Show)@@
+Christina: I&#39;m going to get going. I think I can reach home by sunset if I leave now.@if(christinaBunker=1)then(Show)@
 
 Christina: I&#39;ll talk to you soon, Sam.
 
-Christina: Maybe I&#39;ll even see you.@@if(christinaUtopia=1)then(Show)@@
+Christina: Maybe I&#39;ll even see you.@if(christinaUtopia=1)then(Show)@
 
 **Christina is Busy**
 
@@ -15005,21 +15005,21 @@ Christina: I&#39;m at the bunker, but Abagnale won&#39;t even let me in. I knew 
 
 Christina: Where the hell did you even go? Are you... OK? Utopia&#39;s power was cut and I ran and ran and... I left her behind, Sam. She&#39;s gone. I couldn&#39;t carry her... I couldn&#39;t do anything. I couldn&#39;t...
 
-[[You did the best you could, Christina.-&gt;C en route bunker 2A]]@@set(Trust+1)@@
+[[You did the best you could, Christina.-&gt;C en route bunker 2A]]@set(Trust+1)@
 
-[[You did what you had to. Let her go.-&gt;C en route bunker 2B]]@@set(Cynicism+1)@@</tw-passagedata><tw-passagedata pid="1291" name="C en route bunker 2A" tags="" position="5918,78323" size="100,100">Christina: I know... And you guys did too... and I appreciate it all... I really do. I&#39;m just... not sure I can handle any more of all of this. I&#39;m sick to my stomach and I&#39;m tired and I&#39;m hungry and I hate everyone. Can you guys get me in? Can you unlock the door or something?
+[[You did what you had to. Let her go.-&gt;C en route bunker 2B]]@set(Cynicism+1)@</tw-passagedata><tw-passagedata pid="1291" name="C en route bunker 2A" tags="" position="5918,78323" size="100,100">Christina: I know... And you guys did too... and I appreciate it all... I really do. I&#39;m just... not sure I can handle any more of all of this. I&#39;m sick to my stomach and I&#39;m tired and I&#39;m hungry and I hate everyone. Can you guys get me in? Can you unlock the door or something?
 
 [[Christina... I&#39;m not sure. We&#39;re not... as connected as we were to Utopia&#39;s systems.-&gt;not connected 1]]</tw-passagedata><tw-passagedata pid="1292" name="C en route bunker 2B" tags="" position="6346,78313" size="100,100">Christina: Yeah. I guess I did exactly that. There&#39;s more left to do, still. 
 
-Christina: Can you get me in the main door of the bunker? He&#39;s got me locked out. I can try the side door down the stairs?@@if(Cynicism&lt;6)then(Hide)@@
+Christina: Can you get me in the main door of the bunker? He&#39;s got me locked out. I can try the side door down the stairs?@if(Cynicism&lt;6)then(Hide)@
 
-Christina: I&#39;m going to hit the side door. He won&#39;t have it guarded, and if he does I&#39;ll just shoot him. He&#39;s not taking my HOME, Sam. He can forget about that plan. I was thinking “let&#39;s share and be friends” at the time, but I guess he wants a fight, now.@@if(Cynicism&gt;5)then(Show)@@
+Christina: I&#39;m going to hit the side door. He won&#39;t have it guarded, and if he does I&#39;ll just shoot him. He&#39;s not taking my HOME, Sam. He can forget about that plan. I was thinking “let&#39;s share and be friends” at the time, but I guess he wants a fight, now.@if(Cynicism&gt;5)then(Show)@
 
-[[Christina... I&#39;m not sure. We&#39;re not... as connected as we were to Utopia&#39;s systems.--&gt;not connected 1]]@@if(Cynicism&lt;6)then(Show)@@
+[[Christina... I&#39;m not sure. We&#39;re not... as connected as we were to Utopia&#39;s systems.--&gt;not connected 1]]@if(Cynicism&lt;6)then(Show)@
 
-[[Christina... You don&#39;t have to kill them... Just wait for me.--&gt;gonna kill them 1]]@@if(Cynicism &gt; 5)then(Show)@@
+[[Christina... You don&#39;t have to kill them... Just wait for me.--&gt;gonna kill them 1]]@if(Cynicism &gt; 5)then(Show)@
 
-[[Christina... You don&#39;t have to kill them... Just wait for me.--&gt;dont kill them 1]]@@if(Cynicism &gt; 5)then(Hide)@@</tw-passagedata><tw-passagedata pid="1293" name="not connected 1" tags="" position="5918,78473" size="100,100">Christina: Not connected? SID? Help me out here.
+[[Christina... You don&#39;t have to kill them... Just wait for me.--&gt;dont kill them 1]]@if(Cynicism &gt; 5)then(Hide)@</tw-passagedata><tw-passagedata pid="1293" name="not connected 1" tags="" position="5918,78473" size="100,100">Christina: Not connected? SID? Help me out here.
 
 SID: My systems have been transferred, Christina. Sam and myself =No longer inside Utopia.
 
@@ -15031,9 +15031,9 @@ SID: We are currently en route to your location, transported by a Fibrax Locomot
 
 Christina: And you&#39;re coming here. In a killbot.
 
-Christina: Well that&#39;s just perfect. A killbot is just what I need.@@if(Cynicism&gt;6)then(Show)@@
+Christina: Well that&#39;s just perfect. A killbot is just what I need.@if(Cynicism&gt;6)then(Show)@
 
-Christina: Well that&#39;s just perfect. Are you OK?.@@if(Cynicism&lt;7)then(Show)@@
+Christina: Well that&#39;s just perfect. Are you OK?.@if(Cynicism&lt;7)then(Show)@
 
 [[You should wait for us outside the bunker, if you can.-&gt;wait outside suggest]]
 
@@ -15055,17 +15055,17 @@ SID: Sam, I will devote all resources to effective locomotion, but we are still 
 
 SID: All communication attempts thus far have been unanswered by the bunker&#39;s systems.
 
-SID: There are signs of a confrontation, however. The secondary entrance staircase =On fire.@@if(ChrisDead=1)then(Show)@@
+SID: There are signs of a confrontation, however. The secondary entrance staircase =On fire.@if(ChrisDead=1)then(Show)@
 
-SID: Christina seems to be camping in the cluster of trees to the north. Signature =Bonfire.@@if(ChrisWaits=1)then(Show)@@
+SID: Christina seems to be camping in the cluster of trees to the north. Signature =Bonfire.@if(ChrisWaits=1)then(Show)@
 
-SID: There are no signs of Christina, nor any other lifeform. The primary bunker hatch =Still locked.@@if(!ChrisDead)&amp;&amp;(!ChrisWaits)then(Show)@@
+SID: There are no signs of Christina, nor any other lifeform. The primary bunker hatch =Still locked.@if(!ChrisDead)&amp;&amp;(!ChrisWaits)then(Show)@
 
-[[Head up there, SID.-&gt;Chris Dead Early Bunker End 1]]@@if(ChrisDead=1)then(Show)@@
+[[Head up there, SID.-&gt;Chris Dead Early Bunker End 1]]@if(ChrisDead=1)then(Show)@
 
-[[Head up there, SID.-&gt;Chris Camping Bunker End 1]]@@if(ChrisWaits=1)then(Show)@@
+[[Head up there, SID.-&gt;Chris Camping Bunker End 1]]@if(ChrisWaits=1)then(Show)@
 
-[[Head up there, SID.-&gt;Chris in Bunker End 1]]@@if(!ChrisDead)&amp;&amp;(!ChrisWaits)then(Show)@@</tw-passagedata><tw-passagedata pid="1299" name="Chris Dead Early Bunker End 1" tags="" position="6421,79829" size="100,100">SID: Sam, we have arrived. Christina&#39;s comm device is still inactive, and the main bunker hatch =Still locked.@wait(2hrs)@
+[[Head up there, SID.-&gt;Chris in Bunker End 1]]@if(!ChrisDead)&amp;&amp;(!ChrisWaits)then(Show)@</tw-passagedata><tw-passagedata pid="1299" name="Chris Dead Early Bunker End 1" tags="" position="6421,79829" size="100,100">SID: Sam, we have arrived. Christina&#39;s comm device is still inactive, and the main bunker hatch =Still locked.@wait(2hrs)@
 
 SID: The stairwell Christina came up through is open, and the smoke seems to have subsided.
 
